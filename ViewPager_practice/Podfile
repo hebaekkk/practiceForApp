@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ViewPager_practice' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ViewPager_practice
+    pod  "PagingKit" # add
+  target 'ViewPager_practiceTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ViewPager_practiceUITests' do
+    # Pods for testing
+  end
+
+end

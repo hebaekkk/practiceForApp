@@ -1,0 +1,6 @@
+framework module Pods_addPhotoFromAlbum_practice {
+  umbrella header "Pods-addPhotoFromAlbum_practice-umbrella.h"
+
+  export *
+  module * { export * }
+}

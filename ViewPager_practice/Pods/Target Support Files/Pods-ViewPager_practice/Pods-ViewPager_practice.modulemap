@@ -1,0 +1,6 @@
+framework module Pods_ViewPager_practice {
+  umbrella header "Pods-ViewPager_practice-umbrella.h"
+
+  export *
+  module * { export * }
+}

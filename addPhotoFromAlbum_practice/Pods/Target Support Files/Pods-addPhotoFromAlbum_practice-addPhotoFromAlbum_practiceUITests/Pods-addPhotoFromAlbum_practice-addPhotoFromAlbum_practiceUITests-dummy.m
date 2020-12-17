@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_addPhotoFromAlbum_practice_addPhotoFromAlbum_practiceUITests : NSObject
+@end
+@implementation PodsDummy_Pods_addPhotoFromAlbum_practice_addPhotoFromAlbum_practiceUITests
+@end

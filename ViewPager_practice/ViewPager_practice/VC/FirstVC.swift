@@ -1,0 +1,16 @@
+//
+//  FirstVC.swift
+//  ViewPager_practice
+//
+//  Created by BigHand on 2020/11/06.
+//
+
+import Foundation
+import UIKit
+
+class FirstVC: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("First VC - viewDidLoad")
+    }
+}
