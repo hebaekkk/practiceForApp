@@ -9,11 +9,19 @@ import UIKit
 import BSImagePicker
 import Photos
 
+//  [  ] imagePicker 열 때 Modal 두개 안나오게하기 . Album이랑 imagePickerSource랑 연결하기
+
 class ViewController: UIViewController {
     
     var SelectedAssets = [PHAsset]()
     var photoArray = [UIImage]()
     
+    let View: UIView = {
+        let view = UIView()
+        view.backgroundColor = .red
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     fileprivate let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -147,16 +155,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(scroll)
-        setScroll()
-        //scroll.backgroundColor = .blue
-        scroll.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
-        scroll.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
-        scroll.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-        scroll.heightAnchor.constraint(equalToConstant: img.frame.height).isActive = true
         
-        
-        
+        setAddPhotoView()
+        view.addSubview(View)
+        View.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        View.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+        View.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        View.heightAnchor.constraint(equalToConstant: 120).isActive = true
+//        view.addSubview(scroll)
+//        setScroll()
+//        //scroll.backgroundColor = .blue
+//        scroll.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+//        scroll.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
+//        scroll.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+//        scroll.heightAnchor.constraint(equalToConstant: img.frame.height).isActive = true
+//
+//
+//
         //collectionView setting입니다
 //        view.addSubview(collectionView)
 //        collectionView.delegate = self
@@ -171,9 +186,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    @IBAction func selectImages(_ sender: Any) {
-        
+    @objc func selectImg(_ sender: Any) {
         let imagePicker = ImagePickerController()
         imagePicker.settings.selection.max = 5
         imagePicker.settings.theme.selectionStyle = .numbered
@@ -183,6 +196,51 @@ class ViewController: UIViewController {
 //      [  ] imagePicker 열 때 Modal 두개 안나오게하기 . Album이랑 imagePickerSource랑 연결하기
         
         
+        
+        let start = Date()
+        self.presentImagePicker(imagePicker, select: { (asset) in
+            self.initImageViewArr()
+            
+            //[ O ]resize the scrollView Alloc the image total Length !
+            
+            print("Selected: \(asset)\n")
+        }, deselect: { (asset) in
+            print("Deselected: \(asset)\n")
+        }, cancel: { (assets) in
+            print("Canceled with selections: \(assets)\n")
+        }, finish: { (assets) in
+            self.SelectedAssets = assets
+            
+            print("Finished with selections: \(assets)\n")
+//            if assets.count == 1 {
+//                var selectedImg = assets.first
+//                self.img.image = self.getAsset(asset: selectedImg!)
+//            }
+            let cnt = assets.count
+            self.resizeTheScroll(cnt: cnt)
+            for i in 0..<cnt{
+                var selectedImage = assets[i]
+                self.imageArr[i].isHidden = false
+                self.imageArr[i].image = self.getAsset(asset: selectedImage)
+            }
+            
+            
+        }, completion: {
+            let finish = Date()
+            print("\(finish.timeIntervalSince(start))\n")
+               
+        })
+    
+    }
+    
+    @IBAction func selectImages(_ sender: Any) {
+        
+        let imagePicker = ImagePickerController()
+        imagePicker.settings.selection.max = 5
+        imagePicker.settings.theme.selectionStyle = .numbered
+        imagePicker.settings.fetch.assets.supportedMediaTypes = [.image]
+        imagePicker.settings.selection.unselectOnReachingMax = true
+
         
         let start = Date()
         self.presentImagePicker(imagePicker, select: { (asset) in
@@ -242,7 +300,29 @@ class ViewController: UIViewController {
     return image
     }
 
-    
+    func setAddPhotoView(){
+        let camBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 70))
+        camBtn.translatesAutoresizingMaskIntoConstraints = false
+        camBtn.setImage(UIImage(systemName: "camera"), for: .normal)
+        camBtn.contentMode = .scaleAspectFit
+        camBtn.layer.borderWidth = 1
+        camBtn.layer.borderColor = UIColor.gray.cgColor
+        
+        camBtn.addTarget(self, action: #selector(selectImg(_:)), for: .touchUpInside)
+        
+        View.addSubview(camBtn)
+        camBtn.leftAnchor.constraint(equalTo: View.leftAnchor, constant: 5).isActive = true
+        camBtn.topAnchor.constraint(equalTo: View.topAnchor, constant: 4).isActive = true
+        camBtn.bottomAnchor.constraint(equalTo: View.bottomAnchor, constant: -4).isActive = true
+        
+        View.addSubview(scroll)
+        scroll.leftAnchor.constraint(equalTo: camBtn.rightAnchor, constant: 10).isActive = true
+        scroll.rightAnchor.constraint(equalTo: View.rightAnchor, constant: -10).isActive = true
+        scroll.topAnchor.constraint(equalTo: View.topAnchor, constant: 4).isActive = true
+        scroll.bottomAnchor.constraint(equalTo: View.bottomAnchor, constant: -4).isActive = true
+        setScroll()
+        
+    }
 }
 //extension PHAsset {
 //func getAssetImage() -> UIImage {
