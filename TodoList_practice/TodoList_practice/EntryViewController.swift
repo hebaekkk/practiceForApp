@@ -27,6 +27,10 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTabSaveButton))
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -44,7 +48,8 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
             realm.add(newItem)
             
             try! realm.commitWrite()
-            completionHandelr()
+            completionHandelr?()
+            navigationController?.popToRootViewController(animated: true)
             
         } else {
             print("Add Something")

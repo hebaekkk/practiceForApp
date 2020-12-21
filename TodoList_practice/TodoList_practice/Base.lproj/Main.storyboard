@@ -86,16 +86,48 @@
             </objects>
             <point key="canvasLocation" x="1719" y="108"/>
         </scene>
-        <!--View Controller-->
+        <!--View View Controller-->
         <scene sceneID="Am0-3m-Gqt">
             <objects>
-                <viewController id="ldk-mC-f9j" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view" id="ldk-mC-f9j" customClass="ViewViewController" customModule="TodoList_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jaW-Lv-ymJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBt-hx-JJa">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="TIR-Dj-wru"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thX-Ss-l3b">
+                                <rect key="frame" x="20" y="144" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ihF-d7-EZ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Veb-27-1b9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="thX-Ss-l3b" firstAttribute="top" secondItem="oBt-hx-JJa" secondAttribute="bottom" constant="10" id="JMe-0F-Hca"/>
+                            <constraint firstItem="oBt-hx-JJa" firstAttribute="leading" secondItem="Veb-27-1b9" secondAttribute="leading" constant="20" id="Osq-Uu-63Y"/>
+                            <constraint firstItem="thX-Ss-l3b" firstAttribute="leading" secondItem="Veb-27-1b9" secondAttribute="leading" constant="20" id="T0D-OC-wiW"/>
+                            <constraint firstItem="Veb-27-1b9" firstAttribute="trailing" secondItem="oBt-hx-JJa" secondAttribute="trailing" constant="20" id="wwG-Fe-ZE8"/>
+                            <constraint firstItem="oBt-hx-JJa" firstAttribute="top" secondItem="Veb-27-1b9" secondAttribute="top" constant="20" id="wyn-QD-NXw"/>
+                            <constraint firstItem="Veb-27-1b9" firstAttribute="trailing" secondItem="thX-Ss-l3b" secondAttribute="trailing" constant="20" id="zUJ-0D-mTC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="thX-Ss-l3b" id="wc4-Ib-YA4"/>
+                        <outlet property="itemLabel" destination="oBt-hx-JJa" id="v0t-1h-Lmy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGc-S8-UHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
