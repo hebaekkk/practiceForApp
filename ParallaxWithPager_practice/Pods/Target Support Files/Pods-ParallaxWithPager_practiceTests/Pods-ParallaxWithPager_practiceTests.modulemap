@@ -1,0 +1,6 @@
+framework module Pods_ParallaxWithPager_practiceTests {
+  umbrella header "Pods-ParallaxWithPager_practiceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

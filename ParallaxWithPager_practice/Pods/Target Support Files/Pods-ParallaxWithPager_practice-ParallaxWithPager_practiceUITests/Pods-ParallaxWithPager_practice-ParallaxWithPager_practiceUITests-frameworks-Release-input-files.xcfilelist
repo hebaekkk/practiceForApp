@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework
+${BUILT_PRODUCTS_DIR}/PagingKit/PagingKit.framework

@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4194F7C3259079AE006797C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F7C2259079AE006797C1 /* AppDelegate.swift */; };
+		4194F7C5259079AE006797C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F7C4259079AE006797C1 /* SceneDelegate.swift */; };
+		4194F7C7259079AE006797C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F7C6259079AE006797C1 /* ViewController.swift */; };
+		4194F7CA259079AE006797C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4194F7C8259079AE006797C1 /* Main.storyboard */; };
+		4194F7CC259079AF006797C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4194F7CB259079AF006797C1 /* Assets.xcassets */; };
+		4194F7CF259079AF006797C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4194F7CD259079AF006797C1 /* LaunchScreen.storyboard */; };
+		4194F7DA259079AF006797C1 /* ParallaxWithPager_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F7D9259079AF006797C1 /* ParallaxWithPager_practiceTests.swift */; };
+		4194F7E5259079AF006797C1 /* ParallaxWithPager_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F7E4259079AF006797C1 /* ParallaxWithPager_practiceUITests.swift */; };
+		6C82FB035F4BEC85D43E44C2 /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429756BF66FDEE48A03B78CA /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework */; };
+		A3CA9A759B60D1B5BF9DE928 /* Pods_ParallaxWithPager_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5CF668FFB2883F75DE5F17 /* Pods_ParallaxWithPager_practice.framework */; };
+		F1B328A7193E0836127D559A /* Pods_ParallaxWithPager_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE7BD35FC930561EC4C042D /* Pods_ParallaxWithPager_practiceTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4194F7D6259079AF006797C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4194F7B7259079AE006797C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4194F7BE259079AE006797C1;
+			remoteInfo = ParallaxWithPager_practice;
+		};
+		4194F7E1259079AF006797C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4194F7B7259079AE006797C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4194F7BE259079AE006797C1;
+			remoteInfo = ParallaxWithPager_practice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25DC7C90EEC7A7AEE9512D34 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE7BD35FC930561EC4C042D /* Pods_ParallaxWithPager_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxWithPager_practiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA03F476129AA57EE9BC47B /* Pods-ParallaxWithPager_practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxWithPager_practiceTests.debug.xcconfig"; path = "Target Support Files/Pods-ParallaxWithPager_practiceTests/Pods-ParallaxWithPager_practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4194F7BF259079AE006797C1 /* ParallaxWithPager_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxWithPager_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4194F7C2259079AE006797C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4194F7C4259079AE006797C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4194F7C6259079AE006797C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4194F7C9259079AE006797C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4194F7CB259079AF006797C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4194F7CE259079AF006797C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4194F7D0259079AF006797C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4194F7D5259079AF006797C1 /* ParallaxWithPager_practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxWithPager_practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4194F7D9259079AF006797C1 /* ParallaxWithPager_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxWithPager_practiceTests.swift; sourceTree = "<group>"; };
+		4194F7DB259079AF006797C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4194F7E0259079AF006797C1 /* ParallaxWithPager_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxWithPager_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4194F7E4259079AF006797C1 /* ParallaxWithPager_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxWithPager_practiceUITests.swift; sourceTree = "<group>"; };
+		4194F7E6259079AF006797C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429756BF66FDEE48A03B78CA /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D29CFC58B34531A1DF1C1C0 /* Pods-ParallaxWithPager_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxWithPager_practice.debug.xcconfig"; path = "Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice.debug.xcconfig"; sourceTree = "<group>"; };
+		7BB5E0C3A3253FD7F404ABEC /* Pods-ParallaxWithPager_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxWithPager_practice.release.xcconfig"; path = "Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice.release.xcconfig"; sourceTree = "<group>"; };
+		8B5CF668FFB2883F75DE5F17 /* Pods_ParallaxWithPager_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallaxWithPager_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA32A1067850F0127F7265B /* Pods-ParallaxWithPager_practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxWithPager_practiceTests.release.xcconfig"; path = "Target Support Files/Pods-ParallaxWithPager_practiceTests/Pods-ParallaxWithPager_practiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		F3EADE05C0E078DEDF4066BB /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4194F7BC259079AE006797C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CA9A759B60D1B5BF9DE928 /* Pods_ParallaxWithPager_practice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4194F7D2259079AF006797C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B328A7193E0836127D559A /* Pods_ParallaxWithPager_practiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4194F7DD259079AF006797C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C82FB035F4BEC85D43E44C2 /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B62424A53E4A0EF12C1CB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D29CFC58B34531A1DF1C1C0 /* Pods-ParallaxWithPager_practice.debug.xcconfig */,
+				7BB5E0C3A3253FD7F404ABEC /* Pods-ParallaxWithPager_practice.release.xcconfig */,
+				25DC7C90EEC7A7AEE9512D34 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig */,
+				F3EADE05C0E078DEDF4066BB /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig */,
+				3EA03F476129AA57EE9BC47B /* Pods-ParallaxWithPager_practiceTests.debug.xcconfig */,
+				9AA32A1067850F0127F7265B /* Pods-ParallaxWithPager_practiceTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4194F7B6259079AE006797C1 = {
+			isa = PBXGroup;
+			children = (
+				4194F7C1259079AE006797C1 /* ParallaxWithPager_practice */,
+				4194F7D8259079AF006797C1 /* ParallaxWithPager_practiceTests */,
+				4194F7E3259079AF006797C1 /* ParallaxWithPager_practiceUITests */,
+				4194F7C0259079AE006797C1 /* Products */,
+				14B62424A53E4A0EF12C1CB9 /* Pods */,
+				5903AED32450841643623F21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4194F7C0259079AE006797C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4194F7BF259079AE006797C1 /* ParallaxWithPager_practice.app */,
+				4194F7D5259079AF006797C1 /* ParallaxWithPager_practiceTests.xctest */,
+				4194F7E0259079AF006797C1 /* ParallaxWithPager_practiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4194F7C1259079AE006797C1 /* ParallaxWithPager_practice */ = {
+			isa = PBXGroup;
+			children = (
+				4194F7C2259079AE006797C1 /* AppDelegate.swift */,
+				4194F7C4259079AE006797C1 /* SceneDelegate.swift */,
+				4194F7C6259079AE006797C1 /* ViewController.swift */,
+				4194F7C8259079AE006797C1 /* Main.storyboard */,
+				4194F7CB259079AF006797C1 /* Assets.xcassets */,
+				4194F7CD259079AF006797C1 /* LaunchScreen.storyboard */,
+				4194F7D0259079AF006797C1 /* Info.plist */,
+			);
+			path = ParallaxWithPager_practice;
+			sourceTree = "<group>";
+		};
+		4194F7D8259079AF006797C1 /* ParallaxWithPager_practiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				4194F7D9259079AF006797C1 /* ParallaxWithPager_practiceTests.swift */,
+				4194F7DB259079AF006797C1 /* Info.plist */,
+			);
+			path = ParallaxWithPager_practiceTests;
+			sourceTree = "<group>";
+		};
+		4194F7E3259079AF006797C1 /* ParallaxWithPager_practiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4194F7E4259079AF006797C1 /* ParallaxWithPager_practiceUITests.swift */,
+				4194F7E6259079AF006797C1 /* Info.plist */,
+			);
+			path = ParallaxWithPager_practiceUITests;
+			sourceTree = "<group>";
+		};
+		5903AED32450841643623F21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B5CF668FFB2883F75DE5F17 /* Pods_ParallaxWithPager_practice.framework */,
+				429756BF66FDEE48A03B78CA /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework */,
+				2DE7BD35FC930561EC4C042D /* Pods_ParallaxWithPager_practiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4194F7BE259079AE006797C1 /* ParallaxWithPager_practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4194F7E9259079AF006797C1 /* Build configuration list for PBXNativeTarget "ParallaxWithPager_practice" */;
+			buildPhases = (
+				9A245D5A5D15A2BC9E024B10 /* [CP] Check Pods Manifest.lock */,
+				4194F7BB259079AE006797C1 /* Sources */,
+				4194F7BC259079AE006797C1 /* Frameworks */,
+				4194F7BD259079AE006797C1 /* Resources */,
+				D655736A0129B3C54AD85C0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParallaxWithPager_practice;
+			productName = ParallaxWithPager_practice;
+			productReference = 4194F7BF259079AE006797C1 /* ParallaxWithPager_practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4194F7D4259079AF006797C1 /* ParallaxWithPager_practiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4194F7EC259079AF006797C1 /* Build configuration list for PBXNativeTarget "ParallaxWithPager_practiceTests" */;
+			buildPhases = (
+				5DFA3C2F3E81FBE5697411FE /* [CP] Check Pods Manifest.lock */,
+				4194F7D1259079AF006797C1 /* Sources */,
+				4194F7D2259079AF006797C1 /* Frameworks */,
+				4194F7D3259079AF006797C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4194F7D7259079AF006797C1 /* PBXTargetDependency */,
+			);
+			name = ParallaxWithPager_practiceTests;
+			productName = ParallaxWithPager_practiceTests;
+			productReference = 4194F7D5259079AF006797C1 /* ParallaxWithPager_practiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4194F7DF259079AF006797C1 /* ParallaxWithPager_practiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4194F7EF259079AF006797C1 /* Build configuration list for PBXNativeTarget "ParallaxWithPager_practiceUITests" */;
+			buildPhases = (
+				BACD1A6EBD7124EE38F807DD /* [CP] Check Pods Manifest.lock */,
+				4194F7DC259079AF006797C1 /* Sources */,
+				4194F7DD259079AF006797C1 /* Frameworks */,
+				4194F7DE259079AF006797C1 /* Resources */,
+				C65699F0AAF22D96834A4763 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4194F7E2259079AF006797C1 /* PBXTargetDependency */,
+			);
+			name = ParallaxWithPager_practiceUITests;
+			productName = ParallaxWithPager_practiceUITests;
+			productReference = 4194F7E0259079AF006797C1 /* ParallaxWithPager_practiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4194F7B7259079AE006797C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					4194F7BE259079AE006797C1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					4194F7D4259079AF006797C1 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4194F7BE259079AE006797C1;
+					};
+					4194F7DF259079AF006797C1 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4194F7BE259079AE006797C1;
+					};
+				};
+			};
+			buildConfigurationList = 4194F7BA259079AE006797C1 /* Build configuration list for PBXProject "ParallaxWithPager_practice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4194F7B6259079AE006797C1;
+			productRefGroup = 4194F7C0259079AE006797C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4194F7BE259079AE006797C1 /* ParallaxWithPager_practice */,
+				4194F7D4259079AF006797C1 /* ParallaxWithPager_practiceTests */,
+				4194F7DF259079AF006797C1 /* ParallaxWithPager_practiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4194F7BD259079AE006797C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4194F7CF259079AF006797C1 /* LaunchScreen.storyboard in Resources */,
+				4194F7CC259079AF006797C1 /* Assets.xcassets in Resources */,
+				4194F7CA259079AE006797C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4194F7D3259079AF006797C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4194F7DE259079AF006797C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DFA3C2F3E81FBE5697411FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallaxWithPager_practiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A245D5A5D15A2BC9E024B10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallaxWithPager_practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACD1A6EBD7124EE38F807DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65699F0AAF22D96834A4763 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D655736A0129B3C54AD85C0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4194F7BB259079AE006797C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4194F7C7259079AE006797C1 /* ViewController.swift in Sources */,
+				4194F7C3259079AE006797C1 /* AppDelegate.swift in Sources */,
+				4194F7C5259079AE006797C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4194F7D1259079AF006797C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4194F7DA259079AF006797C1 /* ParallaxWithPager_practiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4194F7DC259079AF006797C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4194F7E5259079AF006797C1 /* ParallaxWithPager_practiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4194F7D7259079AF006797C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4194F7BE259079AE006797C1 /* ParallaxWithPager_practice */;
+			targetProxy = 4194F7D6259079AF006797C1 /* PBXContainerItemProxy */;
+		};
+		4194F7E2259079AF006797C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4194F7BE259079AE006797C1 /* ParallaxWithPager_practice */;
+			targetProxy = 4194F7E1259079AF006797C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4194F7C8259079AE006797C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4194F7C9259079AE006797C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4194F7CD259079AF006797C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4194F7CE259079AF006797C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4194F7E7259079AF006797C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4194F7E8259079AF006797C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4194F7EA259079AF006797C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D29CFC58B34531A1DF1C1C0 /* Pods-ParallaxWithPager_practice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParallaxWithPager_practice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.ParallaxWithPager-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4194F7EB259079AF006797C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB5E0C3A3253FD7F404ABEC /* Pods-ParallaxWithPager_practice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParallaxWithPager_practice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.ParallaxWithPager-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4194F7ED259079AF006797C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA03F476129AA57EE9BC47B /* Pods-ParallaxWithPager_practiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParallaxWithPager_practiceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.ParallaxWithPager-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxWithPager_practice.app/ParallaxWithPager_practice";
+			};
+			name = Debug;
+		};
+		4194F7EE259079AF006797C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA32A1067850F0127F7265B /* Pods-ParallaxWithPager_practiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParallaxWithPager_practiceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.ParallaxWithPager-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxWithPager_practice.app/ParallaxWithPager_practice";
+			};
+			name = Release;
+		};
+		4194F7F0259079AF006797C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25DC7C90EEC7A7AEE9512D34 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParallaxWithPager_practiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.ParallaxWithPager-practiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParallaxWithPager_practice;
+			};
+			name = Debug;
+		};
+		4194F7F1259079AF006797C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3EADE05C0E078DEDF4066BB /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParallaxWithPager_practiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.ParallaxWithPager-practiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParallaxWithPager_practice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4194F7BA259079AE006797C1 /* Build configuration list for PBXProject "ParallaxWithPager_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4194F7E7259079AF006797C1 /* Debug */,
+				4194F7E8259079AF006797C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4194F7E9259079AF006797C1 /* Build configuration list for PBXNativeTarget "ParallaxWithPager_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4194F7EA259079AF006797C1 /* Debug */,
+				4194F7EB259079AF006797C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4194F7EC259079AF006797C1 /* Build configuration list for PBXNativeTarget "ParallaxWithPager_practiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4194F7ED259079AF006797C1 /* Debug */,
+				4194F7EE259079AF006797C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4194F7EF259079AF006797C1 /* Build configuration list for PBXNativeTarget "ParallaxWithPager_practiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4194F7F0259079AF006797C1 /* Debug */,
+				4194F7F1259079AF006797C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4194F7B7259079AE006797C1 /* Project object */;
+}

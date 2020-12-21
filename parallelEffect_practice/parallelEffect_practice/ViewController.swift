@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //ScrollView's contentOffset differences with previous contentOffset
         let contentOffset = scrollView.contentOffset.y - oldContentOffset.y
-        print("content: \(contentOffset), sv: \(scrollView.contentOffset.y), oc:\(oldContentOffset.y)")
+        //print("content: \(contentOffset), sv: \(scrollView.contentOffset.y), oc:\(oldContentOffset.y)")
         // Scrolls UP - we compress the top view
         if contentOffset > 0 && scrollView.contentOffset.y > 0 {
             if ( topViewTopConstraint.constant > -50 ) {// 남아있는 뷰의 크기 !! Scroll up 했을 때!!!

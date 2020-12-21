@@ -1,0 +1,20 @@
+PODS:
+  - MXParallaxHeader (1.1.0)
+  - PagingKit (1.15.0)
+
+DEPENDENCIES:
+  - MXParallaxHeader
+  - PagingKit
+
+SPEC REPOS:
+  trunk:
+    - MXParallaxHeader
+    - PagingKit
+
+SPEC CHECKSUMS:
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  PagingKit: 4bd58b65d71a82ab98486b6927e870c7fbc6c6eb
+
+PODFILE CHECKSUM: 8cce46537dea8fe4387b3305440ea8c636212ea0
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests
+@end
