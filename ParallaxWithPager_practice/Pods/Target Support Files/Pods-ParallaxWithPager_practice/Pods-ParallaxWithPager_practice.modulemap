@@ -1,6 +1,0 @@
-framework module Pods_ParallaxWithPager_practice {
-  umbrella header "Pods-ParallaxWithPager_practice-umbrella.h"
-
-  export *
-  module * { export * }
-}

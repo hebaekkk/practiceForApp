@@ -1,0 +1,6 @@
+framework module Pods_parallaxPlz_practice_parallaxPlz_practiceUITests {
+  umbrella header "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
