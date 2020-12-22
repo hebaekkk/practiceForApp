@@ -8,62 +8,87 @@
 
 /* Begin PBXBuildFile section */
 		0486AF36BE0AFDE3731154FDD4CC5875 /* Pods-ParallaxWithPager_practiceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 280A93CDA25B37B609816D4C1DF2DD2E /* Pods-ParallaxWithPager_practiceTests-dummy.m */; };
-		06F9749CB169D6D27B1FA53F7C54A991 /* MXScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF1B05B8405FBAAD9CD6E61FC829D27 /* MXScrollViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F0D93E9A0E167853850A500BEDFD036 /* UnderlineFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AFF48D6FE917D7831B534FDB47D84 /* UnderlineFocusView.swift */; };
-		13F0D80D173AA7AA2A7C18C289BCA9B7 /* OverlayFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E26B8303C057ACBB98532E06B18EC8 /* OverlayFocusView.swift */; };
-		1807433B116AADF293A87B2116268CB3 /* PagingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C70F2259A80DC1FE55EB1E920BB6A /* PagingContentViewController.swift */; };
-		195E52C5242A95E5255DD35112C634C3 /* MXParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2539561B022A80D3E0134AFB135B1AA0 /* MXParallaxHeader.m */; };
-		19F0FC203FC938E39B9885E6B780328B /* MXParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B936FD10093C7C3880D42DB6C122282 /* MXParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B5D1D4ECC704157894908B9D59540CD /* MXParallaxHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 946FF8586AE30A5832C9635B2FF22D54 /* MXParallaxHeader-dummy.m */; };
-		37C965E55A71E12D6C81CA659D49C50C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		521128BF43E026DD1889EEB7F7DA1281 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC0C853B5ADE7F9D5C35F4325801135 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m */; };
-		5C96BB0A521A6633286F050C3D3353D7 /* MXParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B55723FBC12BD42AB7B40F8C27C2D4 /* MXParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63514756502C12161E22E7045136CDC7 /* TitleLabelMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955146C316B23BDF3C93319EB2ABF798 /* TitleLabelMenuViewCell.swift */; };
-		638C9AB76FFB7ED846A7AE2EC90A47C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6B488EB896CFFE5189F501ACEC2CBA53 /* PagingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E025839EB4D910E6FF3B191EB627B18D /* PagingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72EBA2C5814BC6327DFCD5E75ABABFE6 /* MXScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FAC031E696B95A06C7B4CC4068D878C /* MXScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73FC4637A6664C4DABBC46C24CEA6C6A /* ContentAppearanceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471C6F739F84385065B978CDCC4913E /* ContentAppearanceHandler.swift */; };
-		781F864BC4266AF16E68A359ABEF838D /* PagingMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D2EC0966B3FBFA28D8CFC80D5C8CF /* PagingMenuViewController.swift */; };
-		7D160D810762B0AEF38C9CFD416016EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		873CD4BF1AC60A736118173FC973E50C /* Pods-ParallaxWithPager_practice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFEF575E1ADC40605646B502D05F29E /* Pods-ParallaxWithPager_practice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		948EB8203FBC06F2CA663B4ED63AB4F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9BA427022737FDACF7F54620E08CB1C6 /* PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5D87427D0CFA642CD13F0803DE8FE /* PagingMenuView.swift */; };
-		9D17972019E29B5BEDA13BDE566FCF3D /* Pods-ParallaxWithPager_practice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 972049EF94585FB3830AF6AA72480AD8 /* Pods-ParallaxWithPager_practice-dummy.m */; };
-		9D8BC294AAE7407CBE27C78555C0EB0E /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955BCCEA1BFB08972BCA8B0CD7033A80 /* Array+NSLayoutConstraint.swift */; };
+		06F9749CB169D6D27B1FA53F7C54A991 /* MXScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 901A40A5A52BB8C58140603360703902 /* MXScrollViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CA3973C850ED8317BEB595D560B1594 /* PageMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD3EE4936719B9990FFE9A0A6FE5BCF /* PageMenu-dummy.m */; };
+		0F0D93E9A0E167853850A500BEDFD036 /* UnderlineFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49BA8DE2BFA666B4228C2420E63BDE4 /* UnderlineFocusView.swift */; };
+		13F0D80D173AA7AA2A7C18C289BCA9B7 /* OverlayFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCF106DC4DD6838A34AF4737B63420 /* OverlayFocusView.swift */; };
+		1807433B116AADF293A87B2116268CB3 /* PagingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414937DF94272CB897F3D48D73825D9 /* PagingContentViewController.swift */; };
+		195E52C5242A95E5255DD35112C634C3 /* MXParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BFCAEB7F2B8964FC6A5D087DFBA7AC /* MXParallaxHeader.m */; };
+		19F0FC203FC938E39B9885E6B780328B /* MXParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B61652DE269D09113EF14006B17735D7 /* MXParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B5D1D4ECC704157894908B9D59540CD /* MXParallaxHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3E61EEDD7A906190F653B0D80F1892 /* MXParallaxHeader-dummy.m */; };
+		2F9323C544B68EA91AFFB9FF6C8849C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		30415EC33BC3C30B6C38BB26500101B5 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA00BC4BCF570987DE56D87BF8866BD /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		36BFD6063E4A1C6A97E998803C23D28E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		37C965E55A71E12D6C81CA659D49C50C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		3E3DBF9AEC697C04D0DD55F44F3C0444 /* Pods-ParallaxWithPager_practice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFEF575E1ADC40605646B502D05F29E /* Pods-ParallaxWithPager_practice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53008F40A4FC20112DC7F8B246F13CDD /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7C27B1A3A87C2DC066871F1160616B /* MenuItemView.swift */; };
+		55A8453A264F6C628886407B426A0564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		5953077D637D7AE2AA2121F5F68536B9 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF56F8921DF5396644FE662E9853974 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C96BB0A521A6633286F050C3D3353D7 /* MXParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBD7E306E6BCDCE9B3F0E0EEAA315CA /* MXParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FDD62E0955343F9837F31F6E7E89A21 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EAB0EAB8CBFE4C87386EAF97EE9A4 /* CAPSPageMenu.swift */; };
+		63514756502C12161E22E7045136CDC7 /* TitleLabelMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB99044442392A87FED6FDB6D86D69 /* TitleLabelMenuViewCell.swift */; };
+		6B488EB896CFFE5189F501ACEC2CBA53 /* PagingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DCF25127D28EA24AED67637B27B004 /* PagingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BDBF4838D3CE49AE50C08CB7BF9C468 /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CCF34784B0B910B6BCCB1F8766336 /* CAPSPageMenu+UIConfiguration.swift */; };
+		72EBA2C5814BC6327DFCD5E75ABABFE6 /* MXScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB395BB35162909851DAE09FC42C493 /* MXScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73FC4637A6664C4DABBC46C24CEA6C6A /* ContentAppearanceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02611557DD0EB1D9F1281DFD89CA15E4 /* ContentAppearanceHandler.swift */; };
+		781F864BC4266AF16E68A359ABEF838D /* PagingMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202B75D78109A2EA50E9426DC105255 /* PagingMenuViewController.swift */; };
+		805D5EE0CFC74A2C0695EFF2664CCB1F /* Pods-ParallaxWithPager_practice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 972049EF94585FB3830AF6AA72480AD8 /* Pods-ParallaxWithPager_practice-dummy.m */; };
+		87208EDB75FF6B213ACFB8FEDDD34068 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC0C853B5ADE7F9D5C35F4325801135 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m */; };
+		908AF956DED74146D97AA7C36B5A1515 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F223DA3C9DECEB256D4FDD580C4E4D0 /* CAPSPageMenuConfiguration.swift */; };
+		948EB8203FBC06F2CA663B4ED63AB4F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		9AECF24E7292A6479C95D03A6AE05AAA /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6412BEEBB5FDE51050D62356883ACB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		9BA427022737FDACF7F54620E08CB1C6 /* PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43239B0579F275AA1D960CA45FCC308E /* PagingMenuView.swift */; };
+		9D8BC294AAE7407CBE27C78555C0EB0E /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F096967687C601B36043639777ABE /* Array+NSLayoutConstraint.swift */; };
 		ABAA3A7086DC0B3B1A145BD68C2303F4 /* Pods-ParallaxWithPager_practiceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F34C5B5D26D9F16CCF559CFCA01BE92 /* Pods-ParallaxWithPager_practiceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABF31ADBBE69F779649FC4D51A1ACC48 /* MXScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3BFBC885CE730686A4915BDA68724 /* MXScrollViewController.m */; };
-		B22C4C878D2AA8B5EC3D22641FBBEF3A /* PagingKitProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCCDCA4793710181D8C8134E5965B4 /* PagingKitProxy.swift */; };
-		C0C03F24B0E0D4F56A6A29CB8656B2C4 /* PagingKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E628FA0676BF73B2B3C81D74A5A1CA3 /* PagingKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1DAABD762BF92705CAC62189FB2A1BF /* MXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0317636481EDAE92F2806A3811565B4B /* MXScrollView.m */; };
-		E56D6AABD4FF78A40E434AF834D79D29 /* OverlayMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54036D2DE0D7AAD265D7C9889E82B45 /* OverlayMenuCell.swift */; };
-		ECE712BE7D3548FF8C3A93A3A5F8DDCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F094CF17C9826FD0312F3E5055C750C3 /* PagingKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBAFAAA0BB271B7C3F8FC5ED806BFE2 /* PagingKit-dummy.m */; };
-		FF9F73E5F05241B3AA78D3482DA920F1 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF56F8921DF5396644FE662E9853974 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABF31ADBBE69F779649FC4D51A1ACC48 /* MXScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E867B2157B81208D632AC7A6ED0AA9FB /* MXScrollViewController.m */; };
+		B22C4C878D2AA8B5EC3D22641FBBEF3A /* PagingKitProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37248FEC22B4845061257CD50A53131 /* PagingKitProxy.swift */; };
+		C0C03F24B0E0D4F56A6A29CB8656B2C4 /* PagingKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B196C4B3C548BFAB5CFC8EADDBDC609E /* PagingKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1DAABD762BF92705CAC62189FB2A1BF /* MXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD16EFBACF0BF6796CFC578F324CDDD /* MXScrollView.m */; };
+		DBC3AB9C440FF2C1451464DDB3429CA4 /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACB5CDDB0338D2A95749E04A392B56 /* CAPSPageMenu+Options.swift */; };
+		DC97CFD99AF116137934381D0B9937B9 /* PageMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 122D7E747E27E0E98611D26E8209DB8F /* PageMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E253D555F465D57A1CFFCD4904B45EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		E56D6AABD4FF78A40E434AF834D79D29 /* OverlayMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA98D143858861148DCF8AC77EC5C93 /* OverlayMenuCell.swift */; };
+		ECE712BE7D3548FF8C3A93A3A5F8DDCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		F094CF17C9826FD0312F3E5055C750C3 /* PagingKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DD3FBD50CA5A40E26BDCFA9D20953 /* PagingKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		863CEF4B908E6994C5A8D8FC4406FE9A /* PBXContainerItemProxy */ = {
+		1D7721F1BA3F7F47E5F2B78FBF886E19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F65C0EE8AF6DB74ABBACA4A3A11CE230;
 			remoteInfo = MXParallaxHeader;
 		};
-		8A89985B2120EDF107B7F0E264555F5B /* PBXContainerItemProxy */ = {
+		3716A83DB36A0A31958433BE25B1940F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1A57A9C619B3E6571748F16D097B958;
+			remoteInfo = PageMenu;
+		};
+		8C4036F842A3E9B55E5AE679224F0B59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65C0EE8AF6DB74ABBACA4A3A11CE230;
+			remoteInfo = MXParallaxHeader;
+		};
+		9A724EAF85FB41320D3F9A87BF8450FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6D0EC2DA62F1B2EC342F986026BBD672;
 			remoteInfo = PagingKit;
 		};
-		C742B2A77440E805F2361D407761B99A /* PBXContainerItemProxy */ = {
+		9BFA5DB941A1B22A5C5D5CE9E3054608 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F65C0EE8AF6DB74ABBACA4A3A11CE230;
-			remoteInfo = MXParallaxHeader;
+			remoteGlobalIDString = A1A57A9C619B3E6571748F16D097B958;
+			remoteInfo = PageMenu;
 		};
-		D4A880B9D34B0BC7C434BD18778C371D /* PBXContainerItemProxy */ = {
+		C209CD7F7E48DB59C6B352CC9E6B93B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -80,78 +105,103 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0317636481EDAE92F2806A3811565B4B /* MXScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollView.m; path = Sources/MXScrollView.m; sourceTree = "<group>"; };
+		02611557DD0EB1D9F1281DFD89CA15E4 /* ContentAppearanceHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentAppearanceHandler.swift; path = Sources/ContentAppearanceHandler.swift; sourceTree = "<group>"; };
 		044248F9F45A3E9247487245280DBD44 /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B936FD10093C7C3880D42DB6C122282 /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		0BBD7E306E6BCDCE9B3F0E0EEAA315CA /* MXParallaxHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXParallaxHeader.h; path = Sources/MXParallaxHeader.h; sourceTree = "<group>"; };
 		0DFEF575E1ADC40605646B502D05F29E /* Pods-ParallaxWithPager_practice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParallaxWithPager_practice-umbrella.h"; sourceTree = "<group>"; };
-		19C5D87427D0CFA642CD13F0803DE8FE /* PagingMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuView.swift; path = Sources/PagingMenuView.swift; sourceTree = "<group>"; };
-		1C1D2EC0966B3FBFA28D8CFC80D5C8CF /* PagingMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuViewController.swift; path = Sources/PagingMenuViewController.swift; sourceTree = "<group>"; };
+		0E755E136AC1A4F715F67F36A894255D /* PagingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingKit.debug.xcconfig; sourceTree = "<group>"; };
+		117FECADFA5AA0FFEE15ACD151098A06 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PageMenu.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		122D7E747E27E0E98611D26E8209DB8F /* PageMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-umbrella.h"; sourceTree = "<group>"; };
+		155A7119B67A73BA45F64C5A976450AB /* MXParallaxHeader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.debug.xcconfig; sourceTree = "<group>"; };
+		1AA98D143858861148DCF8AC77EC5C93 /* OverlayMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayMenuCell.swift; path = "Sources/Menu Cells/Overlay/OverlayMenuCell.swift"; sourceTree = "<group>"; };
 		1E20904BB6DAA1E10AE43277394C1C87 /* Pods-ParallaxWithPager_practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxWithPager_practiceTests.release.xcconfig"; sourceTree = "<group>"; };
-		1E628FA0676BF73B2B3C81D74A5A1CA3 /* PagingKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingKit-umbrella.h"; sourceTree = "<group>"; };
-		1FFCCDCA4793710181D8C8134E5965B4 /* PagingKitProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingKitProxy.swift; path = Sources/PagingKitProxy.swift; sourceTree = "<group>"; };
-		244E41B1596712FD7595E2A6845F7198 /* PagingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingKit.debug.xcconfig; sourceTree = "<group>"; };
-		2539561B022A80D3E0134AFB135B1AA0 /* MXParallaxHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXParallaxHeader.m; path = Sources/MXParallaxHeader.m; sourceTree = "<group>"; };
 		280A93CDA25B37B609816D4C1DF2DD2E /* Pods-ParallaxWithPager_practiceTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParallaxWithPager_practiceTests-dummy.m"; sourceTree = "<group>"; };
+		29FCF106DC4DD6838A34AF4737B63420 /* OverlayFocusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayFocusView.swift; path = "Sources/Menu Cells/Overlay/OverlayFocusView.swift"; sourceTree = "<group>"; };
+		2C6F096967687C601B36043639777ABE /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+NSLayoutConstraint.swift"; path = "Sources/Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		2D475CE4CC392ABD15A454AF837500FD /* Pods-ParallaxWithPager_practiceTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxWithPager_practiceTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3471C6F739F84385065B978CDCC4913E /* ContentAppearanceHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentAppearanceHandler.swift; path = Sources/ContentAppearanceHandler.swift; sourceTree = "<group>"; };
+		2F4682967D8F2D9912B12242605C3F99 /* MXParallaxHeader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.release.xcconfig; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		328BA9B241DE233D284D0DC3968659B5 /* PagingKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PagingKit-Info.plist"; sourceTree = "<group>"; };
+		3C748CF31C6CF1D877DF58E702D8C303 /* PagingKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingKit-prefix.pch"; sourceTree = "<group>"; };
+		3C9DD3FBD50CA5A40E26BDCFA9D20953 /* PagingKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingKit-dummy.m"; sourceTree = "<group>"; };
 		3D4BA8CA8C21037B6A091573186C7355 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-Info.plist"; sourceTree = "<group>"; };
-		3FAC031E696B95A06C7B4CC4068D878C /* MXScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollView.h; path = Sources/MXScrollView.h; sourceTree = "<group>"; };
+		429CCF34784B0B910B6BCCB1F8766336 /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIConfiguration.swift"; path = "Classes/CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
+		43239B0579F275AA1D960CA45FCC308E /* PagingMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuView.swift; path = Sources/PagingMenuView.swift; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		473977051BBBEA42E26BC7400AA0327D /* MXParallaxHeader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXParallaxHeader-Info.plist"; sourceTree = "<group>"; };
 		4AF2D0924E14EDC0EFA2AA6D49F9B647 /* Pods-ParallaxWithPager_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxWithPager_practice.release.xcconfig"; sourceTree = "<group>"; };
-		4CD7C8A13632C9D6654449987EFA9CDF /* PagingKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingKit.release.xcconfig; sourceTree = "<group>"; };
+		4C6412BEEBB5FDE51050D62356883ACB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; path = "Classes/CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
 		4EA9F7AF2B63CE72A52F5FA96B536DF4 /* Pods-ParallaxWithPager_practice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxWithPager_practice-acknowledgements.plist"; sourceTree = "<group>"; };
-		56E3BFBC885CE730686A4915BDA68724 /* MXScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollViewController.m; path = Sources/MXScrollViewController.m; sourceTree = "<group>"; };
-		58E7FDA0D7088D133700715548C99C3F /* PagingKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagingKit.modulemap; sourceTree = "<group>"; };
-		5CBAFAAA0BB271B7C3F8FC5ED806BFE2 /* PagingKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingKit-dummy.m"; sourceTree = "<group>"; };
+		547A7F5A18C68C5411CCF5CAB4971766 /* PageMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PageMenu.modulemap; sourceTree = "<group>"; };
 		5E91DEDAD4023E15D441387922C34D43 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		64E26B8303C057ACBB98532E06B18EC8 /* OverlayFocusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayFocusView.swift; path = "Sources/Menu Cells/Overlay/OverlayFocusView.swift"; sourceTree = "<group>"; };
-		68584E685CA3000C3E3ED4B05C62DAEF /* MXParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXParallaxHeader.modulemap; sourceTree = "<group>"; };
-		69BD130ED18CBC272F488212FBC6D9B5 /* MXParallaxHeader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXParallaxHeader-Info.plist"; sourceTree = "<group>"; };
-		6DF1B05B8405FBAAD9CD6E61FC829D27 /* MXScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollViewController.h; path = Sources/MXScrollViewController.h; sourceTree = "<group>"; };
+		632EAB0EAB8CBFE4C87386EAF97EE9A4 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenu.swift; path = Classes/CAPSPageMenu.swift; sourceTree = "<group>"; };
+		6BD16EFBACF0BF6796CFC578F324CDDD /* MXScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollView.m; path = Sources/MXScrollView.m; sourceTree = "<group>"; };
+		6E0A28A50A5B6B35C1E3559914D197C8 /* PageMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-prefix.pch"; sourceTree = "<group>"; };
 		747267449ABE40D3FB0C0363A4500D15 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7BF4F9DF012C6B052F90491877CB3432 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MXParallaxHeader.framework; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82856015AC15A08EA14E4A0DBAA35DB0 /* PagingKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PagingKit-Info.plist"; sourceTree = "<group>"; };
+		86DCF25127D28EA24AED67637B27B004 /* PagingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PagingKit.h; path = Sources/PagingKit.h; sourceTree = "<group>"; };
 		887DB7870A8CAD1E4C2176FE58938C0E /* Pods-ParallaxWithPager_practiceTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParallaxWithPager_practiceTests.modulemap"; sourceTree = "<group>"; };
 		898A736F646D48C33CE0D19170847E6D /* Pods-ParallaxWithPager_practice-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxWithPager_practice-Info.plist"; sourceTree = "<group>"; };
 		8BF56F8921DF5396644FE662E9853974 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h"; sourceTree = "<group>"; };
-		8D3AFF48D6FE917D7831B534FDB47D84 /* UnderlineFocusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderlineFocusView.swift; path = "Sources/Menu Cells/Underline/UnderlineFocusView.swift"; sourceTree = "<group>"; };
+		8CBCCE8A18C28316BAC13B9A759BD513 /* PagingKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingKit.release.xcconfig; sourceTree = "<group>"; };
+		8F223DA3C9DECEB256D4FDD580C4E4D0 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenuConfiguration.swift; path = Classes/CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		8FEB82AF5B1FCE50A926EA80D9533857 /* MXParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
+		901A40A5A52BB8C58140603360703902 /* MXScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollViewController.h; path = Sources/MXScrollViewController.h; sourceTree = "<group>"; };
 		9144337131C53010E625675912E28B98 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.modulemap"; sourceTree = "<group>"; };
-		946FF8586AE30A5832C9635B2FF22D54 /* MXParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXParallaxHeader-dummy.m"; sourceTree = "<group>"; };
-		955146C316B23BDF3C93319EB2ABF798 /* TitleLabelMenuViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitleLabelMenuViewCell.swift; path = "Sources/Menu Cells/Underline/TitleLabelMenuViewCell.swift"; sourceTree = "<group>"; };
-		955BCCEA1BFB08972BCA8B0CD7033A80 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+NSLayoutConstraint.swift"; path = "Sources/Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		972049EF94585FB3830AF6AA72480AD8 /* Pods-ParallaxWithPager_practice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParallaxWithPager_practice-dummy.m"; sourceTree = "<group>"; };
+		97DCAB6DD03C698F860C179C1BC6E74B /* MXParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXParallaxHeader.modulemap; sourceTree = "<group>"; };
 		989FE4E85B5E646E5790A449C1322A89 /* Pods-ParallaxWithPager_practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxWithPager_practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB395BB35162909851DAE09FC42C493 /* MXScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollView.h; path = Sources/MXScrollView.h; sourceTree = "<group>"; };
 		9F34C5B5D26D9F16CCF559CFCA01BE92 /* Pods-ParallaxWithPager_practiceTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParallaxWithPager_practiceTests-umbrella.h"; sourceTree = "<group>"; };
-		A7EA264C41EE077154491E4FA0ABE95B /* MXParallaxHeader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.debug.xcconfig; sourceTree = "<group>"; };
+		AA3E61EEDD7A906190F653B0D80F1892 /* MXParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXParallaxHeader-dummy.m"; sourceTree = "<group>"; };
 		ADC5AC5C2CA61DC794A6CB129A4050D7 /* Pods_ParallaxWithPager_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxWithPager_practiceTests.framework; path = "Pods-ParallaxWithPager_practiceTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B54036D2DE0D7AAD265D7C9889E82B45 /* OverlayMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayMenuCell.swift; path = "Sources/Menu Cells/Overlay/OverlayMenuCell.swift"; sourceTree = "<group>"; };
-		BD5C78543E4BF696692EEDEC529FC70A /* PagingKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingKit-prefix.pch"; sourceTree = "<group>"; };
+		B196C4B3C548BFAB5CFC8EADDBDC609E /* PagingKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingKit-umbrella.h"; sourceTree = "<group>"; };
+		B37248FEC22B4845061257CD50A53131 /* PagingKitProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingKitProxy.swift; path = Sources/PagingKitProxy.swift; sourceTree = "<group>"; };
+		B414937DF94272CB897F3D48D73825D9 /* PagingContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingContentViewController.swift; path = Sources/PagingContentViewController.swift; sourceTree = "<group>"; };
+		B61652DE269D09113EF14006B17735D7 /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		BB7C27B1A3A87C2DC066871F1160616B /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Classes/MenuItemView.swift; sourceTree = "<group>"; };
 		BFBC4E35FA14215F681D202A3FABBCB7 /* Pods-ParallaxWithPager_practice-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxWithPager_practice-frameworks.sh"; sourceTree = "<group>"; };
-		C4B55723FBC12BD42AB7B40F8C27C2D4 /* MXParallaxHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXParallaxHeader.h; path = Sources/MXParallaxHeader.h; sourceTree = "<group>"; };
+		C49BA8DE2BFA666B4228C2420E63BDE4 /* UnderlineFocusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderlineFocusView.swift; path = "Sources/Menu Cells/Underline/UnderlineFocusView.swift"; sourceTree = "<group>"; };
 		C53177A6B6CAD11E5F8AE41EE407833B /* Pods-ParallaxWithPager_practiceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxWithPager_practiceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5C3BB57566B53D3D73FCE8E20A1CC3D /* PageMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PageMenu-Info.plist"; sourceTree = "<group>"; };
 		C6AF451F333450A6B47AAE263886DEB1 /* Pods-ParallaxWithPager_practiceTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParallaxWithPager_practiceTests-Info.plist"; sourceTree = "<group>"; };
+		C9BFCAEB7F2B8964FC6A5D087DFBA7AC /* MXParallaxHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXParallaxHeader.m; path = Sources/MXParallaxHeader.m; sourceTree = "<group>"; };
 		CB110BFAF5E63D0339AC3ECADFA73A7B /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD26BE284B3457124829CB4C4FCE8AD6 /* PagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PagingKit.framework; path = PagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A09EB9053CBCBE9D5252DDA9004527 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D5B1031B943C1BBD4F99BE6FAA9CDDF3 /* Pods-ParallaxWithPager_practice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParallaxWithPager_practice.modulemap"; sourceTree = "<group>"; };
 		D5CA9FB11C1FFCB979EB996A55F6E9B2 /* Pods_ParallaxWithPager_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParallaxWithPager_practice.framework; path = "Pods-ParallaxWithPager_practice.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D64464EF66269FF3704C2B1F34A9EE89 /* MXParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
 		DAC0C853B5ADE7F9D5C35F4325801135 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m"; sourceTree = "<group>"; };
-		DB5C70F2259A80DC1FE55EB1E920BB6A /* PagingContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingContentViewController.swift; path = Sources/PagingContentViewController.swift; sourceTree = "<group>"; };
-		E025839EB4D910E6FF3B191EB627B18D /* PagingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PagingKit.h; path = Sources/PagingKit.h; sourceTree = "<group>"; };
+		DBEB99044442392A87FED6FDB6D86D69 /* TitleLabelMenuViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitleLabelMenuViewCell.swift; path = "Sources/Menu Cells/Underline/TitleLabelMenuViewCell.swift"; sourceTree = "<group>"; };
+		DDD3EE4936719B9990FFE9A0A6FE5BCF /* PageMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PageMenu-dummy.m"; sourceTree = "<group>"; };
 		E0A6BCE867E03BB63A714B520E751DA0 /* Pods-ParallaxWithPager_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallaxWithPager_practice.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BB5673430A8664D1206DFACE07A1F6 /* PagingKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagingKit.modulemap; sourceTree = "<group>"; };
+		E202B75D78109A2EA50E9426DC105255 /* PagingMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuViewController.swift; path = Sources/PagingMenuViewController.swift; sourceTree = "<group>"; };
+		E61D332D20E182071D3E0644F92060C6 /* PageMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PageMenu.debug.xcconfig; sourceTree = "<group>"; };
+		E867B2157B81208D632AC7A6ED0AA9FB /* MXScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollViewController.m; path = Sources/MXScrollViewController.m; sourceTree = "<group>"; };
 		F036EEE08760D817CEA09BAAD72991BC /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-frameworks.sh"; sourceTree = "<group>"; };
 		F14BA3C05A91D8BACD22A2E1DE5672E9 /* Pods-ParallaxWithPager_practice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParallaxWithPager_practice-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F38338B694FE7056ADEA3A6F27454837 /* MXParallaxHeader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.release.xcconfig; sourceTree = "<group>"; };
+		FEA00BC4BCF570987DE56D87BF8866BD /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIScrollViewDelegate.swift"; path = "Classes/CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		FF715F1A5F888CE3CF46A8EA0A7F100D /* PageMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PageMenu.release.xcconfig; sourceTree = "<group>"; };
+		FFACB5CDDB0338D2A95749E04A392B56 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+Options.swift"; path = "Classes/CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02100A65DDEE4F62136197C85B0A2287 /* Frameworks */ = {
+		20CD7506716AE2252C1A83328969F038 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638C9AB76FFB7ED846A7AE2EC90A47C7 /* Foundation.framework in Frameworks */,
+				36BFD6063E4A1C6A97E998803C23D28E /* Foundation.framework in Frameworks */,
+				2F9323C544B68EA91AFFB9FF6C8849C2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D2B25C732928CC6DA64224275ADD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E253D555F465D57A1CFFCD4904B45EE3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,19 +213,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F1D0CD0CAC963DD3B0B1D0D6AD6DCC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A8453A264F6C628886407B426A0564 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		826ADCD705CD6E1C7D03CFC2F326790A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				37C965E55A71E12D6C81CA659D49C50C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF3F542C0AE9B07E61C9F2DF14449B99 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D160D810762B0AEF38C9CFD416016EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +240,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		185281AE75AB259BB8689B659BCAB05D /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,10 +265,11 @@
 			path = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests";
 			sourceTree = "<group>";
 		};
-		286724BC0FD2F51FC7B55C461C9334E6 /* Products */ = {
+		243018E8551C1B545482EFE508AA9E01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				7BF4F9DF012C6B052F90491877CB3432 /* MXParallaxHeader.framework */,
+				117FECADFA5AA0FFEE15ACD151098A06 /* PageMenu.framework */,
 				CD26BE284B3457124829CB4C4FCE8AD6 /* PagingKit.framework */,
 				D5CA9FB11C1FFCB979EB996A55F6E9B2 /* Pods_ParallaxWithPager_practice.framework */,
 				044248F9F45A3E9247487245280DBD44 /* Pods_ParallaxWithPager_practice_ParallaxWithPager_practiceUITests.framework */,
@@ -219,19 +278,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		591A1C9E1EFA3E5C1D1C59EFC4CB10F9 /* MXParallaxHeader */ = {
+		4D0A9D851F6C0F431D0C5D2BB05392C9 /* MXParallaxHeader */ = {
 			isa = PBXGroup;
 			children = (
-				C4B55723FBC12BD42AB7B40F8C27C2D4 /* MXParallaxHeader.h */,
-				2539561B022A80D3E0134AFB135B1AA0 /* MXParallaxHeader.m */,
-				3FAC031E696B95A06C7B4CC4068D878C /* MXScrollView.h */,
-				0317636481EDAE92F2806A3811565B4B /* MXScrollView.m */,
-				6DF1B05B8405FBAAD9CD6E61FC829D27 /* MXScrollViewController.h */,
-				56E3BFBC885CE730686A4915BDA68724 /* MXScrollViewController.m */,
-				BCB87A946F78DCB178C6F5AADD93AA1B /* Support Files */,
+				0BBD7E306E6BCDCE9B3F0E0EEAA315CA /* MXParallaxHeader.h */,
+				C9BFCAEB7F2B8964FC6A5D087DFBA7AC /* MXParallaxHeader.m */,
+				9DB395BB35162909851DAE09FC42C493 /* MXScrollView.h */,
+				6BD16EFBACF0BF6796CFC578F324CDDD /* MXScrollView.m */,
+				901A40A5A52BB8C58140603360703902 /* MXScrollViewController.h */,
+				E867B2157B81208D632AC7A6ED0AA9FB /* MXScrollViewController.m */,
+				84E04624B04D8A59805E4DBFE6063285 /* Support Files */,
 			);
 			name = MXParallaxHeader;
 			path = MXParallaxHeader;
+			sourceTree = "<group>";
+		};
+		54D28709CDB8ADC672FFD2DC9B9BE5A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB5673430A8664D1206DFACE07A1F6 /* PagingKit.modulemap */,
+				3C9DD3FBD50CA5A40E26BDCFA9D20953 /* PagingKit-dummy.m */,
+				328BA9B241DE233D284D0DC3968659B5 /* PagingKit-Info.plist */,
+				3C748CF31C6CF1D877DF58E702D8C303 /* PagingKit-prefix.pch */,
+				B196C4B3C548BFAB5CFC8EADDBDC609E /* PagingKit-umbrella.h */,
+				0E755E136AC1A4F715F67F36A894255D /* PagingKit.debug.xcconfig */,
+				8CBCCE8A18C28316BAC13B9A759BD513 /* PagingKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PagingKit";
+			sourceTree = "<group>";
+		};
+		65C3CDEF7F720A4BA30E46B544CEAAA7 /* PagingKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F096967687C601B36043639777ABE /* Array+NSLayoutConstraint.swift */,
+				02611557DD0EB1D9F1281DFD89CA15E4 /* ContentAppearanceHandler.swift */,
+				29FCF106DC4DD6838A34AF4737B63420 /* OverlayFocusView.swift */,
+				1AA98D143858861148DCF8AC77EC5C93 /* OverlayMenuCell.swift */,
+				B414937DF94272CB897F3D48D73825D9 /* PagingContentViewController.swift */,
+				86DCF25127D28EA24AED67637B27B004 /* PagingKit.h */,
+				B37248FEC22B4845061257CD50A53131 /* PagingKitProxy.swift */,
+				43239B0579F275AA1D960CA45FCC308E /* PagingMenuView.swift */,
+				E202B75D78109A2EA50E9426DC105255 /* PagingMenuViewController.swift */,
+				DBEB99044442392A87FED6FDB6D86D69 /* TitleLabelMenuViewCell.swift */,
+				C49BA8DE2BFA666B4228C2420E63BDE4 /* UnderlineFocusView.swift */,
+				54D28709CDB8ADC672FFD2DC9B9BE5A1 /* Support Files */,
+			);
+			name = PagingKit;
+			path = PagingKit;
 			sourceTree = "<group>";
 		};
 		6E81D1E0649396EC468F0DDFFC914D07 /* Pods-ParallaxWithPager_practiceTests */ = {
@@ -250,19 +344,45 @@
 			path = "Target Support Files/Pods-ParallaxWithPager_practiceTests";
 			sourceTree = "<group>";
 		};
-		AC37EB0F38A1BADB2CC64FF7A1E39D55 /* Support Files */ = {
+		7F173B8E4675935EB2296DC5AC8C08B3 /* PageMenu */ = {
 			isa = PBXGroup;
 			children = (
-				58E7FDA0D7088D133700715548C99C3F /* PagingKit.modulemap */,
-				5CBAFAAA0BB271B7C3F8FC5ED806BFE2 /* PagingKit-dummy.m */,
-				82856015AC15A08EA14E4A0DBAA35DB0 /* PagingKit-Info.plist */,
-				BD5C78543E4BF696692EEDEC529FC70A /* PagingKit-prefix.pch */,
-				1E628FA0676BF73B2B3C81D74A5A1CA3 /* PagingKit-umbrella.h */,
-				244E41B1596712FD7595E2A6845F7198 /* PagingKit.debug.xcconfig */,
-				4CD7C8A13632C9D6654449987EFA9CDF /* PagingKit.release.xcconfig */,
+				632EAB0EAB8CBFE4C87386EAF97EE9A4 /* CAPSPageMenu.swift */,
+				FFACB5CDDB0338D2A95749E04A392B56 /* CAPSPageMenu+Options.swift */,
+				429CCF34784B0B910B6BCCB1F8766336 /* CAPSPageMenu+UIConfiguration.swift */,
+				4C6412BEEBB5FDE51050D62356883ACB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				FEA00BC4BCF570987DE56D87BF8866BD /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				8F223DA3C9DECEB256D4FDD580C4E4D0 /* CAPSPageMenuConfiguration.swift */,
+				BB7C27B1A3A87C2DC066871F1160616B /* MenuItemView.swift */,
+				BB78EFCC5D44B42404F3ED48DCE71CD4 /* Support Files */,
+			);
+			name = PageMenu;
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		84E04624B04D8A59805E4DBFE6063285 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97DCAB6DD03C698F860C179C1BC6E74B /* MXParallaxHeader.modulemap */,
+				AA3E61EEDD7A906190F653B0D80F1892 /* MXParallaxHeader-dummy.m */,
+				473977051BBBEA42E26BC7400AA0327D /* MXParallaxHeader-Info.plist */,
+				8FEB82AF5B1FCE50A926EA80D9533857 /* MXParallaxHeader-prefix.pch */,
+				B61652DE269D09113EF14006B17735D7 /* MXParallaxHeader-umbrella.h */,
+				155A7119B67A73BA45F64C5A976450AB /* MXParallaxHeader.debug.xcconfig */,
+				2F4682967D8F2D9912B12242605C3F99 /* MXParallaxHeader.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/PagingKit";
+			path = "../Target Support Files/MXParallaxHeader";
+			sourceTree = "<group>";
+		};
+		B1572129CD9C552FA090CC717D3D30F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A9D851F6C0F431D0C5D2BB05392C9 /* MXParallaxHeader */,
+				7F173B8E4675935EB2296DC5AC8C08B3 /* PageMenu */,
+				65C3CDEF7F720A4BA30E46B544CEAAA7 /* PagingKit */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B28EE6DE4F81590340C75C340FB44BD1 /* Pods-ParallaxWithPager_practice */ = {
@@ -282,27 +402,19 @@
 			path = "Target Support Files/Pods-ParallaxWithPager_practice";
 			sourceTree = "<group>";
 		};
-		BCB87A946F78DCB178C6F5AADD93AA1B /* Support Files */ = {
+		BB78EFCC5D44B42404F3ED48DCE71CD4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				68584E685CA3000C3E3ED4B05C62DAEF /* MXParallaxHeader.modulemap */,
-				946FF8586AE30A5832C9635B2FF22D54 /* MXParallaxHeader-dummy.m */,
-				69BD130ED18CBC272F488212FBC6D9B5 /* MXParallaxHeader-Info.plist */,
-				D64464EF66269FF3704C2B1F34A9EE89 /* MXParallaxHeader-prefix.pch */,
-				0B936FD10093C7C3880D42DB6C122282 /* MXParallaxHeader-umbrella.h */,
-				A7EA264C41EE077154491E4FA0ABE95B /* MXParallaxHeader.debug.xcconfig */,
-				F38338B694FE7056ADEA3A6F27454837 /* MXParallaxHeader.release.xcconfig */,
+				547A7F5A18C68C5411CCF5CAB4971766 /* PageMenu.modulemap */,
+				DDD3EE4936719B9990FFE9A0A6FE5BCF /* PageMenu-dummy.m */,
+				C5C3BB57566B53D3D73FCE8E20A1CC3D /* PageMenu-Info.plist */,
+				6E0A28A50A5B6B35C1E3559914D197C8 /* PageMenu-prefix.pch */,
+				122D7E747E27E0E98611D26E8209DB8F /* PageMenu-umbrella.h */,
+				E61D332D20E182071D3E0644F92060C6 /* PageMenu.debug.xcconfig */,
+				FF715F1A5F888CE3CF46A8EA0A7F100D /* PageMenu.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MXParallaxHeader";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
+			path = "../Target Support Files/PageMenu";
 			sourceTree = "<group>";
 		};
 		CB8E832181AEE95A2AF511252B44A902 /* Targets Support Files */ = {
@@ -319,48 +431,20 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				FD00F5BE50541709A7CB8850319162F3 /* Pods */,
-				286724BC0FD2F51FC7B55C461C9334E6 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B1572129CD9C552FA090CC717D3D30F7 /* Pods */,
+				243018E8551C1B545482EFE508AA9E01 /* Products */,
 				CB8E832181AEE95A2AF511252B44A902 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB75F84CD6635F4905AF764B22DA7F7A /* PagingKit */ = {
-			isa = PBXGroup;
-			children = (
-				955BCCEA1BFB08972BCA8B0CD7033A80 /* Array+NSLayoutConstraint.swift */,
-				3471C6F739F84385065B978CDCC4913E /* ContentAppearanceHandler.swift */,
-				64E26B8303C057ACBB98532E06B18EC8 /* OverlayFocusView.swift */,
-				B54036D2DE0D7AAD265D7C9889E82B45 /* OverlayMenuCell.swift */,
-				DB5C70F2259A80DC1FE55EB1E920BB6A /* PagingContentViewController.swift */,
-				E025839EB4D910E6FF3B191EB627B18D /* PagingKit.h */,
-				1FFCCDCA4793710181D8C8134E5965B4 /* PagingKitProxy.swift */,
-				19C5D87427D0CFA642CD13F0803DE8FE /* PagingMenuView.swift */,
-				1C1D2EC0966B3FBFA28D8CFC80D5C8CF /* PagingMenuViewController.swift */,
-				955146C316B23BDF3C93319EB2ABF798 /* TitleLabelMenuViewCell.swift */,
-				8D3AFF48D6FE917D7831B534FDB47D84 /* UnderlineFocusView.swift */,
-				AC37EB0F38A1BADB2CC64FF7A1E39D55 /* Support Files */,
-			);
-			name = PagingKit;
-			path = PagingKit;
-			sourceTree = "<group>";
-		};
-		FD00F5BE50541709A7CB8850319162F3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				591A1C9E1EFA3E5C1D1C59EFC4CB10F9 /* MXParallaxHeader */,
-				FB75F84CD6635F4905AF764B22DA7F7A /* PagingKit */,
-			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +459,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2232B3492DACEB432508C88C8740255D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5953077D637D7AE2AA2121F5F68536B9 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2588A409B92AFAFC6ED1C28A43268FEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,19 +478,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6C0378E145B9B478D9EDE4701B3510C /* Headers */ = {
+		4596F9B8F6A215E97DD876AC5EF7FCCB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9F73E5F05241B3AA78D3482DA920F1 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-umbrella.h in Headers */,
+				3E3DBF9AEC697C04D0DD55F44F3C0444 /* Pods-ParallaxWithPager_practice-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0052BBA3FC707CDEDCC92C0CA2A1984 /* Headers */ = {
+		C577BFD1E8EFA2F820BCC84DC0058C2F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873CD4BF1AC60A736118173FC973E50C /* Pods-ParallaxWithPager_practice-umbrella.h in Headers */,
+				DC97CFD99AF116137934381D0B9937B9 /* PageMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,18 +526,19 @@
 		};
 		1C0B3E1B68F673D6063CCB657F453B54 /* Pods-ParallaxWithPager_practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22AEBA6331C31C2F10D305C48975CEA1 /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice" */;
+			buildConfigurationList = 11D6B329B008D73701CFCD55F5F1E14A /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice" */;
 			buildPhases = (
-				E0052BBA3FC707CDEDCC92C0CA2A1984 /* Headers */,
-				C4EE33A1781D4F15B65E4652C9E6C32C /* Sources */,
-				CF3F542C0AE9B07E61C9F2DF14449B99 /* Frameworks */,
-				F7E7A7CB9B4754D4000D856EF3DF4C5F /* Resources */,
+				4596F9B8F6A215E97DD876AC5EF7FCCB /* Headers */,
+				078AA02FFB9FA12431782DCC147251F6 /* Sources */,
+				36D2B25C732928CC6DA64224275ADD7F /* Frameworks */,
+				FE330586A155B0410999FE69CB2500D9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				493D44662FEB7221B442079AC7E6BAF8 /* PBXTargetDependency */,
-				C8BAF37390E020644E24781A754F790D /* PBXTargetDependency */,
+				6FAA30DE6979589EF66065A6DBB2AB63 /* PBXTargetDependency */,
+				A44B3BD99585AB68C3C7AE75F23745A2 /* PBXTargetDependency */,
+				32BCCBC75A6992E4D00B4A7A03623EA1 /* PBXTargetDependency */,
 			);
 			name = "Pods-ParallaxWithPager_practice";
 			productName = "Pods-ParallaxWithPager_practice";
@@ -454,18 +547,19 @@
 		};
 		46C1F9F575A1AC024179653217371A6D /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6302297B4DD860E9AE439E645A35493 /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests" */;
+			buildConfigurationList = 94C8C91EC0580053E672859579E54FA7 /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests" */;
 			buildPhases = (
-				B6C0378E145B9B478D9EDE4701B3510C /* Headers */,
-				9913AF1BF68EFB1CEE684DFC4DDC65F7 /* Sources */,
-				02100A65DDEE4F62136197C85B0A2287 /* Frameworks */,
-				95223C8F12EC5FFBE89CE9D99AE9ED23 /* Resources */,
+				2232B3492DACEB432508C88C8740255D /* Headers */,
+				A93FB8C26BC0EE5FCE7FC786FC728796 /* Sources */,
+				7F1D0CD0CAC963DD3B0B1D0D6AD6DCC5 /* Frameworks */,
+				7F2FB443267DD642A57AC3CEF7FAA5FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6A15F0CCE892AA4E16ED0C1724576202 /* PBXTargetDependency */,
-				3DFBE8E89E828B368F1E982049F7FB99 /* PBXTargetDependency */,
+				C2798705323762C357D71A3C18429903 /* PBXTargetDependency */,
+				81F7E74CEFBE0BB670F155064AD7A70C /* PBXTargetDependency */,
+				27A1644761B16012D5754FF4BA109D95 /* PBXTargetDependency */,
 			);
 			name = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests";
 			productName = "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests";
@@ -488,6 +582,24 @@
 			name = PagingKit;
 			productName = PagingKit;
 			productReference = CD26BE284B3457124829CB4C4FCE8AD6 /* PagingKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1A57A9C619B3E6571748F16D097B958 /* PageMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8283BDCB35355A06248ACAC4B2AC5C7 /* Build configuration list for PBXNativeTarget "PageMenu" */;
+			buildPhases = (
+				C577BFD1E8EFA2F820BCC84DC0058C2F /* Headers */,
+				EC47CF3EBAE7DF89D5DC7258AE94253B /* Sources */,
+				20CD7506716AE2252C1A83328969F038 /* Frameworks */,
+				F95258386FFDFF18D4AD880B31C11E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PageMenu;
+			productName = PageMenu;
+			productReference = 117FECADFA5AA0FFEE15ACD151098A06 /* PageMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F65C0EE8AF6DB74ABBACA4A3A11CE230 /* MXParallaxHeader */ = {
@@ -526,11 +638,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 286724BC0FD2F51FC7B55C461C9334E6 /* Products */;
+			productRefGroup = 243018E8551C1B545482EFE508AA9E01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F65C0EE8AF6DB74ABBACA4A3A11CE230 /* MXParallaxHeader */,
+				A1A57A9C619B3E6571748F16D097B958 /* PageMenu */,
 				6D0EC2DA62F1B2EC342F986026BBD672 /* PagingKit */,
 				1C0B3E1B68F673D6063CCB657F453B54 /* Pods-ParallaxWithPager_practice */,
 				46C1F9F575A1AC024179653217371A6D /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests */,
@@ -554,7 +667,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95223C8F12EC5FFBE89CE9D99AE9ED23 /* Resources */ = {
+		7F2FB443267DD642A57AC3CEF7FAA5FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -568,7 +681,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7E7A7CB9B4754D4000D856EF3DF4C5F /* Resources */ = {
+		F95258386FFDFF18D4AD880B31C11E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE330586A155B0410999FE69CB2500D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -578,6 +698,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		078AA02FFB9FA12431782DCC147251F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805D5EE0CFC74A2C0695EFF2664CCB1F /* Pods-ParallaxWithPager_practice-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10437E05BEEB38BD799BBB1B7B893197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,11 +725,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9913AF1BF68EFB1CEE684DFC4DDC65F7 /* Sources */ = {
+		A93FB8C26BC0EE5FCE7FC786FC728796 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521128BF43E026DD1889EEB7F7DA1281 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m in Sources */,
+				87208EDB75FF6B213ACFB8FEDDD34068 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,34 +751,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4EE33A1781D4F15B65E4652C9E6C32C /* Sources */ = {
+		EC47CF3EBAE7DF89D5DC7258AE94253B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D17972019E29B5BEDA13BDE566FCF3D /* Pods-ParallaxWithPager_practice-dummy.m in Sources */,
+				DBC3AB9C440FF2C1451464DDB3429CA4 /* CAPSPageMenu+Options.swift in Sources */,
+				6BDBF4838D3CE49AE50C08CB7BF9C468 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				9AECF24E7292A6479C95D03A6AE05AAA /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
+				30415EC33BC3C30B6C38BB26500101B5 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				5FDD62E0955343F9837F31F6E7E89A21 /* CAPSPageMenu.swift in Sources */,
+				908AF956DED74146D97AA7C36B5A1515 /* CAPSPageMenuConfiguration.swift in Sources */,
+				53008F40A4FC20112DC7F8B246F13CDD /* MenuItemView.swift in Sources */,
+				0CA3973C850ED8317BEB595D560B1594 /* PageMenu-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3DFBE8E89E828B368F1E982049F7FB99 /* PBXTargetDependency */ = {
+		27A1644761B16012D5754FF4BA109D95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PagingKit;
 			target = 6D0EC2DA62F1B2EC342F986026BBD672 /* PagingKit */;
-			targetProxy = D4A880B9D34B0BC7C434BD18778C371D /* PBXContainerItemProxy */;
+			targetProxy = 9A724EAF85FB41320D3F9A87BF8450FB /* PBXContainerItemProxy */;
 		};
-		493D44662FEB7221B442079AC7E6BAF8 /* PBXTargetDependency */ = {
+		32BCCBC75A6992E4D00B4A7A03623EA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagingKit;
+			target = 6D0EC2DA62F1B2EC342F986026BBD672 /* PagingKit */;
+			targetProxy = C209CD7F7E48DB59C6B352CC9E6B93B4 /* PBXContainerItemProxy */;
+		};
+		6FAA30DE6979589EF66065A6DBB2AB63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MXParallaxHeader;
 			target = F65C0EE8AF6DB74ABBACA4A3A11CE230 /* MXParallaxHeader */;
-			targetProxy = C742B2A77440E805F2361D407761B99A /* PBXContainerItemProxy */;
+			targetProxy = 1D7721F1BA3F7F47E5F2B78FBF886E19 /* PBXContainerItemProxy */;
 		};
-		6A15F0CCE892AA4E16ED0C1724576202 /* PBXTargetDependency */ = {
+		81F7E74CEFBE0BB670F155064AD7A70C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MXParallaxHeader;
-			target = F65C0EE8AF6DB74ABBACA4A3A11CE230 /* MXParallaxHeader */;
-			targetProxy = 863CEF4B908E6994C5A8D8FC4406FE9A /* PBXContainerItemProxy */;
+			name = PageMenu;
+			target = A1A57A9C619B3E6571748F16D097B958 /* PageMenu */;
+			targetProxy = 3716A83DB36A0A31958433BE25B1940F /* PBXContainerItemProxy */;
 		};
 		916726034E9543B663446DE53AFF60D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -658,51 +799,22 @@
 			target = 1C0B3E1B68F673D6063CCB657F453B54 /* Pods-ParallaxWithPager_practice */;
 			targetProxy = F2055EC5DBBC8734AAC2B0F6777AB8E2 /* PBXContainerItemProxy */;
 		};
-		C8BAF37390E020644E24781A754F790D /* PBXTargetDependency */ = {
+		A44B3BD99585AB68C3C7AE75F23745A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PagingKit;
-			target = 6D0EC2DA62F1B2EC342F986026BBD672 /* PagingKit */;
-			targetProxy = 8A89985B2120EDF107B7F0E264555F5B /* PBXContainerItemProxy */;
+			name = PageMenu;
+			target = A1A57A9C619B3E6571748F16D097B958 /* PageMenu */;
+			targetProxy = 9BFA5DB941A1B22A5C5D5CE9E3054608 /* PBXContainerItemProxy */;
+		};
+		C2798705323762C357D71A3C18429903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MXParallaxHeader;
+			target = F65C0EE8AF6DB74ABBACA4A3A11CE230 /* MXParallaxHeader */;
+			targetProxy = 8C4036F842A3E9B55E5AE679224F0B59 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2683DA882C4FE5043FB43C3DF8BD475B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7EA264C41EE077154491E4FA0ABE95B /* MXParallaxHeader.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader.modulemap";
-				PRODUCT_MODULE_NAME = MXParallaxHeader;
-				PRODUCT_NAME = MXParallaxHeader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4AC8CEBA39502C018CA5469E50A17758 /* Debug */ = {
+		20BBD0ADC5EE341D96C90DD62F835228 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0A6BCE867E03BB63A714B520E751DA0 /* Pods-ParallaxWithPager_practice.debug.xcconfig */;
 			buildSettings = {
@@ -740,12 +852,10 @@
 			};
 			name = Debug;
 		};
-		5AD1E2F3D91E99FE9EC3E15D6510198E /* Debug */ = {
+		2683DA882C4FE5043FB43C3DF8BD475B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB110BFAF5E63D0339AC3ECADFA73A7B /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig */;
+			baseConfigurationReference = 155A7119B67A73BA45F64C5A976450AB /* MXParallaxHeader.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -755,23 +865,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader.modulemap";
+				PRODUCT_MODULE_NAME = MXParallaxHeader;
+				PRODUCT_NAME = MXParallaxHeader;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -803,45 +912,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practiceTests/Pods-ParallaxWithPager_practiceTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7BFE89EA14BB17B40F6833B0CD4FB3A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AF2D0924E14EDC0EFA2AA6D49F9B647 /* Pods-ParallaxWithPager_practice.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -894,12 +964,10 @@
 			};
 			name = Debug;
 		};
-		96854C2A0B88CAE8304B823C65DB1612 /* Release */ = {
+		8C4860C685A1D730D9BEB22B0E4C87B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 747267449ABE40D3FB0C0363A4500D15 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig */;
+			baseConfigurationReference = FF715F1A5F888CE3CF46A8EA0A7F100D /* PageMenu.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -909,23 +977,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PageMenu/PageMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PageMenu/PageMenu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/PageMenu/PageMenu.modulemap";
+				PRODUCT_MODULE_NAME = PageMenu;
+				PRODUCT_NAME = PageMenu;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -935,7 +1002,7 @@
 		};
 		9CB9A48A4077D1F656A4AF0DB8754A5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CD7C8A13632C9D6654449987EFA9CDF /* PagingKit.release.xcconfig */;
+			baseConfigurationReference = 8CBCCE8A18C28316BAC13B9A759BD513 /* PagingKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -962,6 +1029,45 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3026776D4B79F8B87DA1BFDB364751E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF2D0924E14EDC0EFA2AA6D49F9B647 /* Pods-ParallaxWithPager_practice.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practice/Pods-ParallaxWithPager_practice.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1033,9 +1139,86 @@
 			};
 			name = Debug;
 		};
+		B453154EDE15B9D51D3996617BAA3F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747267449ABE40D3FB0C0363A4500D15 /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B79AF8ED81707CB06E383E62AEB91613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB110BFAF5E63D0339AC3ECADFA73A7B /* Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests/Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C51F57196660907F38F014F0213C6ADE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38338B694FE7056ADEA3A6F27454837 /* MXParallaxHeader.release.xcconfig */;
+			baseConfigurationReference = 2F4682967D8F2D9912B12242605C3F99 /* MXParallaxHeader.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1071,7 +1254,7 @@
 		};
 		E1C42F0A9A18002F9C352BA6DD5D2820 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244E41B1596712FD7595E2A6845F7198 /* PagingKit.debug.xcconfig */;
+			baseConfigurationReference = 0E755E136AC1A4F715F67F36A894255D /* PagingKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1164,14 +1347,49 @@
 			};
 			name = Release;
 		};
+		F83B85A76651C08B60642E83136AC5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61D332D20E182071D3E0644F92060C6 /* PageMenu.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PageMenu/PageMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PageMenu/PageMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PageMenu/PageMenu.modulemap";
+				PRODUCT_MODULE_NAME = PageMenu;
+				PRODUCT_NAME = PageMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22AEBA6331C31C2F10D305C48975CEA1 /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice" */ = {
+		11D6B329B008D73701CFCD55F5F1E14A /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AC8CEBA39502C018CA5469E50A17758 /* Debug */,
-				7BFE89EA14BB17B40F6833B0CD4FB3A3 /* Release */,
+				20BBD0ADC5EE341D96C90DD62F835228 /* Debug */,
+				A3026776D4B79F8B87DA1BFDB364751E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1181,6 +1399,15 @@
 			buildConfigurations = (
 				AAE100FF8C9C4FA388CD2C3365F9B449 /* Debug */,
 				F0D3E8BE5BBDC05E33D6B4B1E8562585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C8C91EC0580053E672859579E54FA7 /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79AF8ED81707CB06E383E62AEB91613 /* Debug */,
+				B453154EDE15B9D51D3996617BAA3F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1212,11 +1439,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6302297B4DD860E9AE439E645A35493 /* Build configuration list for PBXNativeTarget "Pods-ParallaxWithPager_practice-ParallaxWithPager_practiceUITests" */ = {
+		F8283BDCB35355A06248ACAC4B2AC5C7 /* Build configuration list for PBXNativeTarget "PageMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5AD1E2F3D91E99FE9EC3E15D6510198E /* Debug */,
-				96854C2A0B88CAE8304B823C65DB1612 /* Release */,
+				F83B85A76651C08B60642E83136AC5C6 /* Debug */,
+				8C4860C685A1D730D9BEB22B0E4C87B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

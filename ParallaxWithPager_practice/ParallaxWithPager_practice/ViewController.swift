@@ -6,12 +6,37 @@
 //
 
 import UIKit
+import MXParallaxHeader
 
-class ViewController: UIViewController,UIScrollViewDelegate {
+class ViewController: UIViewController,UIScrollViewDelegate,MXParallaxHeaderDelegate {
 
+    // Scroll bottom View 에 넣는다.
+    // 된다면 ScrollView 안에 Paging 넣읍시다.
     let button = UIButton()
-
     
+    @IBOutlet var headerView: UIView!
+    
+    let bottomView: UIView = {
+       let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .darkGray
+        return view
+    }()
+    ////
+    let mainScroll: UIScrollView = {
+        let scroll = UIScrollView()
+        scroll.translatesAutoresizingMaskIntoConstraints = false
+        scroll.isScrollEnabled = true
+        scroll.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
+        return scroll
+    }()
+//    let headerView: UIView = {
+//        let view = UIView()
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//        view.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+//        return view
+//    }()
+    ////
     let scroll: UIScrollView = {
         let scroll = UIScrollView()
         scroll.translatesAutoresizingMaskIntoConstraints = false
@@ -46,66 +71,69 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         
         return view
     }()
-    
-    let tableView: UITableView = {
-        let table = UITableView()
-        return table
-    }()
-    
-    var oldContentOffset = CGPoint.zero
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        scroll.parallaxHeader.minimumHeight = menuView.frame.height
+    }
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let topViewTopConstraint = View.constraints.first!
-//        //ScrollView's contentOffset differences with previous contentOffset
-//        let contentOffset = scrollView.contentOffset.y - oldContentOffset.y
-//        //print("content: \(contentOffset), sv: \(scrollView.contentOffset.y), oc:\(oldContentOffset.y)")
-//        // Scrolls UP - we compress the top view
-//        if contentOffset > 0 && scrollView.contentOffset.y > 0 {
-//            if ( topViewTopConstraint.constant > -50 ) {// 남아있는 뷰의 크기 !! Scroll up 했을 때!!!
-//                topViewTopConstraint.constant -= contentOffset
-//                scrollView.contentOffset.y -= contentOffset
-//            }
-//        }
-//
-//        // Scrolls Down - we expand the top view
-//        if contentOffset < 0 && scrollView.contentOffset.y < 0 {
-//            if (topViewTopConstraint.constant < 0) {
-//                if topViewTopConstraint.constant - contentOffset > 0 {
-//                    topViewTopConstraint.constant = 0
-//                } else {
-//                    topViewTopConstraint.constant -= contentOffset
-//                }
-//                scrollView.contentOffset.y -= contentOffset
-//            }
-//        }
-//        oldContentOffset = scrollView.contentOffset
-//    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setBottomBtn()
+        
+        mainScroll.parallaxHeader.view = headerView
+        mainScroll.parallaxHeader.height = 50
+        mainScroll.parallaxHeader.mode = .fill
+        mainScroll.parallaxHeader.delegate = self
+
     
-        scroll.delegate = self
+        //scroll.delegate = self
 
         
-        view.addSubview(scroll)
-        scroll.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        scroll.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        scroll.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        scroll.bottomAnchor.constraint(equalTo: button.topAnchor).isActive = true
+        view.addSubview(mainScroll)
+        mainScroll.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        mainScroll.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        mainScroll.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        mainScroll.bottomAnchor.constraint(equalTo: button.topAnchor).isActive = true
+      
         
-        scroll.addSubview(View)
-        View.leftAnchor.constraint(equalTo: scroll.leftAnchor).isActive = true
-        View.topAnchor.constraint(equalTo: scroll.topAnchor).isActive = true
-        View.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        View.heightAnchor.constraint(equalToConstant: 350).isActive = true
+        mainScroll.addSubview(headerView)
+        headerView.leftAnchor.constraint(equalTo: mainScroll.leftAnchor).isActive = true
+        headerView.topAnchor.constraint(equalTo: mainScroll.topAnchor).isActive = true
+        headerView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        headerView.heightAnchor.constraint(equalToConstant: 180).isActive = true
+        
+        
+        mainScroll.addSubview(scroll)
+        scroll.leftAnchor.constraint(equalTo: mainScroll.leftAnchor).isActive = true
+        scroll.topAnchor.constraint(equalTo: headerView.bottomAnchor).isActive = true
+        scroll.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        scroll.bottomAnchor.constraint(equalTo: button.topAnchor, constant: 10).isActive = true
+        
+        setBottomScroll()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        mainScroll.parallaxHeader.minimumHeight = 50
+        
+    }
+    
+    func setBottomScroll() {
+//        scroll.addSubview(View)
+//        View.leftAnchor.constraint(equalTo: scroll.leftAnchor).isActive = true
+//        View.topAnchor.constraint(equalTo: scroll.topAnchor).isActive = true
+//        View.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+//        View.heightAnchor.constraint(equalToConstant: 350).isActive = true
 
         
         scroll.addSubview(menuView)
         menuView.leftAnchor.constraint(equalTo: scroll.leftAnchor).isActive = true
-        menuView.topAnchor.constraint(equalTo: View.bottomAnchor).isActive = true
+        menuView.topAnchor.constraint(equalTo: scroll.topAnchor).isActive = true
         menuView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         menuView.heightAnchor.constraint(equalToConstant: 60).isActive = true
         //lastView.bottomAnchor.constraint(equalTo: scroll.bottomAnchor).isActive = true
@@ -116,7 +144,6 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         contentView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         contentView.heightAnchor.constraint(equalToConstant: 700).isActive = true
         contentView.bottomAnchor.constraint(equalTo: scroll.bottomAnchor).isActive = true
-        
     }
     func setBottomBtn() {
         view.addSubview(button)

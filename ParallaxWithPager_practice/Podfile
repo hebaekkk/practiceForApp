@@ -8,6 +8,7 @@ target 'ParallaxWithPager_practice' do
   # Pods for ParallaxWithPager_practice
   pod "PagingKit" # add
   pod "MXParallaxHeader"
+  pod 'PageMenu' 
   target 'ParallaxWithPager_practiceTests' do
     inherit! :search_paths
     # Pods for testing
