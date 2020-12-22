@@ -7,6 +7,8 @@ target 'parallaxPlz_practice' do
 
   # Pods for parallaxPlz_practice
   pod "MXParallaxHeader"
+  pod "PagingKit"
+
 
   target 'parallaxPlz_practiceTests' do
     inherit! :search_paths
