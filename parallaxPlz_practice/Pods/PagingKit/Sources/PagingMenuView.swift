@@ -343,6 +343,7 @@ open class PagingMenuView: UIScrollView {
             return cell
         default:
             fatalError()
+            //print(fatalError())
         }
     }
 

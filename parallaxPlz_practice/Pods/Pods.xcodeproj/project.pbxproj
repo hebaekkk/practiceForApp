@@ -95,7 +95,7 @@
 		1FFCCDCA4793710181D8C8134E5965B4 /* PagingKitProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingKitProxy.swift; path = Sources/PagingKitProxy.swift; sourceTree = "<group>"; };
 		244E41B1596712FD7595E2A6845F7198 /* PagingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingKit.debug.xcconfig; sourceTree = "<group>"; };
 		2539561B022A80D3E0134AFB135B1AA0 /* MXParallaxHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXParallaxHeader.m; path = Sources/MXParallaxHeader.m; sourceTree = "<group>"; };
-		299368569C6D2798E52AB9DE092CB93A /* Pods_parallaxPlz_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_parallaxPlz_practiceTests.framework; path = "Pods-parallaxPlz_practiceTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		299368569C6D2798E52AB9DE092CB93A /* Pods_parallaxPlz_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parallaxPlz_practiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D8B962D08D2AEF2034221C9B23F124 /* Pods-parallaxPlz_practice-parallaxPlz_practiceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3471C6F739F84385065B978CDCC4913E /* ContentAppearanceHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentAppearanceHandler.swift; path = Sources/ContentAppearanceHandler.swift; sourceTree = "<group>"; };
@@ -112,21 +112,21 @@
 		69BD130ED18CBC272F488212FBC6D9B5 /* MXParallaxHeader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXParallaxHeader-Info.plist"; sourceTree = "<group>"; };
 		6DF1B05B8405FBAAD9CD6E61FC829D27 /* MXScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollViewController.h; path = Sources/MXScrollViewController.h; sourceTree = "<group>"; };
 		6F69523E4F673C3E23C559DC53302392 /* Pods-parallaxPlz_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-parallaxPlz_practice.debug.xcconfig"; sourceTree = "<group>"; };
-		7346176620BD6E793792D970DA418204 /* Pods_parallaxPlz_practice_parallaxPlz_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_parallaxPlz_practice_parallaxPlz_practiceUITests.framework; path = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7346176620BD6E793792D970DA418204 /* Pods_parallaxPlz_practice_parallaxPlz_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parallaxPlz_practice_parallaxPlz_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F08DECD0C7E0CAD10D2121F0DF3928 /* Pods-parallaxPlz_practice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-parallaxPlz_practice-dummy.m"; sourceTree = "<group>"; };
 		7A44AEBF5F05F19E612C62359972CB56 /* Pods-parallaxPlz_practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-parallaxPlz_practiceTests.release.xcconfig"; sourceTree = "<group>"; };
-		7BF4F9DF012C6B052F90491877CB3432 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MXParallaxHeader.framework; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF4F9DF012C6B052F90491877CB3432 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82856015AC15A08EA14E4A0DBAA35DB0 /* PagingKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PagingKit-Info.plist"; sourceTree = "<group>"; };
 		8D3AFF48D6FE917D7831B534FDB47D84 /* UnderlineFocusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderlineFocusView.swift; path = "Sources/Menu Cells/Underline/UnderlineFocusView.swift"; sourceTree = "<group>"; };
 		8F855D4F8F2AA0122C53E9F0B5B99D93 /* Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		946FF8586AE30A5832C9635B2FF22D54 /* MXParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXParallaxHeader-dummy.m"; sourceTree = "<group>"; };
 		955146C316B23BDF3C93319EB2ABF798 /* TitleLabelMenuViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitleLabelMenuViewCell.swift; path = "Sources/Menu Cells/Underline/TitleLabelMenuViewCell.swift"; sourceTree = "<group>"; };
 		955BCCEA1BFB08972BCA8B0CD7033A80 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+NSLayoutConstraint.swift"; path = "Sources/Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7EA264C41EE077154491E4FA0ABE95B /* MXParallaxHeader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.debug.xcconfig; sourceTree = "<group>"; };
 		AD711F075616F2C94B8489F65202FEA4 /* Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF470FA9330D78E65C8185B998E9ED7C /* Pods-parallaxPlz_practiceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-parallaxPlz_practiceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B16795634498FB25FF933F976EB92414 /* Pods_parallaxPlz_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_parallaxPlz_practice.framework; path = "Pods-parallaxPlz_practice.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16795634498FB25FF933F976EB92414 /* Pods_parallaxPlz_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parallaxPlz_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D6407CE6FBBDC6EDD9DBB4616844C5 /* Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.modulemap"; sourceTree = "<group>"; };
 		B52411BD0E5B1A5A241DF1AC5F4DA3D8 /* Pods-parallaxPlz_practice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-parallaxPlz_practice-acknowledgements.plist"; sourceTree = "<group>"; };
 		B54036D2DE0D7AAD265D7C9889E82B45 /* OverlayMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayMenuCell.swift; path = "Sources/Menu Cells/Overlay/OverlayMenuCell.swift"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		C111D6FB54BB8606519CCDCFDC5F37FA /* Pods-parallaxPlz_practice-parallaxPlz_practiceUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests-frameworks.sh"; sourceTree = "<group>"; };
 		C4B55723FBC12BD42AB7B40F8C27C2D4 /* MXParallaxHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXParallaxHeader.h; path = Sources/MXParallaxHeader.h; sourceTree = "<group>"; };
 		C83FCAC30CE6DC12557E1104287546E7 /* Pods-parallaxPlz_practiceTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-parallaxPlz_practiceTests-Info.plist"; sourceTree = "<group>"; };
-		CD26BE284B3457124829CB4C4FCE8AD6 /* PagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PagingKit.framework; path = PagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD26BE284B3457124829CB4C4FCE8AD6 /* PagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC331F76D6AC1938B5CECE438E3E66E /* Pods-parallaxPlz_practice-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-parallaxPlz_practice-Info.plist"; sourceTree = "<group>"; };
 		D64464EF66269FF3704C2B1F34A9EE89 /* MXParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
 		DB5C70F2259A80DC1FE55EB1E920BB6A /* PagingContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingContentViewController.swift; path = Sources/PagingContentViewController.swift; sourceTree = "<group>"; };
@@ -218,7 +218,6 @@
 				56E3BFBC885CE730686A4915BDA68724 /* MXScrollViewController.m */,
 				BCB87A946F78DCB178C6F5AADD93AA1B /* Support Files */,
 			);
-			name = MXParallaxHeader;
 			path = MXParallaxHeader;
 			sourceTree = "<group>";
 		};
@@ -350,7 +349,6 @@
 				8D3AFF48D6FE917D7831B534FDB47D84 /* UnderlineFocusView.swift */,
 				AC37EB0F38A1BADB2CC64FF7A1E39D55 /* Support Files */,
 			);
-			name = PagingKit;
 			path = PagingKit;
 			sourceTree = "<group>";
 		};
@@ -515,7 +513,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1230;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -761,7 +759,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,7 +870,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PagingKit/PagingKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PagingKit/PagingKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -918,6 +916,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -972,7 +971,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1008,7 +1007,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PagingKit/PagingKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PagingKit/PagingKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1092,6 +1091,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

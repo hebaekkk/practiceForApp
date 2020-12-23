@@ -37,6 +37,7 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uo0-R5-TSx">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HJB-LS-9Ry"/>
                                 </constraints>
@@ -46,6 +47,7 @@
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-TH-DQi">
                                 <rect key="frame" x="0.0" y="60" width="414" height="836"/>
+                                <color key="backgroundColor" red="1" green="0.26843171300000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="UVT-h1-pdz" kind="embed" id="HXG-7t-KtI"/>
                                 </connections>
@@ -68,12 +70,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC1-Ac-2s8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="305"/>
+            <point key="canvasLocation" x="969.56521739130437" y="304.6875"/>
         </scene>
         <!--Left View Controller-->
         <scene sceneID="4dV-4I-swh">
             <objects>
-                <viewController id="rao-pU-ba6" customClass="leftViewController" customModule="parallaxPlz_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="leftViewController" id="rao-pU-ba6" customClass="leftViewController" customModule="parallaxPlz_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bWY-S7-uwJ" customClass="leftView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +130,7 @@
         <!--Right View Controller-->
         <scene sceneID="rwU-wT-PQ7">
             <objects>
-                <viewController id="b7o-oe-Vqq" customClass="rightViewController" customModule="parallaxPlz_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rightViewController" id="b7o-oe-Vqq" customClass="rightViewController" customModule="parallaxPlz_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q6c-2r-J0a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,12 +149,13 @@
                     <view key="view" contentMode="scaleToFill" id="d5n-bJ-piK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="Tc5-lP-gzf"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POD-xD-c17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728" y="-3"/>
+            <point key="canvasLocation" x="1770" y="-75"/>
         </scene>
         <!--Paging Content View Controller-->
         <scene sceneID="6uh-v1-Zyn">
@@ -161,6 +164,7 @@
                     <view key="view" contentMode="scaleToFill" id="OzB-m0-yCN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="836"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cGr-gJ-EOf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -176,6 +180,12 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
