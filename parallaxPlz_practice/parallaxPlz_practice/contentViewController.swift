@@ -13,38 +13,52 @@ class contentViewController: UIViewController, MXParallaxHeaderDelegate {
     
     var menuVC: PagingMenuViewController!
     var contentVC: PagingContentViewController!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        
         menuVC.register(nib: UINib(nibName: "MenuCell", bundle: nil), forCellWithReuseIdentifier: "MenuCell")
         menuVC?.registerFocusView(nib: UINib(nibName: "FocusView", bundle: nil))
         
         menuVC.reloadData()
         contentVC.reloadData()
         
-        //dataSource = makeDataSource()
+        menuVC.cellAlignment = .left
+        dataSource = makeDataSource()
         
-        
+        contentVC.scrollView.isScrollEnabled = true
     }
     
-    //[  ]UIColor를 VC로? 어디 쓰는 코드인가...
-    static var viewController: (UIColor) -> UIViewController = { (color) in
-       let vc = UIViewController()
-        vc.view.backgroundColor = color
-        return vc
+    var dataSource = [(menu: String, content: UIViewController)]() {
+        didSet{
+            menuVC.reloadData()
+            contentVC.reloadData()
+        }
     }
     
-    var dataSource = [(menuTitle: "업체정보", vc: viewController(.red)), (menuTitle: "후기", vc: viewController(.blue))]
+    lazy var firstLoad: (() -> Void)? = { [weak self, menuVC, contentVC] in
+        menuVC?.reloadData()
+        contentVC?.reloadData()
+        self?.firstLoad = nil
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        firstLoad?()
+    }
+    
+    //var dataSource = [(menuTitle: "업체정보", vc: viewController(.red)), (menuTitle: "후기", vc: viewController(.blue))]
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? PagingMenuViewController {
             menuVC = vc
-            menuVC.dataSource = self // <- set menu data source
+            menuVC.dataSource = self// <- set menu data source
+            menuVC.delegate = self
         } else if let vc = segue.destination as? PagingContentViewController {
             contentVC = vc
             contentVC.dataSource = self
+            contentVC.delegate = self
         }
     }
     
@@ -54,27 +68,6 @@ class contentViewController: UIViewController, MXParallaxHeaderDelegate {
 //            contentVC.reloadData()
 //        }
 //    }
-    
-    lazy var firstLoad: (() -> Void)? = { [weak self, menuVC, contentVC] in
-        menuVC?.reloadData()
-        contentVC?.reloadData()
-        self?.firstLoad = nil
-    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? PagingMenuViewController {
-//            menuVC = vc
-//            menuVC.dataSource = self // set menu DataSource
-//            menuVC.delegate = self
-//        } else if let vc = segue.destination as? PagingContentViewController {
-//            contentVC = vc
-//            //contentVC.delegate = self
-//            //contentVC.delegate = self
-//
-//
-//        }
-//    }
-//
     
     fileprivate func makeDataSource() -> [(menu: String, content: UIViewController)] {
         let menuArray = ["왼쪽", "오른쪽"]
@@ -96,29 +89,49 @@ class contentViewController: UIViewController, MXParallaxHeaderDelegate {
     }
 
 }
+
 extension contentViewController: PagingMenuViewControllerDataSource {
+
+    
     func numberOfItemsForMenuViewController(viewController: PagingMenuViewController) -> Int {
         return dataSource.count
     }
     
     func menuViewController(viewController: PagingMenuViewController, widthForItemAt index: Int) -> CGFloat {
-        return UIScreen.main.bounds.width / CGFloat(dataSource.count)
- 
+        let screenWidth = UIScreen.main.bounds.width
+        return screenWidth / CGFloat(dataSource.count)
     }
+
     
     func menuViewController(viewController: PagingMenuViewController, cellForItemAt index: Int) -> PagingMenuViewCell {
         let cell = viewController.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: index) as! MenuCell
-        cell.titleLabel.text = dataSource[index].menuTitle
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.titleLabel.text = dataSource[index].menu
+        cell.titleLabel.textColor = .gray
+//        cell.titleLabel.text = dataSource[index].menu//
+//        cell.titleLabel.textColor = .black
         return cell
     }
 }
+extension contentViewController: PagingMenuViewControllerDelegate {
+    func menuViewController(viewController: PagingMenuViewController, didSelect page: Int, previousPage: Int) {
+        contentVC.scroll(to: page, animated: false)
+    }
+}
+//컨텐트 데이터 소스 - 내용
 extension contentViewController: PagingContentViewControllerDataSource {
     func numberOfItemsForContentViewController(viewController: PagingContentViewController) -> Int {
         return dataSource.count
     }
-    
     func contentViewController(viewController: PagingContentViewController, viewControllerAt index: Int) -> UIViewController {
-        return dataSource[index].vc
+        return dataSource[index].content
+    }
+}
+//컨텐트 컨트롤 델리겟
+extension contentViewController: PagingContentViewControllerDelegate {
+    func contentViewController(viewController: PagingContentViewController, didEndManualScrollOn index: Int, percent: CGFloat) {
+        menuVC.scroll(index: index, percent: percent, animated: false)
     }
 }
 
