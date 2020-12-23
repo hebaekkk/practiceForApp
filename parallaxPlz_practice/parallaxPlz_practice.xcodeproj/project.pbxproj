@@ -26,6 +26,7 @@
 		4194F8CA2591E2D0006797C1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F8C82591E2D0006797C1 /* MenuCell.swift */; };
 		4194F8CB2591E2D0006797C1 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4194F8C92591E2D0006797C1 /* MenuCell.xib */; };
 		4194F8D02591E2DF006797C1 /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4194F8CF2591E2DF006797C1 /* FocusView.xib */; };
+		4194F9132593061F006797C1 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194F9122593061F006797C1 /* Base.swift */; };
 		7A4A8065CDCE9FC0E01F4A4D /* Pods_parallaxPlz_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC310E4132E0F6C027A716F /* Pods_parallaxPlz_practiceTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		4194F8C82591E2D0006797C1 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		4194F8C92591E2D0006797C1 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		4194F8CF2591E2DF006797C1 /* FocusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
+		4194F9122593061F006797C1 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		53794562EF30BA864A518C08 /* Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-parallaxPlz_practice-parallaxPlz_practiceUITests/Pods-parallaxPlz_practice-parallaxPlz_practiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77DB933CDC31BAC0BB43EEEB /* Pods-parallaxPlz_practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parallaxPlz_practiceTests.release.xcconfig"; path = "Target Support Files/Pods-parallaxPlz_practiceTests/Pods-parallaxPlz_practiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		809F030EF89D0E8A45F94285 /* Pods_parallaxPlz_practice_parallaxPlz_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parallaxPlz_practice_parallaxPlz_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 				4194F8C82591E2D0006797C1 /* MenuCell.swift */,
 				4194F8C92591E2D0006797C1 /* MenuCell.xib */,
 				4194F8CF2591E2DF006797C1 /* FocusView.xib */,
+				4194F9122593061F006797C1 /* Base.swift */,
 				4194F8752591D358006797C1 /* Info.plist */,
 			);
 			path = parallaxPlz_practice;
@@ -438,6 +441,7 @@
 			files = (
 				4194F8BF2591E083006797C1 /* leftViewController.swift in Sources */,
 				4194F8C42591E08D006797C1 /* rightViewController.swift in Sources */,
+				4194F9132593061F006797C1 /* Base.swift in Sources */,
 				4194F8CA2591E2D0006797C1 /* MenuCell.swift in Sources */,
 				4194F8B12591DD6E006797C1 /* MyCleanTabProfileView.swift in Sources */,
 				4194F86C2591D356006797C1 /* ViewController.swift in Sources */,

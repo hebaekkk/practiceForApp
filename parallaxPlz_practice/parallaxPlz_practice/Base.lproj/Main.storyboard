@@ -8,17 +8,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scroll View Controller-->
+        <!--Base-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MXScrollViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Base" customModule="parallaxPlz_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qce-eh-5kl">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.55335648150000005" blue="0.17060185189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dDj-av-CDs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qce-eh-5kl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qec-8U-CZp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qce-eh-5kl" secondAttribute="trailing" id="eZ4-Yg-Qnb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qce-eh-5kl" secondAttribute="bottom" id="tCV-14-efZ"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="Qce-eh-5kl" id="sD7-ip-U5S"/>
                         <segue destination="R3p-X6-L2F" kind="custom" identifier="parallax_Header" customClass="MXParallaxHeaderSegue" id="zta-Nw-lCo"/>
                         <segue destination="VTv-WY-cib" kind="custom" identifier="content" customClass="MXScrollViewControllerSegue" id="mbO-wk-PXb"/>
                     </connections>
@@ -70,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC1-Ac-2s8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969.56521739130437" y="304.6875"/>
+            <point key="canvasLocation" x="970" y="319"/>
         </scene>
         <!--Left View Controller-->
         <scene sceneID="4dV-4I-swh">
@@ -125,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFG-sx-cqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="-155"/>
+            <point key="canvasLocation" x="969.56521739130437" y="-155.35714285714286"/>
         </scene>
         <!--Right View Controller-->
         <scene sceneID="rwU-wT-PQ7">
@@ -155,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POD-xD-c17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="-75"/>
+            <point key="canvasLocation" x="1728" y="9"/>
         </scene>
         <!--Paging Content View Controller-->
         <scene sceneID="6uh-v1-Zyn">
