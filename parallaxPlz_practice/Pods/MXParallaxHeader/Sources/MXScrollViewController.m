@@ -44,7 +44,7 @@ static void * const kMXScrollViewControllerKVOContext = (void*)&kMXScrollViewCon
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
 
     [self.view addSubview:self.scrollView];
-    [self.scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+    [self.scrollView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor].active = YES;
     [self.scrollView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
     [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
     [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;

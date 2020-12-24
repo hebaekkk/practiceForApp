@@ -24,16 +24,29 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkG-C4-ZOg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="u0R-rh-38f"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="lhB-Hh-G3h"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="HkG-C4-ZOg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NSC-tv-q1t"/>
                             <constraint firstItem="Qce-eh-5kl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qec-8U-CZp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qce-eh-5kl" secondAttribute="trailing" id="eZ4-Yg-Qnb"/>
+                            <constraint firstItem="HkG-C4-ZOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kFN-Mv-mVb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HkG-C4-ZOg" secondAttribute="trailing" id="pGe-M1-2eT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qce-eh-5kl" secondAttribute="bottom" id="tCV-14-efZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bar" destination="HkG-C4-ZOg" id="SUA-eb-sKe"/>
                         <outlet property="button" destination="Qce-eh-5kl" id="sD7-ip-U5S"/>
                         <segue destination="R3p-X6-L2F" kind="custom" identifier="parallax_Header" customClass="MXParallaxHeaderSegue" id="zta-Nw-lCo"/>
                         <segue destination="VTv-WY-cib" kind="custom" identifier="content" customClass="MXScrollViewControllerSegue" id="mbO-wk-PXb"/>

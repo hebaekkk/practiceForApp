@@ -25,7 +25,7 @@ class headerViewController: UIViewController, MXParallaxHeaderDelegate {
         guard (loadedNib.first as? MyCleanTabProfileView) != nil else { return }
         
         
-        let pV = MyCleanTabProfileView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
+        let pV = MyCleanTabProfileView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/2.2))
         headerView.addSubview(pV)
     }
     
