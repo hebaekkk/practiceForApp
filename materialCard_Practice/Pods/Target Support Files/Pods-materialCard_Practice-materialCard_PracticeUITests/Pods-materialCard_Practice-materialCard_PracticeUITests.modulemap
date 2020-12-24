@@ -1,0 +1,6 @@
+framework module Pods_materialCard_Practice_materialCard_PracticeUITests {
+  umbrella header "Pods-materialCard_Practice-materialCard_PracticeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

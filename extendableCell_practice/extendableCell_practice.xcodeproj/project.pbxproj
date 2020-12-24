@@ -16,6 +16,7 @@
 		41D337D525941C2200CA1A63 /* extendableCell_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337D425941C2200CA1A63 /* extendableCell_practiceTests.swift */; };
 		41D337E025941C2200CA1A63 /* extendableCell_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337DF25941C2200CA1A63 /* extendableCell_practiceUITests.swift */; };
 		41D337F125941E6A00CA1A63 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337F025941E6A00CA1A63 /* TableViewCell.swift */; };
+		41D33840259480A600CA1A63 /* kindsBtnsVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3383F259480A600CA1A63 /* kindsBtnsVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		41D337DF25941C2200CA1A63 /* extendableCell_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extendableCell_practiceUITests.swift; sourceTree = "<group>"; };
 		41D337E125941C2200CA1A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D337F025941E6A00CA1A63 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		41D3383F259480A600CA1A63 /* kindsBtnsVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kindsBtnsVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				41D337C625941C2100CA1A63 /* Assets.xcassets */,
 				41D337F025941E6A00CA1A63 /* TableViewCell.swift */,
 				41D337C825941C2100CA1A63 /* LaunchScreen.storyboard */,
+				41D3383F259480A600CA1A63 /* kindsBtnsVIew.swift */,
 				41D337CB25941C2100CA1A63 /* Info.plist */,
 			);
 			path = extendableCell_practice;
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D337C225941C2000CA1A63 /* ViewController.swift in Sources */,
+				41D33840259480A600CA1A63 /* kindsBtnsVIew.swift in Sources */,
 				41D337F125941E6A00CA1A63 /* TableViewCell.swift in Sources */,
 				41D337BE25941C2000CA1A63 /* AppDelegate.swift in Sources */,
 				41D337C025941C2000CA1A63 /* SceneDelegate.swift in Sources */,
