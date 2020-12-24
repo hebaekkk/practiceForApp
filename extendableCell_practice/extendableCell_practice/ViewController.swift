@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//[ ] Cell select 되면 오른쪽 이미지 변경되게 만들기
+//[ ] Cell select 되면 오른쪽 이미지 변경(chevron.up)되게 만들기
 
 
 
@@ -39,6 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if SelectedIndex == indexPath.row {
@@ -51,9 +52,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.isCollapse = true
         }
         
-        
-        
         self.SelectedIndex = indexPath.row
+        
         tableView.reloadRows(at: [indexPath], with: .automatic)
     
     }
