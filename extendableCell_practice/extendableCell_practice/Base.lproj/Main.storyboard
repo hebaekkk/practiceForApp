@@ -77,8 +77,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pk9-lc-fKR"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KAW-Zp-GUz"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dpi-c2-I4H"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wyK-Ci-Xge"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -92,7 +92,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="table" destination="QVl-rg-b4R" id="87D-cF-0cf"/>
+                        <outlet property="table" destination="QVl-rg-b4R" id="HJx-h9-rcO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

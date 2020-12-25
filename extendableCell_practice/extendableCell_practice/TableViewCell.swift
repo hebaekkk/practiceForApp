@@ -17,6 +17,7 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        iconImg.image = UIImage(systemName: "chevron.down")
         // Initialization code
     }
 
@@ -29,7 +30,10 @@ class TableViewCell: UITableViewCell {
         //btnView.setAnchor(top: UIView.topAnchor, left: UIView.leftAnchor, bottom: UIView.bottomAnchor, right: UIView.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
         
     }
-
+    
+    func setCollapse(collapsed: Bool) {
+        iconImg?.rotate(collapsed ? 0.0 : .pi)
+    }
 }
 extension UIView {
     func setAnchor(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?,
@@ -48,6 +52,15 @@ extension UIView {
         if let right = right {
             self.rightAnchor.constraint(equalTo: right, constant:  -paddingRight).isActive = true
         }
+    }
+    func rotate(_ toValue: CGFloat, duration: CFTimeInterval = 0.2 ) {
+        let animation = CABasicAnimation(keyPath: "transform.rotation")
+        animation.toValue = toValue
+        animation.duration = duration
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        
+        self.layer.add(animation,forKey: nil)
     }
 }
 
