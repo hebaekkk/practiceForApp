@@ -24,13 +24,26 @@ class TableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
+        
+        
+//        let button = UIButton()
+//        button.backgroundColor = .yellow
+//        button.setTitle("HAHA", for: .normal)
+//
+//        let buttonStack = DynamicButtonStack(buttons:  [
+//            button,
+//        ])
+//        buttonStack.frame = CGRect(x: 5, y: 5, width: 100, height: 80)
+//        
+//        UIView.addSubview(buttonStack)
+        
         //let btnView = kindsBtnsView(frame: CGRect(x: 0, y: 0, width: 300, height: 80))
         
         //UIView.addSubview(btnView)
         //btnView.setAnchor(top: UIView.topAnchor, left: UIView.leftAnchor, bottom: UIView.bottomAnchor, right: UIView.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
         
     }
-    
+
     func setCollapse(collapsed: Bool) {
         iconImg?.rotate(collapsed ? 0.0 : .pi)
     }

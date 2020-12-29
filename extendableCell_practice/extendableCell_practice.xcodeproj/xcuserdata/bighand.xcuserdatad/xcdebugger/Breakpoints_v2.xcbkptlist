@@ -14,10 +14,134 @@
             filePath = "extendableCell_practice/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD9FE365-8CBD-4249-B903-9B9D0564FA50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "extendableCell_practice/TableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "setSelected(_:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "extendableCell_practice/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - 7887a6e78e4d7a86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "extendableCell_practice.ViewController.isCollapse.getter : Swift.Bool"
+                  moduleName = "extendableCell_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/extendableCell_practice/extendableCell_practice/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - d592314ba851c12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "extendableCell_practice.ViewController.isCollapse.setter : Swift.Bool"
+                  moduleName = "extendableCell_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/extendableCell_practice/extendableCell_practice/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - f4ae67a37a125e52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "extendableCell_practice.ViewController.isCollapse.modify : Swift.Bool"
+                  moduleName = "extendableCell_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/extendableCell_practice/extendableCell_practice/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - 937ac8d108ff05f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "extendableCell_practice.ViewController.isCollapse.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "extendableCell_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/extendableCell_practice/extendableCell_practice/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - 198f3c84111b5a5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "extendableCell_practice.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; extendableCell_practice.ViewController"
+                  moduleName = "extendableCell_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/extendableCell_practice/extendableCell_practice/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "897">
+               </Location>
+               <Location
+                  uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - c432e536b8de3d03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "extendableCell_practice.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;extendableCell_practice.ViewController&gt;"
+                  moduleName = "extendableCell_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/extendableCell_practice/extendableCell_practice/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "838">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

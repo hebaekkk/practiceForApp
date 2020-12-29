@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		419A88E42599614100375941 /* dynamicBtnStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419A88E32599614100375941 /* dynamicBtnStack.swift */; };
 		41D337BE25941C2000CA1A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337BD25941C2000CA1A63 /* AppDelegate.swift */; };
 		41D337C025941C2000CA1A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337BF25941C2000CA1A63 /* SceneDelegate.swift */; };
 		41D337C225941C2000CA1A63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337C125941C2000CA1A63 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		419A88E32599614100375941 /* dynamicBtnStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicBtnStack.swift; sourceTree = "<group>"; };
 		41D337BA25941C2000CA1A63 /* extendableCell_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extendableCell_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D337BD25941C2000CA1A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D337BF25941C2000CA1A63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				41D337C825941C2100CA1A63 /* LaunchScreen.storyboard */,
 				41D3383F259480A600CA1A63 /* kindsBtnsVIew.swift */,
 				41D337CB25941C2100CA1A63 /* Info.plist */,
+				419A88E32599614100375941 /* dynamicBtnStack.swift */,
 			);
 			path = extendableCell_practice;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				41D337F125941E6A00CA1A63 /* TableViewCell.swift in Sources */,
 				41D337BE25941C2000CA1A63 /* AppDelegate.swift in Sources */,
 				41D337C025941C2000CA1A63 /* SceneDelegate.swift in Sources */,
+				419A88E42599614100375941 /* dynamicBtnStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
