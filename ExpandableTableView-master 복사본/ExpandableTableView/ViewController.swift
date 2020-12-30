@@ -14,19 +14,21 @@ enum cellHeight : CGFloat{
     case Jrsn = 300
 }
 enum cellSelect : String {
-    case Tscs
-    case Jrsn
-    case Cg
-    case Pgm
+    case Tscs = "Tscs"
+    case Jrsn = "Jrsn"
+    case Cg = "Cg"
+    case Pgm = "Pgm"
 }
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
+    @IBOutlet weak var nextButton: UIButton!
     var data : [Section] = [
         Section(title: "Section 1", list: ["0"], isColleps: true),
         Section(title: "Section 2", list: ["1"], isColleps: true),
         Section(title: "Section 3", list: ["2"], isColleps: true),
         Section(title: "Section 4", list: ["3"], isColleps: true),
+        Section(title: "Section 5", list: ["4"], isColleps: true)
     ]
 
     
@@ -34,7 +36,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(LastCell.self, forCellReuseIdentifier: "LastCell")
         tableViewSetup()
+        
+        
     }
 
 }
@@ -53,26 +58,38 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return cellHeight.Header.rawValue
+        if section == 4 {
+            return 2
+        } else {
+            return cellHeight.Header.rawValue
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header : HeaderCell = tableView.dequeueReusableCell(withIdentifier: String(describing : HeaderCell.self)) as! HeaderCell
         
-        let content : ContentCell = tableView.dequeueReusableCell(withIdentifier: String(describing : ContentCell.self)) as! ContentCell
+        //let header : HeaderCell = tableView.dequeueReusableCell(withIdentifier: String(describing : HeaderCell.self)) as! HeaderCell
         
-        let sectionData = data[section]
-        header.labelTitle.text = sectionData.title
-      
-        ///arrow rotate
-        header.buttonArrow.transform = CGAffineTransform(rotationAngle: (sectionData.isColleps)! ? 0.0 : .pi)
-        header.buttonArrow.tag = section
-        header.contentView.tag = section
-        content.UIView.tag = section
-        print("wwwwwww : \(content.UIView.tag)")
         
-        header.buttonArrow.addTarget(self, action: #selector(buttonHandlerSectionArrowTap(sender:)), for: .touchUpInside)
-        return header.contentView
+        if section == 4 {
+            let header : LastCell = tableView.dequeueReusableCell(withIdentifier: LastCell.identifier) as! LastCell
+            return header.contentView
+            
+        } else {
+            let header : HeaderCell = tableView.dequeueReusableCell(withIdentifier: String(describing : HeaderCell.self)) as! HeaderCell
+
+            let sectionData = data[section]
+            header.labelTitle.text = sectionData.title
+            
+            header.buttonArrow.transform = CGAffineTransform(rotationAngle: (sectionData.isColleps)! ? 0.0 : .pi)
+            header.buttonArrow.tag = section
+            
+            header.buttonArrow.addTarget(self, action: #selector(buttonHandlerSectionArrowTap(sender:)), for: .touchUpInside)
+            
+            return header.contentView
+            
+        }
+        
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -212,12 +229,6 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         
         
         //return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let view = UIView()
-        view.backgroundColor = .purple
-        return view
     }
 
     ///Button action arrow in header

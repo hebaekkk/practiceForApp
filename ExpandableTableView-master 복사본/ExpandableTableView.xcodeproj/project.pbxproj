@@ -16,10 +16,10 @@
 		301A3A4B1FF6A4EB0088E9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301A3A491FF6A4EB0088E9B8 /* LaunchScreen.storyboard */; };
 		301A3A531FF6A7280088E9B8 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A3A521FF6A7280088E9B8 /* HeaderCell.swift */; };
 		301A3A551FF6A73E0088E9B8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A3A541FF6A73E0088E9B8 /* ContentCell.swift */; };
+		413D062C259C4682005A2056 /* LastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D062A259C4682005A2056 /* LastCell.swift */; };
 		416DBF57259ABD2B003CC1D8 /* GridComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416DBF56259ABD2B003CC1D8 /* GridComponent.swift */; };
 		416DBF5A259AC43B003CC1D8 /* stackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416DBF59259AC43B003CC1D8 /* stackButton.swift */; };
 		416DBF5D259ACA06003CC1D8 /* daean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416DBF5C259ACA06003CC1D8 /* daean.swift */; };
-		416DBF60259ACA18003CC1D8 /* daean.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416DBF5F259ACA18003CC1D8 /* daean.xib */; };
 		416DBF63259AF99D003CC1D8 /* dynamicBtnStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416DBF62259AF99D003CC1D8 /* dynamicBtnStack.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +35,10 @@
 		301A3A4C1FF6A4EB0088E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301A3A521FF6A7280088E9B8 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		301A3A541FF6A73E0088E9B8 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		413D062A259C4682005A2056 /* LastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCell.swift; sourceTree = "<group>"; };
 		416DBF56259ABD2B003CC1D8 /* GridComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridComponent.swift; sourceTree = "<group>"; };
 		416DBF59259AC43B003CC1D8 /* stackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stackButton.swift; sourceTree = "<group>"; };
 		416DBF5C259ACA06003CC1D8 /* daean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daean.swift; sourceTree = "<group>"; };
-		416DBF5F259ACA18003CC1D8 /* daean.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = daean.xib; sourceTree = "<group>"; };
 		416DBF62259AF99D003CC1D8 /* dynamicBtnStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dynamicBtnStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +78,8 @@
 				301A3A421FF6A4EB0088E9B8 /* ViewController.swift */,
 				301A3A521FF6A7280088E9B8 /* HeaderCell.swift */,
 				301A3A541FF6A73E0088E9B8 /* ContentCell.swift */,
+				413D062A259C4682005A2056 /* LastCell.swift */,
 				301A3A441FF6A4EB0088E9B8 /* Main.storyboard */,
-				416DBF5F259ACA18003CC1D8 /* daean.xib */,
 				416DBF56259ABD2B003CC1D8 /* GridComponent.swift */,
 				301A3A471FF6A4EB0088E9B8 /* Assets.xcassets */,
 				416DBF5C259ACA06003CC1D8 /* daean.swift */,
@@ -154,7 +154,6 @@
 				301A3A4B1FF6A4EB0088E9B8 /* LaunchScreen.storyboard in Resources */,
 				301A3A481FF6A4EB0088E9B8 /* Assets.xcassets in Resources */,
 				301A3A461FF6A4EB0088E9B8 /* Main.storyboard in Resources */,
-				416DBF60259ACA18003CC1D8 /* daean.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +173,7 @@
 				301A3A531FF6A7280088E9B8 /* HeaderCell.swift in Sources */,
 				301A3A411FF6A4EB0088E9B8 /* AppDelegate.swift in Sources */,
 				416DBF5A259AC43B003CC1D8 /* stackButton.swift in Sources */,
+				413D062C259C4682005A2056 /* LastCell.swift in Sources */,
 				301A3A551FF6A73E0088E9B8 /* ContentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

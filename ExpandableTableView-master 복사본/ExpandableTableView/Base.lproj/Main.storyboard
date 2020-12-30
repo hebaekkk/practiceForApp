@@ -20,16 +20,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AsH-zY-TP2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AsH-zY-TP2">
+                                <rect key="frame" x="24" y="0.0" width="327" height="607"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderCell" id="ZOY-6A-DK3" customClass="HeaderCell" customModule="ExpandableTableView" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="327" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZOY-6A-DK3" id="oOY-Db-1iC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zic-VQ-U1W">
@@ -39,7 +39,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-Hk-Tn6">
-                                                    <rect key="frame" x="329" y="7" width="30" height="30"/>
+                                                    <rect key="frame" x="281" y="7" width="30" height="30"/>
                                                     <state key="normal" image="ic_down_arrow"/>
                                                 </button>
                                             </subviews>
@@ -57,10 +57,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContentCell" rowHeight="234" id="byv-Wc-K4t" customClass="ContentCell" customModule="ExpandableTableView" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="234"/>
+                                        <rect key="frame" x="0.0" y="72" width="327" height="234"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="byv-Wc-K4t" id="JWa-4E-kMe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNX-mc-T4d">
@@ -70,7 +70,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXE-ag-CLr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="234"/>
                                                     <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                 </view>
                                             </subviews>
@@ -88,18 +88,35 @@
                                             <outlet property="labelTitle" destination="jNX-mc-T4d" id="mRX-WL-TaF"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xiy-0Q-MGH" customClass="LastCell" customModule="ExpandableTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="306" width="327" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xiy-0Q-MGH" id="oIZ-JK-utI">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.37254901959999998" green="1" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="C0q-hY-Dls">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37254901959999998" green="0.23921568630000001" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AsH-zY-TP2" secondAttribute="bottom" id="Doa-hy-Rx2"/>
-                            <constraint firstAttribute="trailing" secondItem="AsH-zY-TP2" secondAttribute="trailing" id="L5O-kJ-lvi"/>
-                            <constraint firstItem="AsH-zY-TP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RMU-lm-C1j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AsH-zY-TP2" secondAttribute="bottom" constant="60" id="Doa-hy-Rx2"/>
+                            <constraint firstAttribute="trailing" secondItem="AsH-zY-TP2" secondAttribute="trailing" constant="24" id="L5O-kJ-lvi"/>
+                            <constraint firstItem="AsH-zY-TP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="RMU-lm-C1j"/>
+                            <constraint firstItem="C0q-hY-Dls" firstAttribute="top" secondItem="AsH-zY-TP2" secondAttribute="bottom" id="iiQ-Pc-Ird"/>
                             <constraint firstItem="AsH-zY-TP2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xmz-Xe-Sc2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="C0q-hY-Dls" id="EzR-Hn-Lri"/>
                         <outlet property="tableView" destination="AsH-zY-TP2" id="4gn-3W-egL"/>
                     </connections>
                 </viewController>
