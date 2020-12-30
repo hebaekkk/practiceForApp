@@ -20,3 +20,12 @@ class Section {
         self.isColleps = isColleps
     }
 }
+class btnText {
+    var title : String?
+    init() {
+    }
+    
+    init(title : String?) {
+        self.title = title
+    }
+}

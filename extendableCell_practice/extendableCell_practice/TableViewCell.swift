@@ -25,7 +25,6 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         
-        
 //        let button = UIButton()
 //        button.backgroundColor = .yellow
 //        button.setTitle("HAHA", for: .normal)
@@ -46,6 +45,26 @@ class TableViewCell: UITableViewCell {
 
     func setCollapse(collapsed: Bool) {
         iconImg?.rotate(collapsed ? 0.0 : .pi)
+    }
+    
+    override func prepareForReuse() {
+        
+ 
+        for view in self.UIView.subviews {
+            
+            print("REMOVE")
+            if view != nil {
+                super.prepareForReuse()
+                view.removeFromSuperview()
+                
+            }
+        }
+        //self.updateLayout()
+        
+    }
+    func updateLayout() {
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
     }
 }
 extension UIView {

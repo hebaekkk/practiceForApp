@@ -14,8 +14,8 @@
             filePath = "extendableCell_practice/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "extendableCell_practice/TableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "setSelected(_:animated:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -53,7 +53,7 @@
             <Locations>
                <Location
                   uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - 7887a6e78e4d7a86"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "extendableCell_practice.ViewController.isCollapse.getter : Swift.Bool"
@@ -68,7 +68,7 @@
                </Location>
                <Location
                   uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - d592314ba851c12"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "extendableCell_practice.ViewController.isCollapse.setter : Swift.Bool"
@@ -83,7 +83,7 @@
                </Location>
                <Location
                   uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - f4ae67a37a125e52"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "extendableCell_practice.ViewController.isCollapse.modify : Swift.Bool"
@@ -98,7 +98,7 @@
                </Location>
                <Location
                   uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - 937ac8d108ff05f5"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "extendableCell_practice.ViewController.isCollapse.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
@@ -113,7 +113,7 @@
                </Location>
                <Location
                   uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - 198f3c84111b5a5d"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "extendableCell_practice.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; extendableCell_practice.ViewController"
@@ -128,7 +128,7 @@
                </Location>
                <Location
                   uuid = "7B109445-A9F7-42EB-AFF6-97FF598A3937 - c432e536b8de3d03"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "extendableCell_practice.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;extendableCell_practice.ViewController&gt;"
@@ -140,6 +140,29 @@
                   startingLineNumber = "17"
                   endingLineNumber = "17"
                   offsetFromSymbolStart = "838">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "C700FFBB-E6A4-442D-BD26-CE4633CFD12C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "UIViewAlertForUnsatisfiableConstraints"
+            moduleName = "">
+            <Locations>
+               <Location
+                  uuid = "C700FFBB-E6A4-442D-BD26-CE4633CFD12C - ba3ad5676a792f38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIViewAlertForUnsatisfiableConstraints"
+                  moduleName = "UIKitCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
                </Location>
             </Locations>
          </BreakpointContent>

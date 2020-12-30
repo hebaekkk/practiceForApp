@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nameArr.count
     }
+    
+    
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -33,7 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.isExpand = (self.SelectedIndex == indexPath.row && isCollapse) //== true)
         cell.iconImg.image = UIImage(systemName: self.isExpand ?  "chevron.up" : "chevron.down")
         
-        cell.UIView.isHidden = true
+        //cell.UIView.isHidden = true
         
         let makeButton: (String?) -> UIButton = { title in
             let button = UIButton()
@@ -113,8 +115,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         case 0:
             print("000000000")
             
-            TscsBtn.frame = CGRect(x: 0, y: 0, width: cell.frame.width / 2, height: 200)
-            TscsBtn1.frame = CGRect(x: 0, y: 0, width: cell.frame.width / 2, height: 200)
+            TscsBtn.frame = CGRect(x: 0, y: 0, width: 199, height: 200)
+            TscsBtn1.frame = CGRect(x: 0, y: 0, width: 199, height: 200)
             
             let stackView = UIStackView()
         
@@ -132,21 +134,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             TscsBtn.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
             TscsBtn.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-            TscsBtn.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
-            TscsBtn.widthAnchor.constraint(equalToConstant: cell.UIView.frame.width / 2).isActive = true
+            //TscsBtn.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
+            //TscsBtn.widthAnchor.constraint(equalToConstant: 100).isActive = true
             
             TscsBtn1.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
             TscsBtn1.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-            TscsBtn1.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
-            TscsBtn1.widthAnchor.constraint(equalToConstant: cell.UIView.frame.width / 2).isActive = true
+            //TscsBtn1.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
+            //TscsBtn1.widthAnchor.constraint(equalToConstant: 100).isActive = true
 
             
             
             cell.UIView.addSubview(stackView)
             stackView.leadingAnchor.constraint(equalTo: cell.UIView.leadingAnchor).isActive = true
             stackView.trailingAnchor.constraint(equalTo: cell.UIView.trailingAnchor).isActive = true
-            stackView.topAnchor.constraint(equalTo: cell.UIView.topAnchor).isActive = true
-            stackView.bottomAnchor.constraint(equalTo: cell.UIView.bottomAnchor).isActive = true
+            stackView.topAnchor.constraint(equalTo: cell.UIView.topAnchor, constant: 5).isActive = true
+            //stackView.bottomAnchor.constraint(equalTo: cell.UIView.bottomAnchor).isActive = true
             
             self.cellHeight = 380
             cell.UIView.isHidden = false

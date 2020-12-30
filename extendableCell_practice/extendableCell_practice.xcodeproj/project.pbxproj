@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414351E1259BF72800BF6775 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414351E0259BF72800BF6775 /* File.swift */; };
 		419A88E42599614100375941 /* dynamicBtnStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419A88E32599614100375941 /* dynamicBtnStack.swift */; };
 		41D337BE25941C2000CA1A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337BD25941C2000CA1A63 /* AppDelegate.swift */; };
 		41D337C025941C2000CA1A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D337BF25941C2000CA1A63 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		414351E0259BF72800BF6775 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		419A88E32599614100375941 /* dynamicBtnStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicBtnStack.swift; sourceTree = "<group>"; };
 		41D337BA25941C2000CA1A63 /* extendableCell_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extendableCell_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D337BD25941C2000CA1A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				41D3383F259480A600CA1A63 /* kindsBtnsVIew.swift */,
 				41D337CB25941C2100CA1A63 /* Info.plist */,
 				419A88E32599614100375941 /* dynamicBtnStack.swift */,
+				414351E0259BF72800BF6775 /* File.swift */,
 			);
 			path = extendableCell_practice;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				41D337C225941C2000CA1A63 /* ViewController.swift in Sources */,
 				41D33840259480A600CA1A63 /* kindsBtnsVIew.swift in Sources */,
+				414351E1259BF72800BF6775 /* File.swift in Sources */,
 				41D337F125941E6A00CA1A63 /* TableViewCell.swift in Sources */,
 				41D337BE25941C2000CA1A63 /* AppDelegate.swift in Sources */,
 				41D337C025941C2000CA1A63 /* SceneDelegate.swift in Sources */,

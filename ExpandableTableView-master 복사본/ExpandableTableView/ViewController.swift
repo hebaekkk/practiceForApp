@@ -11,18 +11,20 @@ import UIKit
 enum cellHeight : CGFloat{
     case Header = 44
     case Row = 200
+    case Jrsn = 300
 }
 
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
-//    var data : [Section] = [Section(title: "Section 1", list: ["Row 1", "Row 2", "Row 3"], isColleps: true),Section(title: "Section 2", list: ["Row 1", "Row 2", "Row 3"], isColleps: true),Section(title: "Section 3", list: ["Row 1", "Row 2", "Row 3"], isColleps: true),Section(title: "Section 4", list: ["Row 1", "Row 2", "Row 3"], isColleps: true),Section(title: "Section 5", list: ["Row 1", "Row 2", "Row 3"], isColleps: true)]
     var data : [Section] = [
-        Section(title: "Section 1", list: ["Row 1"], isColleps: true),
-        Section(title: "Section 2", list: ["Row 1"], isColleps: true),
-        Section(title: "Section 3", list: ["Row 1"], isColleps: true),
-        Section(title: "Section 4", list: ["Row 1"], isColleps: true),
-]
+        Section(title: "Section 1", list: ["0"], isColleps: true),
+        Section(title: "Section 2", list: ["1"], isColleps: true),
+        Section(title: "Section 3", list: ["2"], isColleps: true),
+        Section(title: "Section 4", list: ["3"], isColleps: true),
+    ]
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header : HeaderCell = tableView.dequeueReusableCell(withIdentifier: String(describing : HeaderCell.self)) as! HeaderCell
         
+        let content : ContentCell = tableView.dequeueReusableCell(withIdentifier: String(describing : ContentCell.self)) as! ContentCell
+        
         let sectionData = data[section]
         header.labelTitle.text = sectionData.title
       
@@ -57,11 +61,9 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         header.buttonArrow.transform = CGAffineTransform(rotationAngle: (sectionData.isColleps)! ? 0.0 : .pi)
         header.buttonArrow.tag = section
         header.contentView.tag = section
+        content.UIView.tag = section
+        print("wwwwwww : \(content.UIView.tag)")
         
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(buttonHandlerSectionArrowTap(sender:)))
-        //header.addGestureRecognizer(gesture)
-    
-        //header.contentView.addGestureRecognizer(gesture)
         header.buttonArrow.addTarget(self, action: #selector(buttonHandlerSectionArrowTap(sender:)), for: .touchUpInside)
         return header.contentView
     }
@@ -71,15 +73,19 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeight.Row.rawValue
+        return cellHeight.Jrsn.rawValue
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         let cell : ContentCell = tableView.dequeueReusableCell(withIdentifier: String(describing : ContentCell.self)) as! ContentCell
         
         let listData = data[indexPath.section].list
         cell.labelTitle.text = listData?[indexPath.row]
-
+        
+        let index = cell.labelTitle.text!
+        
         let makeButton: (String?) -> UIButton = { title in
             let button = UIButton()
             button.setTitle(title, for: .normal)
@@ -89,7 +95,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
             button.titleLabel?.font = UIFont(name: "bold", size: 10)
             button.titleLabel?.textAlignment = .center
             button.layer.cornerRadius = 8
-            button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+            button.contentEdgeInsets = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
             button.backgroundColor = .white
             
             button.layer.borderWidth = 3
@@ -97,27 +103,104 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         
             return button
         }
-       
-        let v = DynamicButtonStack(buttons: [
-                                    makeButton("집쓰레기배출/청소"),
-                                    makeButton("유품정리/고독사"),
-                                    makeButton("사고현장정리"),
-                                    makeButton("침수/수해복구청소")])
-        let v1 = DynamicButtonStack(buttons: [
-                                    makeButton("이사 후 퇴실청소"),
-                                    makeButton("화재현장 청소"),
-                                    makeButton("빈집만들기"),
-                                    makeButton("기타 특수청소")])
-        v.frame = CGRect(x: 0, y: 0, width: cell.UIView.bounds.width / 2, height: cellHeight.Row.rawValue)
-        v1.frame = CGRect(x: cell.UIView.bounds.width / 2, y: 0, width: cell.UIView.bounds.width / 2, height: cellHeight.Row.rawValue)
+        let TscsBtn = DynamicButtonStack(buttons: [
+                                    makeButton("a"),
+                                    makeButton("b"),
+                                    makeButton("c"),
+                                    makeButton("d")])
         
-        cell.UIView.addSubview(v)
-        cell.UIView.addSubview(v1)
+        let TscsBtn1 = DynamicButtonStack(buttons: [
+                                    makeButton("q"),
+                                    makeButton("w"),
+                                    makeButton("e"),
+                                    makeButton("r")])
+        
+        let JrsnBtn = DynamicButtonStack(buttons: [
+            makeButton("z"),
+            makeButton("x"),
+            makeButton("c"),
+            makeButton("v")
+        ])
+
+        let JrsnBtn1 = DynamicButtonStack(buttons: [
+            makeButton("a"),
+            makeButton("b"),
+            makeButton("c"),
+            makeButton("d")
+        ])
+        
+        let PgmBtn = DynamicButtonStack(buttons: [
+            makeButton("a"),
+            makeButton("b"),
+            makeButton("c"),
+            makeButton("d")
+            
+        ])
+
+        let PgmBtn1 = DynamicButtonStack(buttons: [
+            makeButton("a"),
+            makeButton("b"),
+            makeButton("c"),
+            makeButton("d")
+        ])
+        
+        let CgBtn = DynamicButtonStack(buttons: [
+            makeButton("a"),
+            makeButton("b"),
+            makeButton("c"),
+            makeButton("d")
+        ])
+
+        let CgBtn1 = DynamicButtonStack(buttons: [
+            makeButton("a"),
+            makeButton("b"),
+            makeButton("c"),
+            makeButton("d")
+        ])
+        
+        switch listData?[indexPath.row]{
+        case "0":
+            print("asdfasdfa:\(index)")
+            TscsBtn.frame = CGRect(x: 0, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Row.rawValue)
+            TscsBtn1.frame = CGRect(x: cell.UIView.frame.width / 2 , y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Row.rawValue)
+            cell.UIView.addSubview(TscsBtn)
+            cell.UIView.addSubview(TscsBtn1)
+            print("\(TscsBtn.frame.minX),\( TscsBtn.frame.minY)")
+            print("\(TscsBtn.frame.maxX),\(TscsBtn.frame.maxY)")
+            return cell
+        case "1":
+            print("asdfasdfa:\(index)")
+            JrsnBtn.frame = CGRect(x: 0, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Jrsn.rawValue)
+            JrsnBtn1.frame = CGRect(x: cell.UIView.frame.width / 2, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Jrsn.rawValue)
+            print("\(JrsnBtn.frame.minX),\( JrsnBtn.frame.minY)")
+            print("\(JrsnBtn.frame.maxX),\(JrsnBtn.frame.maxY)")
+            cell.UIView.addSubview(JrsnBtn)
+            cell.UIView.addSubview(JrsnBtn1)
+            return cell
+        case "2":
+            PgmBtn.frame = CGRect(x: 0, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Jrsn.rawValue)
+            PgmBtn1.frame = CGRect(x: cell.UIView.frame.width / 2, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Jrsn.rawValue)
+            print("\(PgmBtn.frame.minX),\( PgmBtn.frame.minY)")
+            print("\(PgmBtn.frame.maxX),\(PgmBtn.frame.maxY)")
+            //print("\(PgmBtn.frame.)")
+            cell.UIView.addSubview(PgmBtn)
+            cell.UIView.addSubview(PgmBtn1)
+            return cell
+        case "3":
+            CgBtn.frame = CGRect(x: 0, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Jrsn.rawValue)
+            CgBtn1.frame = CGRect(x: cell.UIView.frame.width / 2, y: 0, width: cell.UIView.frame.width / 2, height: cellHeight.Jrsn.rawValue)
+            cell.UIView.addSubview(CgBtn)
+            cell.UIView.addSubview(CgBtn1)
+            return cell
+            
+        default:
+            print("asdfasdfa:\(indexPath.row)")
+            cell.UIView.backgroundColor = .blue
+            return cell
+        }
         
         
-        
-        
-        return cell
+        //return cell
     }
 
     ///Button action arrow in header
@@ -125,7 +208,6 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         let sectionData = data[sender.tag]
         sectionData.isColleps = !sectionData.isColleps!
         tableView.reloadSections(IndexSet(integer: sender.tag), with: .automatic)
-        
-        print("aha")
+
     }
 }
