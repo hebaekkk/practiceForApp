@@ -13,7 +13,12 @@ enum cellHeight : CGFloat{
     case Row = 200
     case Jrsn = 300
 }
-
+enum cellSelect : String {
+    case Tscs
+    case Jrsn
+    case Cg
+    case Pgm
+}
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
@@ -38,7 +43,9 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     func tableViewSetup()  {
         tableView.dataSource = self
         tableView.delegate = self
+        
         tableView.tableFooterView = UIView()
+        tableView.tableFooterView?.backgroundColor = .green
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -103,61 +110,65 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         
             return button
         }
-        let TscsBtn = DynamicButtonStack(buttons: [
-                                    makeButton("a"),
-                                    makeButton("b"),
-                                    makeButton("c"),
-                                    makeButton("d")])
+                let TscsBtn = DynamicButtonStack(buttons: [
+                                            makeButton("집쓰레기배출/청소"),
+                                            makeButton("유품정리/고독사"),
+                                            makeButton("사고현장정리"),
+                                            makeButton("침수/수해복구청소")])
         
-        let TscsBtn1 = DynamicButtonStack(buttons: [
-                                    makeButton("q"),
-                                    makeButton("w"),
-                                    makeButton("e"),
-                                    makeButton("r")])
+                let TscsBtn1 = DynamicButtonStack(buttons: [
+                                            makeButton("이사 후 퇴실청소"),
+                                            makeButton("화재현장 청소"),
+                                            makeButton("빈집만들기"),
+                                            makeButton("기타 특수청소")])
         
-        let JrsnBtn = DynamicButtonStack(buttons: [
-            makeButton("z"),
-            makeButton("x"),
-            makeButton("c"),
-            makeButton("v")
-        ])
+                let JrsnBtn = DynamicButtonStack(buttons: [
+                    makeButton("집 전체"),
+                    makeButton("드레스룸/옷방(의류)"),
+                    makeButton("거실"),
+                    makeButton("방2개"),
+                    makeButton("이삿짐 정리")
+                ])
+        
+                let JrsnBtn1 = DynamicButtonStack(buttons: [
+                    makeButton("주방"),
+                    makeButton("베란다/다용도실"),
+                    makeButton("방 1개"),
+                    makeButton("방 3개"),
+                    makeButton("상담 후 결정")
+                ])
+        
+                let PgmBtn = DynamicButtonStack(buttons: [
+                    makeButton("생활폐기물"),
+                    makeButton("건축폐기물"),
+                    makeButton("혼합폐기물"),
+                    makeButton("고철/재활용")
+        
+                ])
+        
+                let PgmBtn1 = DynamicButtonStack(buttons: [
+                    makeButton("사업장폐기물"),
+                    makeButton("인테리어 폐기물"),
+                    makeButton("목재(MDF)"),
+                    makeButton("가구/가전제품")
+                ])
+        
+                let CgBtn = DynamicButtonStack(buttons: [
+                    makeButton("주택(주거공간)"),
+                    makeButton("학원/독서실/PC방"),
+                    makeButton("식당/공유주방"),
+                    makeButton("유흥주점/노래방"),
+                    makeButton("병원/의원/약국")
+                ])
+        
+                let CgBtn1 = DynamicButtonStack(buttons: [
+                    makeButton("사무실"),
+                    makeButton("상가"),
+                    makeButton("카페/제과점"),
+                    makeButton("뷰티/마사지샵"),////?
+                    makeButton("건물/외부 구조물")//?폐기물이랑 중복아님?
+                ])
 
-        let JrsnBtn1 = DynamicButtonStack(buttons: [
-            makeButton("a"),
-            makeButton("b"),
-            makeButton("c"),
-            makeButton("d")
-        ])
-        
-        let PgmBtn = DynamicButtonStack(buttons: [
-            makeButton("a"),
-            makeButton("b"),
-            makeButton("c"),
-            makeButton("d")
-            
-        ])
-
-        let PgmBtn1 = DynamicButtonStack(buttons: [
-            makeButton("a"),
-            makeButton("b"),
-            makeButton("c"),
-            makeButton("d")
-        ])
-        
-        let CgBtn = DynamicButtonStack(buttons: [
-            makeButton("a"),
-            makeButton("b"),
-            makeButton("c"),
-            makeButton("d")
-        ])
-
-        let CgBtn1 = DynamicButtonStack(buttons: [
-            makeButton("a"),
-            makeButton("b"),
-            makeButton("c"),
-            makeButton("d")
-        ])
-        
         switch listData?[indexPath.row]{
         case "0":
             print("asdfasdfa:\(index)")
@@ -201,6 +212,12 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         
         
         //return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .purple
+        return view
     }
 
     ///Button action arrow in header
