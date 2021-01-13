@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'APIRequest_practice' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for APIRequest_practice
+  pod 'Alamofire', '~> 5.2'
+ 
+  target 'APIRequest_practiceTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'APIRequest_practiceUITests' do
+    # Pods for testing
+  end
+
+end

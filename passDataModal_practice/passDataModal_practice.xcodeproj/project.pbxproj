@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B41A2C30D0B91F8721A9FC0 /* Pods_passDataModal_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CC1B187B8076D480F7C05 /* Pods_passDataModal_practiceTests.framework */; };
+		1634B08DDF80D930E024DA1C /* Pods_passDataModal_practice_passDataModal_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8715C09822EEF427F7F429C7 /* Pods_passDataModal_practice_passDataModal_practiceUITests.framework */; };
+		413C094125A0251D00D9B925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C094025A0251D00D9B925 /* AppDelegate.swift */; };
+		413C094325A0251D00D9B925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C094225A0251D00D9B925 /* SceneDelegate.swift */; };
+		413C094525A0251D00D9B925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C094425A0251D00D9B925 /* ViewController.swift */; };
+		413C094825A0251D00D9B925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413C094625A0251D00D9B925 /* Main.storyboard */; };
+		413C094A25A0251F00D9B925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413C094925A0251F00D9B925 /* Assets.xcassets */; };
+		413C094D25A0251F00D9B925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413C094B25A0251F00D9B925 /* LaunchScreen.storyboard */; };
+		413C095825A0251F00D9B925 /* passDataModal_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C095725A0251F00D9B925 /* passDataModal_practiceTests.swift */; };
+		413C096325A0251F00D9B925 /* passDataModal_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C096225A0251F00D9B925 /* passDataModal_practiceUITests.swift */; };
+		413C097F25A025B600D9B925 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C097E25A025B600D9B925 /* ModalViewController.swift */; };
+		41B99D7D25A2901600A6CCA6 /* Juso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B99D7C25A2901600A6CCA6 /* Juso.swift */; };
+		41B99D8A25A2A9C000A6CCA6 /* JusoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B99D8925A2A9C000A6CCA6 /* JusoCell.swift */; };
+		B33FDF2F8AB65736DF4DFD4F /* Pods_passDataModal_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AA4947079CE54D237C7159 /* Pods_passDataModal_practice.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		413C095425A0251F00D9B925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413C093525A0251D00D9B925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413C093C25A0251D00D9B925;
+			remoteInfo = passDataModal_practice;
+		};
+		413C095F25A0251F00D9B925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413C093525A0251D00D9B925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413C093C25A0251D00D9B925;
+			remoteInfo = passDataModal_practice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AD431C72E58246FE965C6EE /* Pods-passDataModal_practice-passDataModal_practiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passDataModal_practice-passDataModal_practiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-passDataModal_practice-passDataModal_practiceUITests/Pods-passDataModal_practice-passDataModal_practiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CB09C5E6BCD83D0B284C628 /* Pods-passDataModal_practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passDataModal_practiceTests.release.xcconfig"; path = "Target Support Files/Pods-passDataModal_practiceTests/Pods-passDataModal_practiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		413C093D25A0251D00D9B925 /* passDataModal_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passDataModal_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413C094025A0251D00D9B925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		413C094225A0251D00D9B925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		413C094425A0251D00D9B925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		413C094725A0251D00D9B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		413C094925A0251F00D9B925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		413C094C25A0251F00D9B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		413C094E25A0251F00D9B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413C095325A0251F00D9B925 /* passDataModal_practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = passDataModal_practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		413C095725A0251F00D9B925 /* passDataModal_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passDataModal_practiceTests.swift; sourceTree = "<group>"; };
+		413C095925A0251F00D9B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413C095E25A0251F00D9B925 /* passDataModal_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = passDataModal_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		413C096225A0251F00D9B925 /* passDataModal_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passDataModal_practiceUITests.swift; sourceTree = "<group>"; };
+		413C096425A0251F00D9B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413C097E25A025B600D9B925 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		41B99D7C25A2901600A6CCA6 /* Juso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juso.swift; sourceTree = "<group>"; };
+		41B99D8925A2A9C000A6CCA6 /* JusoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JusoCell.swift; sourceTree = "<group>"; };
+		4F54CC83115B0B71772D231A /* Pods-passDataModal_practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passDataModal_practiceTests.debug.xcconfig"; path = "Target Support Files/Pods-passDataModal_practiceTests/Pods-passDataModal_practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		576CC1B187B8076D480F7C05 /* Pods_passDataModal_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_passDataModal_practiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AA4947079CE54D237C7159 /* Pods_passDataModal_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_passDataModal_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71961A5EAD621BA24BE8B987 /* Pods-passDataModal_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passDataModal_practice.debug.xcconfig"; path = "Target Support Files/Pods-passDataModal_practice/Pods-passDataModal_practice.debug.xcconfig"; sourceTree = "<group>"; };
+		741D0B703BACE2F579BFCD22 /* Pods-passDataModal_practice-passDataModal_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passDataModal_practice-passDataModal_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-passDataModal_practice-passDataModal_practiceUITests/Pods-passDataModal_practice-passDataModal_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8715C09822EEF427F7F429C7 /* Pods_passDataModal_practice_passDataModal_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_passDataModal_practice_passDataModal_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC8325D81296056A03F9332 /* Pods-passDataModal_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passDataModal_practice.release.xcconfig"; path = "Target Support Files/Pods-passDataModal_practice/Pods-passDataModal_practice.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		413C093A25A0251D00D9B925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33FDF2F8AB65736DF4DFD4F /* Pods_passDataModal_practice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413C095025A0251F00D9B925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B41A2C30D0B91F8721A9FC0 /* Pods_passDataModal_practiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413C095B25A0251F00D9B925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1634B08DDF80D930E024DA1C /* Pods_passDataModal_practice_passDataModal_practiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		413C093425A0251D00D9B925 = {
+			isa = PBXGroup;
+			children = (
+				413C093F25A0251D00D9B925 /* passDataModal_practice */,
+				413C095625A0251F00D9B925 /* passDataModal_practiceTests */,
+				413C096125A0251F00D9B925 /* passDataModal_practiceUITests */,
+				413C093E25A0251D00D9B925 /* Products */,
+				CC19719BA6F1017AF669061C /* Pods */,
+				9A94738E3531009FF75D5A75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		413C093E25A0251D00D9B925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				413C093D25A0251D00D9B925 /* passDataModal_practice.app */,
+				413C095325A0251F00D9B925 /* passDataModal_practiceTests.xctest */,
+				413C095E25A0251F00D9B925 /* passDataModal_practiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		413C093F25A0251D00D9B925 /* passDataModal_practice */ = {
+			isa = PBXGroup;
+			children = (
+				413C094025A0251D00D9B925 /* AppDelegate.swift */,
+				413C094225A0251D00D9B925 /* SceneDelegate.swift */,
+				413C094425A0251D00D9B925 /* ViewController.swift */,
+				413C094625A0251D00D9B925 /* Main.storyboard */,
+				413C097E25A025B600D9B925 /* ModalViewController.swift */,
+				41B99D7C25A2901600A6CCA6 /* Juso.swift */,
+				413C094925A0251F00D9B925 /* Assets.xcassets */,
+				413C094B25A0251F00D9B925 /* LaunchScreen.storyboard */,
+				41B99D8925A2A9C000A6CCA6 /* JusoCell.swift */,
+				413C094E25A0251F00D9B925 /* Info.plist */,
+			);
+			path = passDataModal_practice;
+			sourceTree = "<group>";
+		};
+		413C095625A0251F00D9B925 /* passDataModal_practiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				413C095725A0251F00D9B925 /* passDataModal_practiceTests.swift */,
+				413C095925A0251F00D9B925 /* Info.plist */,
+			);
+			path = passDataModal_practiceTests;
+			sourceTree = "<group>";
+		};
+		413C096125A0251F00D9B925 /* passDataModal_practiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				413C096225A0251F00D9B925 /* passDataModal_practiceUITests.swift */,
+				413C096425A0251F00D9B925 /* Info.plist */,
+			);
+			path = passDataModal_practiceUITests;
+			sourceTree = "<group>";
+		};
+		9A94738E3531009FF75D5A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63AA4947079CE54D237C7159 /* Pods_passDataModal_practice.framework */,
+				8715C09822EEF427F7F429C7 /* Pods_passDataModal_practice_passDataModal_practiceUITests.framework */,
+				576CC1B187B8076D480F7C05 /* Pods_passDataModal_practiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC19719BA6F1017AF669061C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71961A5EAD621BA24BE8B987 /* Pods-passDataModal_practice.debug.xcconfig */,
+				9BC8325D81296056A03F9332 /* Pods-passDataModal_practice.release.xcconfig */,
+				3AD431C72E58246FE965C6EE /* Pods-passDataModal_practice-passDataModal_practiceUITests.debug.xcconfig */,
+				741D0B703BACE2F579BFCD22 /* Pods-passDataModal_practice-passDataModal_practiceUITests.release.xcconfig */,
+				4F54CC83115B0B71772D231A /* Pods-passDataModal_practiceTests.debug.xcconfig */,
+				3CB09C5E6BCD83D0B284C628 /* Pods-passDataModal_practiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		413C093C25A0251D00D9B925 /* passDataModal_practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413C096725A0251F00D9B925 /* Build configuration list for PBXNativeTarget "passDataModal_practice" */;
+			buildPhases = (
+				BCD535BF84103942C5ACDFA4 /* [CP] Check Pods Manifest.lock */,
+				413C093925A0251D00D9B925 /* Sources */,
+				413C093A25A0251D00D9B925 /* Frameworks */,
+				413C093B25A0251D00D9B925 /* Resources */,
+				176EBBE7084EDE6459B3627E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = passDataModal_practice;
+			productName = passDataModal_practice;
+			productReference = 413C093D25A0251D00D9B925 /* passDataModal_practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		413C095225A0251F00D9B925 /* passDataModal_practiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413C096A25A0251F00D9B925 /* Build configuration list for PBXNativeTarget "passDataModal_practiceTests" */;
+			buildPhases = (
+				A0B20A0E324BDDB692E20378 /* [CP] Check Pods Manifest.lock */,
+				413C094F25A0251F00D9B925 /* Sources */,
+				413C095025A0251F00D9B925 /* Frameworks */,
+				413C095125A0251F00D9B925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				413C095525A0251F00D9B925 /* PBXTargetDependency */,
+			);
+			name = passDataModal_practiceTests;
+			productName = passDataModal_practiceTests;
+			productReference = 413C095325A0251F00D9B925 /* passDataModal_practiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		413C095D25A0251F00D9B925 /* passDataModal_practiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413C096D25A0251F00D9B925 /* Build configuration list for PBXNativeTarget "passDataModal_practiceUITests" */;
+			buildPhases = (
+				EB4D65C4E5171B4A1C4284AF /* [CP] Check Pods Manifest.lock */,
+				413C095A25A0251F00D9B925 /* Sources */,
+				413C095B25A0251F00D9B925 /* Frameworks */,
+				413C095C25A0251F00D9B925 /* Resources */,
+				3A0054E385B53B4081369387 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				413C096025A0251F00D9B925 /* PBXTargetDependency */,
+			);
+			name = passDataModal_practiceUITests;
+			productName = passDataModal_practiceUITests;
+			productReference = 413C095E25A0251F00D9B925 /* passDataModal_practiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		413C093525A0251D00D9B925 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					413C093C25A0251D00D9B925 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					413C095225A0251F00D9B925 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 413C093C25A0251D00D9B925;
+					};
+					413C095D25A0251F00D9B925 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 413C093C25A0251D00D9B925;
+					};
+				};
+			};
+			buildConfigurationList = 413C093825A0251D00D9B925 /* Build configuration list for PBXProject "passDataModal_practice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 413C093425A0251D00D9B925;
+			productRefGroup = 413C093E25A0251D00D9B925 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				413C093C25A0251D00D9B925 /* passDataModal_practice */,
+				413C095225A0251F00D9B925 /* passDataModal_practiceTests */,
+				413C095D25A0251F00D9B925 /* passDataModal_practiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		413C093B25A0251D00D9B925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413C094D25A0251F00D9B925 /* LaunchScreen.storyboard in Resources */,
+				413C094A25A0251F00D9B925 /* Assets.xcassets in Resources */,
+				413C094825A0251D00D9B925 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413C095125A0251F00D9B925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413C095C25A0251F00D9B925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		176EBBE7084EDE6459B3627E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passDataModal_practice/Pods-passDataModal_practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passDataModal_practice/Pods-passDataModal_practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-passDataModal_practice/Pods-passDataModal_practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A0054E385B53B4081369387 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passDataModal_practice-passDataModal_practiceUITests/Pods-passDataModal_practice-passDataModal_practiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passDataModal_practice-passDataModal_practiceUITests/Pods-passDataModal_practice-passDataModal_practiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-passDataModal_practice-passDataModal_practiceUITests/Pods-passDataModal_practice-passDataModal_practiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B20A0E324BDDB692E20378 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-passDataModal_practiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD535BF84103942C5ACDFA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-passDataModal_practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4D65C4E5171B4A1C4284AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-passDataModal_practice-passDataModal_practiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		413C093925A0251D00D9B925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B99D8A25A2A9C000A6CCA6 /* JusoCell.swift in Sources */,
+				413C097F25A025B600D9B925 /* ModalViewController.swift in Sources */,
+				413C094525A0251D00D9B925 /* ViewController.swift in Sources */,
+				413C094125A0251D00D9B925 /* AppDelegate.swift in Sources */,
+				41B99D7D25A2901600A6CCA6 /* Juso.swift in Sources */,
+				413C094325A0251D00D9B925 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413C094F25A0251F00D9B925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413C095825A0251F00D9B925 /* passDataModal_practiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413C095A25A0251F00D9B925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413C096325A0251F00D9B925 /* passDataModal_practiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		413C095525A0251F00D9B925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413C093C25A0251D00D9B925 /* passDataModal_practice */;
+			targetProxy = 413C095425A0251F00D9B925 /* PBXContainerItemProxy */;
+		};
+		413C096025A0251F00D9B925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413C093C25A0251D00D9B925 /* passDataModal_practice */;
+			targetProxy = 413C095F25A0251F00D9B925 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		413C094625A0251D00D9B925 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413C094725A0251D00D9B925 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		413C094B25A0251F00D9B925 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413C094C25A0251F00D9B925 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		413C096525A0251F00D9B925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		413C096625A0251F00D9B925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		413C096825A0251F00D9B925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71961A5EAD621BA24BE8B987 /* Pods-passDataModal_practice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = passDataModal_practice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.passDataModal-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		413C096925A0251F00D9B925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC8325D81296056A03F9332 /* Pods-passDataModal_practice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = passDataModal_practice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.passDataModal-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		413C096B25A0251F00D9B925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F54CC83115B0B71772D231A /* Pods-passDataModal_practiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = passDataModal_practiceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.passDataModal-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/passDataModal_practice.app/passDataModal_practice";
+			};
+			name = Debug;
+		};
+		413C096C25A0251F00D9B925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB09C5E6BCD83D0B284C628 /* Pods-passDataModal_practiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = passDataModal_practiceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.passDataModal-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/passDataModal_practice.app/passDataModal_practice";
+			};
+			name = Release;
+		};
+		413C096E25A0251F00D9B925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD431C72E58246FE965C6EE /* Pods-passDataModal_practice-passDataModal_practiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = passDataModal_practiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.passDataModal-practiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = passDataModal_practice;
+			};
+			name = Debug;
+		};
+		413C096F25A0251F00D9B925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741D0B703BACE2F579BFCD22 /* Pods-passDataModal_practice-passDataModal_practiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = passDataModal_practiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyeuneune.passDataModal-practiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = passDataModal_practice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		413C093825A0251D00D9B925 /* Build configuration list for PBXProject "passDataModal_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413C096525A0251F00D9B925 /* Debug */,
+				413C096625A0251F00D9B925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413C096725A0251F00D9B925 /* Build configuration list for PBXNativeTarget "passDataModal_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413C096825A0251F00D9B925 /* Debug */,
+				413C096925A0251F00D9B925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413C096A25A0251F00D9B925 /* Build configuration list for PBXNativeTarget "passDataModal_practiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413C096B25A0251F00D9B925 /* Debug */,
+				413C096C25A0251F00D9B925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413C096D25A0251F00D9B925 /* Build configuration list for PBXNativeTarget "passDataModal_practiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413C096E25A0251F00D9B925 /* Debug */,
+				413C096F25A0251F00D9B925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 413C093525A0251D00D9B925 /* Project object */;
+}

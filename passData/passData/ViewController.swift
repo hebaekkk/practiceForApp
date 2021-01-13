@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     }
 
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
     @IBAction func onClickBtn(_ sender: Any) {
         
         let vc = storyboard?.instantiateViewController(identifier: "SecondViewController") as? SecondViewController

@@ -13,10 +13,16 @@ class ContentCell: UITableViewCell{
     @IBOutlet weak var UIView: UIView!
     
     @IBOutlet weak var labelTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         UIView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        self.addGestureRecognizer(tapGesture)
         
+    }
+    @objc func tapped(_ sender: Any) {
+        print(sender)
     }
     
     //Cell의 overlap막기 위해서 쓰는 함수이다.

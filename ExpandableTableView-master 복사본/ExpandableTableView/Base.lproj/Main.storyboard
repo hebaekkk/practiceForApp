@@ -124,11 +124,110 @@
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="jNg-Sa-jBQ">
+            <objects>
+                <viewController id="rfH-aL-cVs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XIV-8P-mBb"/>
+                        <viewControllerLayoutGuide type="bottom" id="VlX-S3-kM2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="erO-7B-E3V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bkq-al-yGV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-946"/>
+        </scene>
+        <!--ViewA-->
+        <scene sceneID="uRH-dI-9Gb">
+            <objects>
+                <viewController id="Fj1-FP-lyl" customClass="viewA" customModule="ExpandableTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YzD-fK-dlj"/>
+                        <viewControllerLayoutGuide type="bottom" id="lWJ-Cw-bmz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fXO-mr-5OQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdq-EV-zlm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-946"/>
+        </scene>
+        <!--ViewB-->
+        <scene sceneID="tGw-4A-hNQ">
+            <objects>
+                <viewController id="spJ-ra-Sdd" customClass="viewB" customModule="ExpandableTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ptd-Dh-6aM"/>
+                        <viewControllerLayoutGuide type="bottom" id="T5H-eg-MuC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p20-Pq-yDo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.45540747549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kva-zt-lsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-224"/>
+        </scene>
+        <!--ViewC-->
+        <scene sceneID="ntP-9T-j6X">
+            <objects>
+                <viewController id="xlj-qu-0Yw" customClass="viewC" customModule="ExpandableTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qad-2u-DfV"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qd-TE-8bL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XjW-IC-clZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tU1-pk-gNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="493"/>
+        </scene>
+        <!--ViewD-->
+        <scene sceneID="EuM-xr-PDb">
+            <objects>
+                <viewController id="6kq-El-Qfc" customClass="viewD" customModule="ExpandableTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6iE-lU-2uE"/>
+                        <viewControllerLayoutGuide type="bottom" id="nA8-sa-Ut9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JIh-mH-AB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTh-Fp-aSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="1317"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ic_down_arrow" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
