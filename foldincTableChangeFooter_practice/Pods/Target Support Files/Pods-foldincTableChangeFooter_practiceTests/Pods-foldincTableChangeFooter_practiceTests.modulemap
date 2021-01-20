@@ -1,0 +1,6 @@
+framework module Pods_foldincTableChangeFooter_practiceTests {
+  umbrella header "Pods-foldincTableChangeFooter_practiceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

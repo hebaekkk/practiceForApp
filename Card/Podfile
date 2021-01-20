@@ -7,6 +7,9 @@ target 'Card' do
 
   # Pods for Card
   pod 'MaterialComponents/Cards'
+  pod 'MaterialComponents'
+  pod 'FoldingCell' 
+
 
   target 'CardTests' do
     inherit! :search_paths

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "81C27851-9890-4C90-8737-E2EEFFF99F0C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7800A83E-6D14-4B7E-90AA-FD01B501D2D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "photoSlider_practice/SecondViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "imageURLs"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7800A83E-6D14-4B7E-90AA-FD01B501D2D9 - 675bf84bf228c42e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "photoSlider_practice.SecondViewController.imageURLs.getter : Swift.Array&lt;Foundation.URL&gt;"
+                  moduleName = "photoSlider_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/photoSlider_practice/photoSlider_practice/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "7800A83E-6D14-4B7E-90AA-FD01B501D2D9 - d262dd110d5af1c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "photoSlider_practice.SecondViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; photoSlider_practice.SecondViewController"
+                  moduleName = "photoSlider_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/photoSlider_practice/photoSlider_practice/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "763">
+               </Location>
+               <Location
+                  uuid = "7800A83E-6D14-4B7E-90AA-FD01B501D2D9 - 4f34fba0dd985b87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "photoSlider_practice.SecondViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;photoSlider_practice.SecondViewController&gt;"
+                  moduleName = "photoSlider_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/photoSlider_practice/photoSlider_practice/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "720">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B0E8F59-E3E2-46F5-82F6-CA800607BFB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "photoSlider_practice/SecondViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

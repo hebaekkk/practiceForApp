@@ -1,16 +1,112 @@
 PODS:
   - Alamofire (5.4.1)
+  - MaterialComponents/AnimationTiming (119.3.0)
+  - MaterialComponents/Availability (119.3.0)
+  - MaterialComponents/Buttons (119.3.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Chips (119.3.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/TextFields
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/Chips+Theming (119.3.0)":
+    - MaterialComponents/Chips
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/Typography
+  - MaterialComponents/Elevation (119.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (119.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (119.3.0)
+  - MaterialComponents/private/Application (119.3.0)
+  - MaterialComponents/private/Color (119.3.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (119.3.0)
+  - MaterialComponents/Ripple (119.3.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/schemes/Color (119.3.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+  - MaterialComponents/schemes/Container (119.3.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Shape
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/schemes/Shape (119.3.0):
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/schemes/Typography (119.3.0):
+    - "MaterialComponents/schemes/Typography+BasicFontScheme"
+    - "MaterialComponents/schemes/Typography+Scheming"
+    - MaterialComponents/Typography
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (119.3.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (119.3.0)"
+  - MaterialComponents/ShadowElevations (119.3.0)
+  - MaterialComponents/ShadowLayer (119.3.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (119.3.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (119.3.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields (119.3.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (119.3.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - MaterialComponents/Chips
+  - "MaterialComponents/Chips+Theming"
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  MaterialComponents: 49658f0fd7ef6e098e9943fce3f293e700595570
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
-PODFILE CHECKSUM: e4f39eb0899d5d3f5bc8f317a7f7cdffbaf385ab
+PODFILE CHECKSUM: cb438ae5f71587fa78916a57c4524b274138a373
 
 COCOAPODS: 1.9.3

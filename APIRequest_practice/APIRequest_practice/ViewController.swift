@@ -7,6 +7,8 @@
 
 import UIKit
 import Alamofire
+import MaterialComponents.MaterialChips
+import MaterialComponents.MaterialChips_MaterialTheming
 
 class ViewController: UIViewController {
 
@@ -32,6 +34,20 @@ class ViewController: UIViewController {
         countryTable.delegate = self
         countryTable.dataSource = self
         //getTest()
+        
+        
+//        let chipView = MDCChipView()
+//        chipView.titleLabel.text = "Tap Me"
+//        chipView.setTitleColor(UIColor.red, for: .selected)
+//        chipView.sizeToFit()
+//        chipView.invalidateIntrinsicContentSize()
+//        self.view.addSubview(chipView)
+//
+        let containerScheme = MDCContainerScheme()
+         // Theme the chip with either default theme
+        chip.applyTheme(withScheme: containerScheme)
+         // Or outlined theme
+        chip.applyOutlinedTheme(withScheme: containerScheme)
         
     }
     
