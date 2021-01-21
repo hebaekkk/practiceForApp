@@ -44,25 +44,20 @@ class TableViewCell: UITableViewCell, ExpyTableViewHeaderCell {
         }
     }
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-
 }
 
 
 class SpecificationTableViewCell: UITableViewCell {
     @IBOutlet weak var labelSpecification: UILabel!
     
+    
+    @IBOutlet weak var btnView: UIView!
+    
+    
+    
+    
 }
-class BuyTableViewCell: UITableViewCell {}
+
 
 extension UITableViewCell {
     func showSeparator() {

@@ -77,42 +77,43 @@ class SecondViewController: UIViewController {
                 
             }
             
-        if cnt != buttonText.count {
-            print("입성!!!!")
-            let HStackView = UIStackView()
-            HStackView.axis = .horizontal
-            HStackView.distribution = .fillEqually
-            HStackView.backgroundColor = .yellow
-            HStackView.spacing = 10
-            
-            for j in 0..<column {
-                let flatButtonStatic = MDCButton()
-                flatButtonStatic.applyContainedTheme(withScheme:        containerScheme)
-                
-                if cnt + j <= buttonText.count - 1 {
-                    flatButtonStatic.setTitle("\(buttonText[cnt + j])", for: UIControl.State())
-                    flatButtonStatic.sizeToFit()
-                    flatButtonStatic        .translatesAutoresizingMaskIntoConstraints =    false
-                    flatButtonStatic.addTarget(self, action:#selector(tap), for: .touchUpInside)
-                    
-                    
-                    cnt += 1
-                    HStackView.addArrangedSubview(flatButtonStatic)
-                    
-                } else {
-                    flatButtonStatic.setTitle("Dummy", for: UIControl.State())
-                    flatButtonStatic.sizeToFit()
-                    flatButtonStatic        .translatesAutoresizingMaskIntoConstraints =    false
-                    //flatButtonStatic.addTarget(self, action:#selector(tap), for: .touchUpInside)
-                    flatButtonStatic.alpha = 0
-                    HStackView.addArrangedSubview(flatButtonStatic)
-                    
-                }
-                
-            }
-            VStackView.addArrangedSubview(HStackView)
-        }
+//        if cnt != buttonText.count {
+//            print("입성!!!!")
+//            let HStackView = UIStackView()
+//            HStackView.axis = .horizontal
+//            HStackView.distribution = .fillEqually
+//            HStackView.backgroundColor = .yellow
+//            HStackView.spacing = 10
+//
+//            for j in 0..<column {
+//                let flatButtonStatic = MDCButton()
+//                flatButtonStatic.applyContainedTheme(withScheme:        containerScheme)
+//
+//                if cnt + j <= buttonText.count - 1 {
+//                    flatButtonStatic.setTitle("\(buttonText[cnt + j])", for: UIControl.State())
+//                    flatButtonStatic.sizeToFit()
+//                    flatButtonStatic        .translatesAutoresizingMaskIntoConstraints =    false
+//                    flatButtonStatic.addTarget(self, action:#selector(tap), for: .touchUpInside)
+//
+//
+//                    cnt += 1
+//                    HStackView.addArrangedSubview(flatButtonStatic)
+//
+//                } else {
+//                    flatButtonStatic.setTitle("Dummy", for: UIControl.State())
+//                    flatButtonStatic.sizeToFit()
+//                    flatButtonStatic        .translatesAutoresizingMaskIntoConstraints =    false
+//                    //flatButtonStatic.addTarget(self, action:#selector(tap), for: .touchUpInside)
+//                    flatButtonStatic.alpha = 0
+//                    HStackView.addArrangedSubview(flatButtonStatic)
+//
+//                }
+//
+//            }
+//            VStackView.addArrangedSubview(HStackView)
+//        }
   
+        ///////////////////////////////////////
         
 //        for i in 0..<row{
 //
@@ -173,40 +174,24 @@ class SecondViewController: UIViewController {
 //                  options: .alignAllCenterX, metrics: nil, views: views))
       }
 
-      // MARK: Private
-      func centerView(view: UIView, onView: UIView) {
-        onView.addConstraint(NSLayoutConstraint(
-          item: view,
-          attribute: .centerX,
-          relatedBy: .equal,
-          toItem: onView,
-          attribute: .centerX,
-          multiplier: 1.0,
-          constant: 0.0))
-
-        onView.addConstraint(NSLayoutConstraint(
-          item: view,
-          attribute: .centerY,
-          relatedBy: .equal,
-          toItem: onView,
-          attribute: .centerY,
-          multiplier: 1.0,
-          constant: 0.0))
-      }
+//      // MARK: Private
+//      func centerView(view: UIView, onView: UIView) {
+//        onView.addConstraint(NSLayoutConstraint(
+//          item: view,
+//          attribute: .centerX,
+//          relatedBy: .equal,
+//          toItem: onView,
+//          attribute: .centerX,
+//          multiplier: 1.0,
+//          constant: 0.0))
+//
+//        onView.addConstraint(NSLayoutConstraint(
+//          item: view,
+//          attribute: .centerY,
+//      
 
      @objc func tap(_ sender: Any) {
         print("\(type(of: sender)) was tapped.")
       }
 }
-
-    // MARK: Catalog by conventions
-//extension SecondViewController {
-////        @objc class func catalogMetadata() -> [String: Any] {
-////            return [
-////                "breadcrumbs": ["Buttons", "Buttons (DynamicType)"],
-////                "primaryDemo": false,
-////                "presentable": false,
-////        ]
-////    }
-//}
 

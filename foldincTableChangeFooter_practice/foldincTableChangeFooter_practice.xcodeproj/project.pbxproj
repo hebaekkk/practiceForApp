@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4162EA8325B6CD910000A9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EA8225B6CD910000A9C5 /* AppDelegate.swift */; };
 		4162EA8525B6CD910000A9C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EA8425B6CD910000A9C5 /* SceneDelegate.swift */; };
-		4162EA8725B6CD910000A9C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EA8625B6CD910000A9C5 /* ViewController.swift */; };
 		4162EA8A25B6CD910000A9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4162EA8825B6CD910000A9C5 /* Main.storyboard */; };
 		4162EA8C25B6CD920000A9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4162EA8B25B6CD920000A9C5 /* Assets.xcassets */; };
 		4162EA8F25B6CD920000A9C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4162EA8D25B6CD920000A9C5 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,9 @@
 		4162EAA525B6CD930000A9C5 /* foldincTableChangeFooter_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EAA425B6CD930000A9C5 /* foldincTableChangeFooter_practiceUITests.swift */; };
 		4162EABD25B6D1C10000A9C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EABC25B6D1C10000A9C5 /* TableViewCell.swift */; };
 		4162EAE225B7C8710000A9C5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EAE125B7C8710000A9C5 /* SecondViewController.swift */; };
+		4162EB1725B805CC0000A9C5 /* DynamicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EB1625B805CC0000A9C5 /* DynamicButtonView.swift */; };
+		4162EB1C25B80C3A0000A9C5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EB1B25B80C3A0000A9C5 /* ThirdViewController.swift */; };
+		4162EB2225B81F300000A9C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EB2025B81F300000A9C5 /* ViewController.swift */; };
 		5166730CB924A284FAF3C475 /* Pods_foldincTableChangeFooter_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E0669192F18D2A1E24FC7 /* Pods_foldincTableChangeFooter_practice.framework */; };
 		546D6E1062C914E2ED2A4DEA /* Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AADF6C26A07747C95CBC906 /* Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework */; };
 		680E6D37924CB11FC3004861 /* Pods_foldincTableChangeFooter_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF30B21C770A14D89004382D /* Pods_foldincTableChangeFooter_practiceTests.framework */; };
@@ -44,7 +46,6 @@
 		4162EA7F25B6CD910000A9C5 /* foldincTableChangeFooter_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foldincTableChangeFooter_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4162EA8225B6CD910000A9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4162EA8425B6CD910000A9C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4162EA8625B6CD910000A9C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4162EA8925B6CD910000A9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4162EA8B25B6CD920000A9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4162EA8E25B6CD920000A9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,9 @@
 		4162EAA625B6CD930000A9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4162EABC25B6D1C10000A9C5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4162EAE125B7C8710000A9C5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4162EB1625B805CC0000A9C5 /* DynamicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicButtonView.swift; sourceTree = "<group>"; };
+		4162EB1B25B80C3A0000A9C5 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4162EB2025B81F300000A9C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B17B40782AF77752B612483 /* Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests/Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8AADF6C26A07747C95CBC906 /* Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5E0669192F18D2A1E24FC7 /* Pods_foldincTableChangeFooter_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foldincTableChangeFooter_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,11 +126,13 @@
 			children = (
 				4162EA8225B6CD910000A9C5 /* AppDelegate.swift */,
 				4162EA8425B6CD910000A9C5 /* SceneDelegate.swift */,
-				4162EA8625B6CD910000A9C5 /* ViewController.swift */,
 				4162EAE125B7C8710000A9C5 /* SecondViewController.swift */,
 				4162EA8825B6CD910000A9C5 /* Main.storyboard */,
 				4162EABC25B6D1C10000A9C5 /* TableViewCell.swift */,
+				4162EB1B25B80C3A0000A9C5 /* ThirdViewController.swift */,
+				4162EB2025B81F300000A9C5 /* ViewController.swift */,
 				4162EA8B25B6CD920000A9C5 /* Assets.xcassets */,
+				4162EB1625B805CC0000A9C5 /* DynamicButtonView.swift */,
 				4162EA8D25B6CD920000A9C5 /* LaunchScreen.storyboard */,
 				4162EA9025B6CD920000A9C5 /* Info.plist */,
 			);
@@ -412,10 +418,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4162EA8725B6CD910000A9C5 /* ViewController.swift in Sources */,
 				4162EABD25B6D1C10000A9C5 /* TableViewCell.swift in Sources */,
 				4162EA8325B6CD910000A9C5 /* AppDelegate.swift in Sources */,
+				4162EB1C25B80C3A0000A9C5 /* ThirdViewController.swift in Sources */,
 				4162EAE225B7C8710000A9C5 /* SecondViewController.swift in Sources */,
+				4162EB2225B81F300000A9C5 /* ViewController.swift in Sources */,
+				4162EB1725B805CC0000A9C5 /* DynamicButtonView.swift in Sources */,
 				4162EA8525B6CD910000A9C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
