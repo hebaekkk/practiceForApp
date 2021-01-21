@@ -12,9 +12,10 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let buttonText = ["ㅁ","ㄴ","ㅇ"]
+        let buttonText = ["ㅁ","ㄴ","ㅇ","ㄹ"]
         let buttonView = DynamicButtonView(frame: CGRect(x: 30, y: 100, width: 200, height: 200))
-        buttonView.commonInit(with: buttonText)
+        
+        buttonView.commonInit(with: buttonText, row: 2, column: 3)
         
         view.addSubview(buttonView)
     }

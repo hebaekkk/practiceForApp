@@ -13,7 +13,7 @@ class ViewController: UIViewController {
  
     let v = UIView()
     
-    var selectedRow: Int = 2
+    var selectedRow: Int = 4
     
     let footerViewColor = ["red","orange","yellow","green"]
     
@@ -185,12 +185,14 @@ extension ViewController {
     }
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let view = UIView()
+        var view = UIView()
         switch selectedRow {
         case 0:
-            view.backgroundColor = .red
-            
+            view = TSCSSubView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+            //view.backgroundColor = .red
+            //view.commonInit()
         case 1:
+            
             
             view.backgroundColor = .orange
         case 2:
@@ -211,8 +213,7 @@ extension ViewController {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         if section == 3 {
-            
-            return 180
+            return 400
         } else {
             return 0
         }
@@ -240,11 +241,12 @@ extension ViewController {
                 print("collapse해야해\(i)")
                 expandableTableView.collapse(i)
             }
+    
             
-            
-            tableView.deselectRow(at: indexPath, animated: false)
+            //tableView.deselectRow(at: indexPath, animated: false)
         }
         
+        tableView.reloadSections(IndexSet(integer: 3), with: .automatic)
         print("헤더냐 여기가? DID SELECT row: \(indexPath.row), section: \(indexPath.section)")
         
     }
