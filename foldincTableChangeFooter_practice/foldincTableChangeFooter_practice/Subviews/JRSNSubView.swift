@@ -1,16 +1,16 @@
 //
-//  TSCSSubVIew.swift
+//  JRSNSubView.swift
 //  foldincTableChangeFooter_practice
 //
-//  Created by BigHand on 2021/01/21.
+//  Created by BigHand on 2021/01/22.
 //
 
 import UIKit
 import MaterialComponents
 
-class TSCSSubView: UIView {
-    
-    @IBOutlet weak var elevatorBtnView: UIView!
+class JRSNSubView: UIView {
+
+    @IBOutlet weak var petBtnView: UIView!
     @IBOutlet weak var setTextView: UIView!
     
     override init(frame: CGRect) {
@@ -27,28 +27,28 @@ class TSCSSubView: UIView {
         commonInit()
     }
     
-    let elevatorBtnText = ["있음", "없음", "지하층"]
+    let petBtnText = ["있음","없음"]
+    
     func commonInit() {
-        setElevatorView()
+        setPetView()
         setPyView()
         setPlusIconView()
     }
-    
-    func setElevatorView() {
-        let buttonView = DynamicButtonView(frame: CGRect(x: 0, y: 0, width: elevatorBtnView.frame.width, height: elevatorBtnView.frame.height))
         
+    func setPetView() {
+        let buttonView = DynamicButtonView(frame: CGRect(x: 0, y: 0, width: petBtnView.frame.width, height: petBtnView.frame.height))
         buttonView.translatesAutoresizingMaskIntoConstraints = false
-        buttonView.commonInit(with: elevatorBtnText, row: 1, column: 3)
         
-        elevatorBtnView.addSubview(buttonView)
+        buttonView.commonInit(with: petBtnText, row: 1, column: 2)
         
-        buttonView.leadingAnchor.constraint(equalTo: elevatorBtnView.leadingAnchor).isActive = true
-        buttonView.trailingAnchor.constraint(equalTo: elevatorBtnView.trailingAnchor).isActive = true
-        buttonView.topAnchor.constraint(equalTo: elevatorBtnView.topAnchor).isActive = true
-        buttonView.bottomAnchor.constraint(equalTo: elevatorBtnView.bottomAnchor).isActive = true
-    
+        petBtnView.addSubview(buttonView)
+        
+        buttonView.leadingAnchor.constraint(equalTo: petBtnView.leadingAnchor).isActive = true
+        buttonView.trailingAnchor.constraint(equalTo: petBtnView.trailingAnchor).isActive = true
+        buttonView.topAnchor.constraint(equalTo: petBtnView.topAnchor).isActive = true
+        buttonView.bottomAnchor.constraint(equalTo: petBtnView.bottomAnchor).isActive = true
     }
-    
+
     func setPyView() {
         let pyView = TextFieldView(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
         pyView.translatesAutoresizingMaskIntoConstraints = false
@@ -60,6 +60,7 @@ class TSCSSubView: UIView {
         pyView.topAnchor.constraint(equalTo: setTextView.topAnchor).isActive = true
         pyView.bottomAnchor.constraint(equalTo: setTextView.bottomAnchor).isActive = true
     }
+    
     func setPlusIconView() {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -67,15 +68,23 @@ class TSCSSubView: UIView {
         stackView.axis = .vertical
         stackView.spacing = 10
         
-        let view1 = QuantityBtnView()
-        view1.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-        view1.backgroundColor = .red
-        let view2 = QuantityBtnView()
-        view2.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-        view2.backgroundColor = .orange
-        let view3 = QuantityBtnView()
-        view3.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-        view3.backgroundColor = .yellow
+        /*
+        1)방 개수
+        2)욕실 개수
+        3)베란다 개수
+         */
+        
+        let roomNumView = QuantityBtnView()
+        roomNumView.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+        roomNumView.title.text = "방 개수"
+        
+        let bathNumView = QuantityBtnView()
+        bathNumView.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+        bathNumView.title.text = "욕실 개수"
+        
+        let verandaNumView = QuantityBtnView()
+        verandaNumView.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+        verandaNumView.title.text = "주방 개수"
         
         addSubview(stackView)
         stackView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 12).isActive = true
@@ -84,19 +93,15 @@ class TSCSSubView: UIView {
 
         stackView.heightAnchor.constraint(equalToConstant: 180).isActive = true
         
-        stackView.addArrangedSubview(view1)
-        stackView.addArrangedSubview(view2)
-        stackView.addArrangedSubview(view3)
+        stackView.addArrangedSubview(roomNumView)
+        stackView.addArrangedSubview(bathNumView)
+        stackView.addArrangedSubview(verandaNumView)
     }
     
-    @objc func tap(_ sender: UIButton) {
-        print("\(type(of: sender.titleLabel?.text)) was tapped.\n \(sender.self)")
-     }
     
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-
 }
