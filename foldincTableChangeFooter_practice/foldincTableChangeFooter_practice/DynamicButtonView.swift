@@ -26,17 +26,21 @@ class DynamicButtonView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    let VStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.backgroundColor = .red
+        stackView.spacing = 20
+        return stackView
+    }()
 
     func commonInit(with buttonText: [String], row: Int, column: Int) {
         var containerScheme = MDCContainerScheme()
         
         backgroundColor = containerScheme.colorScheme.backgroundColor
         
-        let VStackView = UIStackView()
-        VStackView.axis = .vertical
-        VStackView.distribution = .fillEqually
-        VStackView.backgroundColor = .red
-        VStackView.spacing = 20
         
         addSubview(VStackView)
         VStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -58,11 +62,17 @@ class DynamicButtonView: UIView {
                 for j in 0..<column {
                     let button = MDCButton()
                     button.applyContainedTheme(withScheme: containerScheme)
-        
-                        button.setTitle("\(buttonText[column * i + j])", for: UIControl.State())
-                        button.sizeToFit()
-                        button.translatesAutoresizingMaskIntoConstraints = false
-                        button.addTarget(self, action: #selector(tap), for: .touchUpInside)
+                    button.setBorderWidth(1.5, for: .normal)
+                    button.setBorderColor(.gray, for: .normal)
+                    button.backgroundColor = .white
+                    
+                    button.setTitle("\(buttonText[column * i + j])", for: .normal)
+                    //button.titleLabel!.text = "\(buttonText[column * i + j])"
+                    button.setTitleColor(.gray, for: UIControl.State())
+                    button.titleLabel?.textColor = .black
+                    button.sizeToFit()
+                    button.translatesAutoresizingMaskIntoConstraints = false
+                    button.addTarget(self, action: #selector(tap), for: .touchUpInside)
                     
 
                         HStackView.addArrangedSubview(button)
@@ -70,7 +80,9 @@ class DynamicButtonView: UIView {
                 }
                 
                 VStackView.addArrangedSubview(HStackView)
+                
             }
+           
         } else {
             //그렇지 않다면 Dummy Button 만들어서 alpha = 0 처리 해줘야돼 !
             for i in 0..<row{
@@ -86,7 +98,7 @@ class DynamicButtonView: UIView {
                     if column * i + j < buttonText.count {
                         button.setTitle("\(buttonText[column * i + j])", for: UIControl.State())
                         button.translatesAutoresizingMaskIntoConstraints = false
-                        button.addTarget(self, action: #selector(tap), for: .touchUpInside)
+                        button.addTarget(self, action: #selector(tap(_:)), for: .touchUpInside)
                         
                     } else {
                         button.setTitle("Dummy", for: UIControl.State())
@@ -131,7 +143,51 @@ class DynamicButtonView: UIView {
         
     }
     
-    @objc func tap(_ sender: Any) {
-        print("\(type(of: sender)) was tapped.\n \(sender.self)")
+    @objc func tap(_ sender: MDCButton) {
+        sender.isSelected = !sender.isSelected
+        print("\(sender.isSelected)\n")
+        func updateSelectedState(_ isSelected: Bool) {
+            if isSelected {
+                sender.setBorderColor(.purple, for: .normal)
+                sender.setTitleColor(.purple, for: .normal)
+            } else {
+                sender.setBorderColor(.gray, for: .normal)
+                sender.setTitleColor(.gray, for: .normal)
+            }
+        }
+        updateSelectedState(sender.isSelected)
+        deselectButtons(stackView: VStackView)
+        print("\(type(of: sender)) was tapped.\n \(String(describing: sender.titleLabel?.text))")
+
      }
+    
+//    func deselectButtons(stackView: UIStackView) {
+//        for subView in stackView.subviews {//VStack의 SubViews: subView(HStack)
+//            print("1DESELECT")
+//            for sub in subView.subviews {//HStack의 SubViews
+//                print("2DESELECT")
+//
+//            }
+//        }
+//    }
+//
+    
+    func deselectButtons(stackView: UIStackView) {
+        for subView in stackView.subviews {
+            print("1STACK : \(subView)")
+            for sub in subView.subviews{ //cuz this is multi stack View !! ( Vertical + Horizontal )
+                //print("\(sub.tag)")
+                let b = sub as? MDCButton
+                if (b?.isSelected)! == false {
+                    //b?.isSelected = false
+                    print("2STACK \(b?.isSelected)다")
+                    b?.setBorderColor(.gray, for: .normal)
+                    //b?.setBorderColor(.gray, for: .normal)
+                }
+                print("2STACK : \(String(describing: b?.titleLabel?.text)), SELECT? : \((b?.isSelected)!)")
+  
+            }
+        }
+    }
+
 }

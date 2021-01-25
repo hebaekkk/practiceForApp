@@ -7,9 +7,10 @@ target 'APIRequest_practice' do
 
   # Pods for APIRequest_practice
   pod 'Alamofire', '~> 5.2'
+  pod 'MaterialComponents'
   pod 'MaterialComponents/Chips'
   pod 'MaterialComponents/Chips+Theming'
- 
+  pod 'SwiftyGif'
   target 'APIRequest_practiceTests' do
     inherit! :search_paths
     # Pods for testing

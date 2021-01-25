@@ -64,6 +64,7 @@ class TextFieldView: UIView {
         stackView.axis = .horizontal
         stackView.spacing = 100
         stackView.distribution = .fillEqually
+        
         return stackView
     }()
 

@@ -1,18 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CGSubView" customModule="foldincTableChangeFooter_practice" customModuleProvider="target">
+            <connections>
+                <outlet property="elevatorBtnView" destination="g8w-HT-mMW" id="dD5-wk-WTM"/>
+                <outlet property="setTextView" destination="Bmm-E3-QUg" id="PnB-P8-7x9"/>
+                <outlet property="textInputView" destination="OOI-cH-TCh" id="RIq-zA-TU1"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-Jc-lm0">
+                    <rect key="frame" x="12" y="12" width="296" height="76"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8w-HT-mMW">
+                            <rect key="frame" x="0.0" y="26" width="296" height="50"/>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="2bJ-jj-nSO"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="엘리베이터 여부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d0-93-vEd">
+                            <rect key="frame" x="0.0" y="0.0" width="95" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="JIX-t0-CbF"/>
+                        <constraint firstAttribute="trailing" secondItem="g8w-HT-mMW" secondAttribute="trailing" id="N5k-lt-H9n"/>
+                        <constraint firstAttribute="bottom" secondItem="g8w-HT-mMW" secondAttribute="bottom" id="Vwl-vo-d0q"/>
+                        <constraint firstItem="9d0-93-vEd" firstAttribute="top" secondItem="LWe-Jc-lm0" secondAttribute="top" id="mr7-CI-3zX"/>
+                        <constraint firstItem="g8w-HT-mMW" firstAttribute="leading" secondItem="LWe-Jc-lm0" secondAttribute="leading" id="vdj-Tt-JM4"/>
+                        <constraint firstItem="9d0-93-vEd" firstAttribute="leading" secondItem="LWe-Jc-lm0" secondAttribute="leading" id="yfy-Qv-aCu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmm-E3-QUg">
+                    <rect key="frame" x="12" y="118" width="296" height="65"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="52H-Ez-zXX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-cH-TCh">
+                    <rect key="frame" x="12" y="213" width="296" height="180"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="gLb-vq-z4A"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="LWe-Jc-lm0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="4gY-3z-LdR"/>
+                <constraint firstItem="OOI-cH-TCh" firstAttribute="top" secondItem="Bmm-E3-QUg" secondAttribute="bottom" constant="30" id="77i-Ra-H38"/>
+                <constraint firstItem="Bmm-E3-QUg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="9IF-z7-bmr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OOI-cH-TCh" secondAttribute="trailing" constant="12" id="DQj-o5-ttL"/>
+                <constraint firstItem="OOI-cH-TCh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="JEd-Xt-hpl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bmm-E3-QUg" secondAttribute="trailing" constant="12" id="Jkg-nf-vcr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LWe-Jc-lm0" secondAttribute="trailing" constant="12" id="bOD-KT-tPb"/>
+                <constraint firstItem="Bmm-E3-QUg" firstAttribute="top" secondItem="LWe-Jc-lm0" secondAttribute="bottom" constant="30" id="lXV-b6-kig"/>
+                <constraint firstItem="LWe-Jc-lm0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="nuh-UR-gCF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="141" y="99"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

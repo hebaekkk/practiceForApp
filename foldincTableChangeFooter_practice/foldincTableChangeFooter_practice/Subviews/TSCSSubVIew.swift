@@ -28,6 +28,7 @@ class TSCSSubView: UIView {
     }
     
     let elevatorBtnText = ["있음", "없음", "지하층"]
+    
     func commonInit() {
         setElevatorView()
         setPyView()

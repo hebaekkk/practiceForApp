@@ -193,14 +193,15 @@ extension ViewController {
             //view.commonInit()
         case 1:
             
-            
-            view.backgroundColor = .orange
+            view = JRSNSubView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+            //view.backgroundColor = .orange
         case 2:
             
-            view.backgroundColor = .yellow
+            view = PGMSubView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+            //view.backgroundColor = .yellow
         case 3:
+            view = CGSubView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
             
-            view.backgroundColor = .green
         default:
             
             view.backgroundColor = .clear

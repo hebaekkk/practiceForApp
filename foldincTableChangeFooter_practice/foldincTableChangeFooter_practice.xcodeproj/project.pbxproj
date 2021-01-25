@@ -23,6 +23,13 @@
 		4162EB6025B9383E0000A9C5 /* TSCSSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4162EB5F25B9383E0000A9C5 /* TSCSSubView.xib */; };
 		4162EB8025B95A550000A9C5 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EB7F25B95A550000A9C5 /* TextFieldView.swift */; };
 		4162EBB525B9663C0000A9C5 /* QuantityCntrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EBB425B9663C0000A9C5 /* QuantityCntrlView.swift */; };
+		4162EBEA25BA9E750000A9C5 /* JRSNSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EBE925BA9E740000A9C5 /* JRSNSubView.swift */; };
+		4162EBEF25BA9E860000A9C5 /* JRSNSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4162EBEE25BA9E860000A9C5 /* JRSNSubView.xib */; };
+		4162EC0C25BAA3B90000A9C5 /* PGMSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EC0B25BAA3B90000A9C5 /* PGMSubView.swift */; };
+		4162EC1125BAA3D20000A9C5 /* PGMSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4162EC1025BAA3D20000A9C5 /* PGMSubView.xib */; };
+		4162EC3225BAACC10000A9C5 /* CGSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EC3125BAACC10000A9C5 /* CGSubView.swift */; };
+		4162EC3725BAAD000000A9C5 /* CGSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4162EC3625BAAD000000A9C5 /* CGSubView.xib */; };
+		4162EC3C25BAAEDB0000A9C5 /* WideTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162EC3B25BAAEDB0000A9C5 /* WideTextFieldView.swift */; };
 		5166730CB924A284FAF3C475 /* Pods_foldincTableChangeFooter_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E0669192F18D2A1E24FC7 /* Pods_foldincTableChangeFooter_practice.framework */; };
 		546D6E1062C914E2ED2A4DEA /* Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AADF6C26A07747C95CBC906 /* Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework */; };
 		680E6D37924CB11FC3004861 /* Pods_foldincTableChangeFooter_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF30B21C770A14D89004382D /* Pods_foldincTableChangeFooter_practiceTests.framework */; };
@@ -69,6 +76,13 @@
 		4162EB5F25B9383E0000A9C5 /* TSCSSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSCSSubView.xib; sourceTree = "<group>"; };
 		4162EB7F25B95A550000A9C5 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		4162EBB425B9663C0000A9C5 /* QuantityCntrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityCntrlView.swift; sourceTree = "<group>"; };
+		4162EBE925BA9E740000A9C5 /* JRSNSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRSNSubView.swift; sourceTree = "<group>"; };
+		4162EBEE25BA9E860000A9C5 /* JRSNSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRSNSubView.xib; sourceTree = "<group>"; };
+		4162EC0B25BAA3B90000A9C5 /* PGMSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGMSubView.swift; sourceTree = "<group>"; };
+		4162EC1025BAA3D20000A9C5 /* PGMSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PGMSubView.xib; sourceTree = "<group>"; };
+		4162EC3125BAACC10000A9C5 /* CGSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSubView.swift; sourceTree = "<group>"; };
+		4162EC3625BAAD000000A9C5 /* CGSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGSubView.xib; sourceTree = "<group>"; };
+		4162EC3B25BAAEDB0000A9C5 /* WideTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideTextFieldView.swift; sourceTree = "<group>"; };
 		6B17B40782AF77752B612483 /* Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests/Pods-foldincTableChangeFooter_practice-foldincTableChangeFooter_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8AADF6C26A07747C95CBC906 /* Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foldincTableChangeFooter_practice_foldincTableChangeFooter_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5E0669192F18D2A1E24FC7 /* Pods_foldincTableChangeFooter_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foldincTableChangeFooter_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,10 +153,10 @@
 				4162EABC25B6D1C10000A9C5 /* TableViewCell.swift */,
 				4162EB1B25B80C3A0000A9C5 /* ThirdViewController.swift */,
 				4162EB2025B81F300000A9C5 /* ViewController.swift */,
-				4162EB5A25B938100000A9C5 /* TSCSSubVIew.swift */,
-				4162EB5F25B9383E0000A9C5 /* TSCSSubView.xib */,
 				4162EA8B25B6CD920000A9C5 /* Assets.xcassets */,
+				4162EC1525BAA7200000A9C5 /* Subviews */,
 				4162EB7F25B95A550000A9C5 /* TextFieldView.swift */,
+				4162EC3B25BAAEDB0000A9C5 /* WideTextFieldView.swift */,
 				4162EBB425B9663C0000A9C5 /* QuantityCntrlView.swift */,
 				4162EB1625B805CC0000A9C5 /* DynamicButtonView.swift */,
 				4162EA8D25B6CD920000A9C5 /* LaunchScreen.storyboard */,
@@ -167,6 +181,21 @@
 				4162EAA625B6CD930000A9C5 /* Info.plist */,
 			);
 			path = foldincTableChangeFooter_practiceUITests;
+			sourceTree = "<group>";
+		};
+		4162EC1525BAA7200000A9C5 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4162EB5A25B938100000A9C5 /* TSCSSubVIew.swift */,
+				4162EB5F25B9383E0000A9C5 /* TSCSSubView.xib */,
+				4162EBE925BA9E740000A9C5 /* JRSNSubView.swift */,
+				4162EBEE25BA9E860000A9C5 /* JRSNSubView.xib */,
+				4162EC0B25BAA3B90000A9C5 /* PGMSubView.swift */,
+				4162EC1025BAA3D20000A9C5 /* PGMSubView.xib */,
+				4162EC3625BAAD000000A9C5 /* CGSubView.xib */,
+				4162EC3125BAACC10000A9C5 /* CGSubView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		5098E624BC4207D75EB3BA49 /* Pods */ = {
@@ -302,7 +331,10 @@
 			files = (
 				4162EB6025B9383E0000A9C5 /* TSCSSubView.xib in Resources */,
 				4162EA8F25B6CD920000A9C5 /* LaunchScreen.storyboard in Resources */,
+				4162EC3725BAAD000000A9C5 /* CGSubView.xib in Resources */,
 				4162EA8C25B6CD920000A9C5 /* Assets.xcassets in Resources */,
+				4162EBEF25BA9E860000A9C5 /* JRSNSubView.xib in Resources */,
+				4162EC1125BAA3D20000A9C5 /* PGMSubView.xib in Resources */,
 				4162EA8A25B6CD910000A9C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4162EABD25B6D1C10000A9C5 /* TableViewCell.swift in Sources */,
+				4162EC3225BAACC10000A9C5 /* CGSubView.swift in Sources */,
 				4162EBB525B9663C0000A9C5 /* QuantityCntrlView.swift in Sources */,
 				4162EA8325B6CD910000A9C5 /* AppDelegate.swift in Sources */,
 				4162EB1C25B80C3A0000A9C5 /* ThirdViewController.swift in Sources */,
@@ -439,6 +472,9 @@
 				4162EB2225B81F300000A9C5 /* ViewController.swift in Sources */,
 				4162EB1725B805CC0000A9C5 /* DynamicButtonView.swift in Sources */,
 				4162EB5B25B938100000A9C5 /* TSCSSubVIew.swift in Sources */,
+				4162EC0C25BAA3B90000A9C5 /* PGMSubView.swift in Sources */,
+				4162EBEA25BA9E750000A9C5 /* JRSNSubView.swift in Sources */,
+				4162EC3C25BAAEDB0000A9C5 /* WideTextFieldView.swift in Sources */,
 				4162EA8525B6CD910000A9C5 /* SceneDelegate.swift in Sources */,
 				4162EB8025B95A550000A9C5 /* TextFieldView.swift in Sources */,
 			);
