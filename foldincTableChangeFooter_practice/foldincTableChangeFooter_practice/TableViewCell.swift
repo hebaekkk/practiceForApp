@@ -44,6 +44,9 @@ class TableViewCell: UITableViewCell, ExpyTableViewHeaderCell {
         }
     }
     
+    //override func setSelected(_ selected: Bool, animated: Bool) {
+    
+    //}
 }
 
 
@@ -55,6 +58,9 @@ class SpecificationTableViewCell: UITableViewCell {
     
     
     
+    
+}
+class ButtonViewTableViewCell: UITableViewCell {
     
 }
 

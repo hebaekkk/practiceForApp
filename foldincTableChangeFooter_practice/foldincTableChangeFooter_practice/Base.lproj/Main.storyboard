@@ -33,8 +33,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U8Q-uY-bo2">
-                                                    <rect key="frame" x="312" y="26" width="30" height="28"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U8Q-uY-bo2">
+                                                    <rect key="frame" x="312" y="30" width="30" height="20.5"/>
                                                     <color key="tintColor" red="0.97647058819999999" green="0.42745098040000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="E2X-nU-Nqd"/>
@@ -67,15 +67,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYb-EH-0lW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="353"/>
+                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="353" id="fFg-bY-FlL"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.1450980392" green="0.68235294120000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cYb-EH-0lW" secondAttribute="trailing" id="42Q-Sc-ZTw"/>
                                                 <constraint firstItem="05N-rt-4m2" firstAttribute="top" secondItem="e65-9v-xxS" secondAttribute="topMargin" constant="24" id="8OE-TY-zEX"/>
                                                 <constraint firstItem="05N-rt-4m2" firstAttribute="leading" secondItem="e65-9v-xxS" secondAttribute="leading" constant="24" id="gmp-zl-4F3"/>
+                                                <constraint firstAttribute="bottom" secondItem="cYb-EH-0lW" secondAttribute="bottom" id="i7X-HN-d0r"/>
+                                                <constraint firstItem="cYb-EH-0lW" firstAttribute="leading" secondItem="e65-9v-xxS" secondAttribute="leading" id="jRp-tM-sKM"/>
+                                                <constraint firstItem="cYb-EH-0lW" firstAttribute="top" secondItem="e65-9v-xxS" secondAttribute="top" id="mJQ-Qa-mCY"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="05N-rt-4m2" secondAttribute="bottom" constant="24" id="swL-Tv-jFs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnView" destination="cYb-EH-0lW" id="Y1J-hF-ceL"/>
                                             <outlet property="labelSpecification" destination="05N-rt-4m2" id="nve-mH-5b6"/>
                                         </connections>
                                     </tableViewCell>
@@ -201,12 +213,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="triangle.fill" catalog="system" width="128" height="112"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

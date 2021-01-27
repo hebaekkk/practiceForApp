@@ -11,9 +11,18 @@ import ExpyTableView
 class ViewController: UIViewController {
 
  
-    let v = UIView()
+    //let v = UIView()
+    
     
     var selectedRow: Int = 4
+    
+    var isTouched: Bool?
+    
+    
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(detect))
+    @objc func detect(){
+        print("셀 눌렸어요")
+    }
     
     let footerViewColor = ["red","orange","yellow","green"]
     
@@ -22,6 +31,14 @@ class ViewController: UIViewController {
                           ["C", "Apple A10 Fusion(64 bit)"],
                           ["D", "4 inches"]
                           ]
+    
+    let buttonData = [["특수청소", ["집쓰레기배출/청소","이사 후 퇴실청소","유품정리/고독사","화재현장 청소","사고현장정리","빈집만들기","침수/수해복구청소","기타 특수청소"]],
+                      ["정리수납", ["집 전체","주방","드레스룸/옷방(의류)","베란다/다용도실","거실","방 1개","방 2개","방 3개","이삿짐 정리","상담 후 결정"]],
+                          ["폐기물", ["생활폐기물","사업장폐기물","건축폐기물","인테리어폐기물","혼합폐기물","목재(MDF)","고철/재활용","가구/가전제품"]],
+                          ["철거", ["주택(주거공간)","사무실","학원/독서실/PC방","상가","식당/공유주방","카페/제과점","유흥주점/노래방","뷰티/마사지샵","병원/의원/약국","건물/외부 구조물"]]
+                          ]
+    
+    
       
         @IBAction func nextView(_ sender: Any) {
             let vc = (storyboard?.instantiateViewController(identifier: "SecondViewController"))! as SecondViewController
@@ -48,8 +65,8 @@ class ViewController: UIViewController {
                     expandableTableView.collapsingAnimation = .fade
                 
             
-            v.backgroundColor = .blue
-            expandableTableView.tableFooterView = v
+            //v.backgroundColor = .blue
+            //expandableTableView.tableFooterView = v
             
                 
                     //navigationItem.title = "iPhones"
@@ -76,7 +93,7 @@ extension ViewController: ExpyTableViewDataSource {
     
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TableViewCell.self)) as! TableViewCell
-        cell.titleLabel.text = sampleData[section].first!
+        cell.titleLabel.text = buttonData[section].first! as! String
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell
@@ -214,7 +231,7 @@ extension ViewController {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         if section == 3 {
-            return 400
+            return 300
         } else {
             return 0
         }
@@ -262,7 +279,8 @@ extension ViewController {
 extension ViewController {
     func numberOfSections(in tableView: UITableView) -> Int {
         print("SAMPLE DATA \(sampleData.count)" )
-        return sampleData.count
+        //return sampleData.count
+        return buttonData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -271,7 +289,7 @@ extension ViewController {
         // So, always return the total row count you want to see in that section
         
         print("Row count for section \(section) is \(sampleData[section].count)")
-        return sampleData[section].count //+ 1 // +1 here is for BuyTableViewCell
+        return buttonData[section].count //+ 1 // +1 here is for BuyTableViewCell
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -286,10 +304,20 @@ extension ViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpecificationTableViewCell.self))as!SpecificationTableViewCell
             cell.labelSpecification.text = (sampleData[indexPath.section])[indexPath.row]
         
-            
-            cell.layoutMargins = UIEdgeInsets.zero
-            cell.hideSeparator()
-            return cell
+        let btnView = DynamicButtonView(frame: CGRect(x: 0, y: 0, width: cell.btnView.frame.width, height: 300))
+        //cell.btnView = DynamicButtonView(frame: CGRect(x: 0, y: 0, width: 10, height: 100))
+        
+        
+        
+        let sendString = buttonData[indexPath.section][indexPath.row] as! [String]
+        let row = sendString.count / 2
+        print("ROW : \(row)")
+        btnView.commonInit(with: (buttonData[indexPath.section])[1] as! [String], row: row, column: 2)
+        
+        cell.btnView.addSubview(btnView)
+        cell.layoutMargins = UIEdgeInsets.zero
+        cell.hideSeparator()
+        return cell
         // }
     }
 }

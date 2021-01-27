@@ -7,5 +7,8 @@
 
 import Foundation
 
+let a = readLine()
+
+print(a!)
 print("Hello, World!")
 

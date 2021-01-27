@@ -1,0 +1,6 @@
+module Pods_PhotoCollection_practice {
+  umbrella header "Pods-PhotoCollection_practice-umbrella.h"
+
+  export *
+  module * { export * }
+}

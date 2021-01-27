@@ -82,6 +82,7 @@ class DynamicButtonView: UIView {
                 VStackView.addArrangedSubview(HStackView)
                 
             }
+            
            
         } else {
             //그렇지 않다면 Dummy Button 만들어서 alpha = 0 처리 해줘야돼 !
@@ -94,9 +95,15 @@ class DynamicButtonView: UIView {
                 for j in 0..<column {
                     let button = MDCButton()
                     button.applyContainedTheme(withScheme: containerScheme)
+                    button.applyContainedTheme(withScheme: containerScheme)
+                    button.setBorderWidth(1.5, for: .normal)
+                    button.setBorderColor(.gray, for: .normal)
+                    button.backgroundColor = .white
+                    
                     
                     if column * i + j < buttonText.count {
                         button.setTitle("\(buttonText[column * i + j])", for: UIControl.State())
+                        button.setTitleColor(.gray, for: UIControl.State())
                         button.translatesAutoresizingMaskIntoConstraints = false
                         button.addTarget(self, action: #selector(tap(_:)), for: .touchUpInside)
                         
@@ -146,21 +153,30 @@ class DynamicButtonView: UIView {
     @objc func tap(_ sender: MDCButton) {
         sender.isSelected = !sender.isSelected
         print("\(sender.isSelected)\n")
-        func updateSelectedState(_ isSelected: Bool) {
-            if isSelected {
-                sender.setBorderColor(.purple, for: .normal)
-                sender.setTitleColor(.purple, for: .normal)
-            } else {
-                sender.setBorderColor(.gray, for: .normal)
-                sender.setTitleColor(.gray, for: .normal)
-            }
-        }
-        updateSelectedState(sender.isSelected)
+//        func updateSelectedState(_ isSelected: Bool) {
+//            if isSelected {
+//                sender.setBorderColor(.purple, for: .normal)
+//                sender.setTitleColor(.purple, for: .normal)
+//            } else {
+//                sender.setBorderColor(.gray, for: .normal)
+//                sender.setTitleColor(.gray, for: .normal)
+//            }
+//        }
+        updateSelectedState(sender)
         deselectButtons(stackView: VStackView)
         print("\(type(of: sender)) was tapped.\n \(String(describing: sender.titleLabel?.text))")
 
      }
     
+    func updateSelectedState(_ sender: MDCButton) {
+        if sender.isSelected {
+            sender.setBorderColor(.purple, for: .normal)
+            sender.setTitleColor(.purple, for: .normal)
+        } else {
+            sender.setBorderColor(.gray, for: .normal)
+            sender.setTitleColor(.gray, for: .normal)
+        }
+    }
 //    func deselectButtons(stackView: UIStackView) {
 //        for subView in stackView.subviews {//VStack의 SubViews: subView(HStack)
 //            print("1DESELECT")
@@ -174,17 +190,16 @@ class DynamicButtonView: UIView {
     
     func deselectButtons(stackView: UIStackView) {
         for subView in stackView.subviews {
-            print("1STACK : \(subView)")
+            //print("1STACK : \(subView)")
             for sub in subView.subviews{ //cuz this is multi stack View !! ( Vertical + Horizontal )
                 //print("\(sub.tag)")
                 let b = sub as? MDCButton
-                if (b?.isSelected)! == false {
-                    //b?.isSelected = false
-                    print("2STACK \(b?.isSelected)다")
-                    b?.setBorderColor(.gray, for: .normal)
-                    //b?.setBorderColor(.gray, for: .normal)
+                //print("2STACK : \(String(describing: b?.titleLabel?.text)), SELECT? : \((b?.isSelected)!)")
+                if (b?.isSelected)! == true {
+                    b?.isSelected = false
+                } else {
+                    updateSelectedState(b!)
                 }
-                print("2STACK : \(String(describing: b?.titleLabel?.text)), SELECT? : \((b?.isSelected)!)")
   
             }
         }
