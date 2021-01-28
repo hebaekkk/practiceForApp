@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3C3632E2FBB731F26F1CD471 /* libPods-PhotoCollection_practice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE5B999F3B1F2053AED2588 /* libPods-PhotoCollection_practice.a */; };
+		41267B2725C25186001009E6 /* MyEditablePhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B2625C25186001009E6 /* MyEditablePhotoCollectionViewCell.swift */; };
+		41267B2C25C25542001009E6 /* MyPostEditorCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B2B25C25542001009E6 /* MyPostEditorCollectionView.swift */; };
+		41267B3125C260D9001009E6 /* MyEditablePhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B3025C260D9001009E6 /* MyEditablePhotoCollectionView.swift */; };
+		41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */; };
+		41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */; };
+		41267B9825C2AB0B001009E6 /* MyPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B9725C2AB0B001009E6 /* MyPhotoPickerController.swift */; };
 		41C5B19E25C04E53003036D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B19D25C04E53003036D8 /* AppDelegate.swift */; };
 		41C5B1A025C04E53003036D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B19F25C04E53003036D8 /* SceneDelegate.swift */; };
 		41C5B1A225C04E53003036D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B1A125C04E53003036D8 /* ViewController.swift */; };
@@ -46,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41267B2625C25186001009E6 /* MyEditablePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEditablePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		41267B2B25C25542001009E6 /* MyPostEditorCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostEditorCollectionView.swift; sourceTree = "<group>"; };
+		41267B3025C260D9001009E6 /* MyEditablePhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEditablePhotoCollectionView.swift; sourceTree = "<group>"; };
+		41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringImagePracticeViewController.swift; sourceTree = "<group>"; };
+		41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
+		41267B9725C2AB0B001009E6 /* MyPhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotoPickerController.swift; sourceTree = "<group>"; };
 		41C5B19A25C04E53003036D8 /* PhotoCollection_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollection_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C5B19D25C04E53003036D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C5B19F25C04E53003036D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +121,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		41267B3525C283B2001009E6 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		41267B5225C28E8D001009E6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */,
+				41267B9725C2AB0B001009E6 /* MyPhotoPickerController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		41C5B19125C04E53003036D8 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +167,8 @@
 				41C5B19F25C04E53003036D8 /* SceneDelegate.swift */,
 				41C5B1A125C04E53003036D8 /* ViewController.swift */,
 				41ECA97F25C14C0600306097 /* Extensions.swift */,
+				41267B5225C28E8D001009E6 /* New Group */,
+				41267B3525C283B2001009E6 /* Basic */,
 				41ECA9AE25C1582500306097 /* MyPhotoCollectionView */,
 				41ECA97625C149A600306097 /* PhotoEdit */,
 				41C5B1A325C04E53003036D8 /* Main.storyboard */,
@@ -184,7 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				41ECA9B225C15BD000306097 /* MyPhotoCollectionViewController.swift */,
+				41267B2625C25186001009E6 /* MyEditablePhotoCollectionViewCell.swift */,
+				41267B3025C260D9001009E6 /* MyEditablePhotoCollectionView.swift */,
 				41ECA9BA25C160FD00306097 /* MyPhotoCollectionCell.swift */,
+				41267B2B25C25542001009E6 /* MyPostEditorCollectionView.swift */,
 			);
 			path = MyPhotoCollectionView;
 			sourceTree = "<group>";
@@ -361,12 +395,18 @@
 				41C5B19E25C04E53003036D8 /* AppDelegate.swift in Sources */,
 				41ECA99D25C14FB900306097 /* PostEditorPhotoPreviewCollectionView.swift in Sources */,
 				41ECA99525C14EB200306097 /* PostEditorPhotoCollectionView.swift in Sources */,
+				41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */,
+				41267B3125C260D9001009E6 /* MyEditablePhotoCollectionView.swift in Sources */,
+				41267B9825C2AB0B001009E6 /* MyPhotoPickerController.swift in Sources */,
 				41ECA9BB25C160FD00306097 /* MyPhotoCollectionCell.swift in Sources */,
 				41C5B1A025C04E53003036D8 /* SceneDelegate.swift in Sources */,
 				41ECA9A225C1521100306097 /* PostEditorPhotoPickerController.swift in Sources */,
 				41ECA97825C14A8200306097 /* EditPhotoViewcontroller.swift in Sources */,
+				41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */,
 				41ECA9A725C152B000306097 /* PostCell.swift in Sources */,
+				41267B2C25C25542001009E6 /* MyPostEditorCollectionView.swift in Sources */,
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,
+				41267B2725C25186001009E6 /* MyEditablePhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Gaf-uI-EZ0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-b0-bw7">
                                 <rect key="frame" x="142" y="243" width="130" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.50978009260000001" blue="1" alpha="0.50785164760000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -23,17 +26,67 @@
                                     <constraint firstAttribute="height" constant="60" id="hTa-sj-yz4"/>
                                     <constraint firstAttribute="width" constant="130" id="lfJ-XR-68V"/>
                                 </constraints>
-                                <state key="normal" title="Let's Edit Photo"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Let's Edit Photo">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="photoCollectionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cu-BT-zWp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnX-Gg-vUI">
+                                <rect key="frame" x="126" y="331" width="162" height="60"/>
+                                <color key="backgroundColor" red="0.1723668981" green="0.96591435189999997" blue="0.74117647060000003" alpha="0.67650462960000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kW8-oH-5Hd"/>
+                                </constraints>
+                                <state key="normal" title="CollectionView Practice">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToMyCollectionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UcE-3L-hu1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ox3-sj-WhW">
+                                <rect key="frame" x="157" y="419" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.67843137249999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zuS-B0-XNK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Basic">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToBasic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5re-Ro-zDy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNJ-6h-ydp">
+                                <rect key="frame" x="137" y="479" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.67843137249999996" green="0.6705882353" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Basic collectionView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToBasicCollection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wc4-aR-kUi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gaf-uI-EZ0" secondAttribute="bottom" id="2R7-K1-WLq"/>
+                            <constraint firstItem="JnX-Gg-vUI" firstAttribute="top" secondItem="3wd-b0-bw7" secondAttribute="bottom" constant="28" id="3Nt-S8-Afa"/>
+                            <constraint firstItem="iNJ-6h-ydp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3fr-5p-7qx"/>
+                            <constraint firstItem="iNJ-6h-ydp" firstAttribute="top" secondItem="Ox3-sj-WhW" secondAttribute="bottom" constant="30" id="9ud-AX-vaz"/>
+                            <constraint firstItem="Ox3-sj-WhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LxS-Yi-Vo7"/>
+                            <constraint firstItem="Gaf-uI-EZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LzZ-Yo-a9a"/>
                             <constraint firstItem="3wd-b0-bw7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P8t-Uk-oUY"/>
+                            <constraint firstItem="Ox3-sj-WhW" firstAttribute="top" secondItem="JnX-Gg-vUI" secondAttribute="bottom" constant="28" id="cAp-qz-S1S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gaf-uI-EZ0" secondAttribute="trailing" id="i4c-2h-0rv"/>
+                            <constraint firstItem="JnX-Gg-vUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCD-CZ-2F6"/>
                             <constraint firstItem="3wd-b0-bw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="oqh-zG-69c"/>
+                            <constraint firstItem="Gaf-uI-EZ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s1h-pZ-OE6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kp3-9a-fsb"/>
@@ -56,6 +109,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JG8-zA-zGB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1848" y="304"/>
+        </scene>
+        <!--Basic Collection View Controller-->
+        <scene sceneID="Gdx-RP-Lnk">
+            <objects>
+                <viewController storyboardIdentifier="BasicCollectionViewController" id="Jxt-cq-uhe" customClass="BasicCollectionViewController" customModule="PhotoCollection_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLc-8d-6cL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSE-P2-ENK">
+                                <rect key="frame" x="157" y="694" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.67843137249999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4wt-AH-u5W"/>
+                                    <constraint firstAttribute="width" constant="100" id="G0s-Vt-04j"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="check:" destination="Jxt-cq-uhe" eventType="touchUpInside" id="QAB-4r-xCL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FdA-Ct-USA"/>
+                        <color key="backgroundColor" red="0.4306712962962963" green="0.35980902777777779" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FdA-Ct-USA" firstAttribute="bottom" secondItem="RSE-P2-ENK" secondAttribute="bottom" constant="108" id="L6o-qw-atk"/>
+                            <constraint firstItem="RSE-P2-ENK" firstAttribute="centerX" secondItem="BLc-8d-6cL" secondAttribute="centerX" id="Yor-nC-omn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S78-cZ-pSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2784" y="-1"/>
+        </scene>
+        <!--Bring Image Practice View Controller-->
+        <scene sceneID="abw-cc-PWN">
+            <objects>
+                <viewController storyboardIdentifier="BringImagePracticeViewController" id="nWS-Or-vL6" customClass="BringImagePracticeViewController" customModule="PhotoCollection_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvQ-hs-NQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jHT-LW-igJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxL-w9-B08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="973"/>
         </scene>
         <!--Edit Photo View Controller-->
         <scene sceneID="V3T-xt-bq5">
@@ -92,8 +193,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="5005" height="3417"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

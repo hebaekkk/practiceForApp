@@ -42,6 +42,8 @@ class EditPhotoViewController: UIViewController {
         cv.collectionView.dataSource = self
         return cv
     }()
+    
+    
     lazy var postEditorPhotoPreviewCollectionView : PostEditorPhotoPreviewCollectionView = {
         let cv = PostEditorPhotoPreviewCollectionView()
         cv.delegate = self
@@ -140,12 +142,14 @@ class EditPhotoViewController: UIViewController {
         
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.title = "글쓰기"
-        let dissmissButon = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.cancel, target: self, action: #selector(actionDismiss))
-        self.navigationItem.leftBarButtonItem = dissmissButon
+        //let dissmissButon = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.close, target: self, action: #selector(actionDismiss))
+    
+        //self.navigationItem.leftBarButtonItem = dissmissButon
         
     }
     @objc func actionDismiss(sender : Any){
-        self.dismiss(animated: true, completion: nil)
+       // self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 

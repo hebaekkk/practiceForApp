@@ -84,6 +84,7 @@ class PostEditorPhotoPickerController : UIViewController {
         let okButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(actionFinish))
         self.navigationItem.rightBarButtonItem = okButton
     }
+    
     @objc func actionDismiss(_ sender : Any){
         self.dismiss(animated: true, completion: nil)
     }

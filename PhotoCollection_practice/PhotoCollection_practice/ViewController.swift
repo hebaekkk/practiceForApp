@@ -15,6 +15,20 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func moveToMyCollectionBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "MyPhotoCollectionViewController")
+        navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    @IBAction func moveToBasic(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "BringImagePracticeViewController")
+        navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    @IBAction func moveToBasicCollection(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "BasicCollectionViewController")
+        navigationController?.pushViewController(vc!, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
