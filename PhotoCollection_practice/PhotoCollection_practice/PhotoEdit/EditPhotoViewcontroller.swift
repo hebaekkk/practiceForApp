@@ -373,6 +373,7 @@ extension EditPhotoViewController {
             }
         }
 }
+//
 extension EditPhotoViewController : PostEditorPhotoPickerControllerDelegate {
     func postEditorPhotoPickerController(_ picker: PostEditorPhotoPickerController, didFinishPickingContents contents: [PostContent]?) {
         if let contents = contents {
@@ -384,17 +385,20 @@ extension EditPhotoViewController : PostEditorPhotoPickerControllerDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
+
 extension EditPhotoViewController {
     func insertPostContent(content : PostContent){
         //        contents?.append(content)
         photoSelectedPostContents?.insert(content, at: 0)
-        if let index = photoSelectedPostContents?.index(of: content){
+        if let index = photoSelectedPostContents?.firstIndex(of: content){
             let indexPath = IndexPath(row: index, section: 0)
             postEditorPhotoCollectionView.collectionView.insertItems(at: [indexPath])
         }
         showOrHidePhotoPreviewCollectionView()
     }
 }
+
+/////////아직 필요 업슴
 extension EditPhotoViewController {
     func showOrHidePhotoPreviewCollectionView(){
         if (!textView.text.isEmpty || photoSelectedPostContents?.count != 0) {

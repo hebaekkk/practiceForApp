@@ -91,6 +91,7 @@ class PostEditorPhotoPreviewCollectionView : BaseCell, UICollectionViewDelegateF
     var contents : [PostContent]?
     let imageManager = PHCachingImageManager()
     var delegate : PostEditorPhotoPreviewCollectionViewDelegate?
+    
     lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -102,6 +103,7 @@ class PostEditorPhotoPreviewCollectionView : BaseCell, UICollectionViewDelegateF
         //cv.isPagingEnabled = true
         return cv
     }()
+    
     override func setupViews() {
         addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
