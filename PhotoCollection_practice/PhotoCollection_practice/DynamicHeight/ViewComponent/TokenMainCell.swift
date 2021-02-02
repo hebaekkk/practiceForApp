@@ -58,6 +58,13 @@ class TokenMainCell: BaseCollectionViewCell {
 class TokenListCell: BaseCollectionViewCell {
     static let identifier = "TokenListCell"
     
+    var token: Token? {
+        didSet {
+            guard let sender = self.token else { return }
+            self.titleLabel.text = sender.title
+
+        }
+    }
 
     var titleLabel: UILabel = {
         let lbl = UILabel()

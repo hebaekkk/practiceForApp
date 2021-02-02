@@ -196,6 +196,13 @@ extension DynamicHeightViewController: UICollectionViewDataSource, UICollectionV
         if collectionView == topCollView {
             guard let cell = self.topCollView.dequeueReusableCell(withReuseIdentifier: TokenMainCell.identifier, for: indexPath) as? TokenMainCell else { return TokenMainCell() }
             cell.token = self.correctSeedArray[indexPath.item]
+            return cell
+        } else {
+            guard let cell = self.bottomCollView.dequeueReusableCell(withReuseIdentifier: TokenListCell.identifier, for: indexPath) as? TokenListCell else { return TokenListCell() }
+            cell.token = self.shuffledSeedArray[indexPath.item]
+            //써야돼
+            
+            return cell
         }
     }
     
