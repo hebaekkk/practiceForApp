@@ -6,6 +6,7 @@ target 'PhotoCollection_practice' do
    pod 'SnapKit', '~> 4.0.0'
    pod 'SwiftyJSON', '~> 4.0'
    pod 'SDWebImage', '~> 4.0'
+   pod 'STPopup'
 
 
 end

@@ -127,6 +127,7 @@ class EditPhotoViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        navigationController?.navigationBar.isHidden = false
         setUpView()
         setUpNavigationBar()
       //  grabPhotos()

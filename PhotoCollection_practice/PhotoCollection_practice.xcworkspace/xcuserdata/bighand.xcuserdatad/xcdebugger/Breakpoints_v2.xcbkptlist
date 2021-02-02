@@ -3,4 +3,114 @@
    uuid = "8DEC10EE-2D6C-4F24-992F-88731ED8F1F5"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoCollection_practice/New Group/BottomPopupView/BottomPopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "BottomPopupViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496 - 6dd354b755127819"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BottomPopupViewController.leadingConstraint.getter : Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BottomPopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496 - a85cf25d63cca865"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BottomPopupViewController.leadingConstraint.setter : Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BottomPopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496 - 40f6e4fea483b161"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BottomPopupViewController.leadingConstraint.modify : Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BottomPopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496 - cafb6e164396bbe5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BottomPopupViewController.leadingConstraint.modify : Swift.Optional&lt;__C.NSLayoutConstraint&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BottomPopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496 - 36501ca414919f83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BottomPopupViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PhotoCollection_practice.BottomPopupViewController"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BottomPopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "738">
+               </Location>
+               <Location
+                  uuid = "3AF9A3EC-E9C2-4A0E-8C72-D4A8E74C8496 - 3d2f75a864a5e345"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BottomPopupViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PhotoCollection_practice.BottomPopupViewController&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BottomPopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "679">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

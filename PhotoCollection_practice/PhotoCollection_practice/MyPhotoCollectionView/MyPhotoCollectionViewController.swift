@@ -18,6 +18,7 @@ class MyPhotoCollectionViewController: UIViewController {
 //    }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = false
 
         // Do any additional setup after loading the view.
     }
