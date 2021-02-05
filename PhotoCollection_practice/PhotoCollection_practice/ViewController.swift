@@ -37,6 +37,17 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc!, animated: true)
     }
     
+    @IBAction func moveToDynamic(_ sender: Any) {
+
+        let vc = storyboard?.instantiateViewController(identifier: "DynamicHeightViewController")
+        navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    @IBAction func moveTojson(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "CommViewController")
+        navigationController?.pushViewController(vc!, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
