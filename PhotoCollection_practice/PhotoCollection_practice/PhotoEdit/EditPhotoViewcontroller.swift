@@ -182,13 +182,17 @@ extension EditPhotoViewController : UICollectionViewDelegate {
 }
 extension EditPhotoViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if let content = photoSelectedPostContents?[indexPath.item], let asset = content.asset{
+        if let content = photoSelectedPostContents?[indexPath.item],
+           let asset = content.asset{
             let pixcelWidth = asset.pixelWidth
             let pixcelHeight = asset.pixelHeight
-            let height : CGFloat = 200 - 20
-            let width = height * ( CGFloat(pixcelWidth) / CGFloat(pixcelHeight) )
+            let height : CGFloat = 100//200 - 20
+            //let width = height * ( CGFloat(pixcelWidth) / CGFloat(pixcelHeight) )
+            let width: CGFloat = height * (CGFloat(pixcelWidth) / CGFloat(pixcelHeight))
+            print("resizing occured!")
             return CGSize(width: width, height: height)
         }
+        print("else is occured")
         return CGSize(width: 200, height: 200-20)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

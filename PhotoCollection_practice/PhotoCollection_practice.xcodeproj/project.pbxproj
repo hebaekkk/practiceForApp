@@ -161,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */,
-				41721E4B25C3A62E0073696F /* MyPostEditorPhotoCollectionView.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -305,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				41ECA9B225C15BD000306097 /* MyPhotoCollectionViewController.swift */,
+				41721E4B25C3A62E0073696F /* MyPostEditorPhotoCollectionView.swift */,
 				411760BB25CCF17B000C19F0 /* MyContents.swift */,
 				411760C025CCF1CF000C19F0 /* MyBaseCell.swift */,
 				411760CA25CCF369000C19F0 /* MyPostEditorPhotoCell.swift */,

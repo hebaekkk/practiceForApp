@@ -17,7 +17,7 @@ class BasicCollectionViewController: UIViewController, UIImagePickerControllerDe
     
 
     let imageManager = PHCachingImageManager()
-    let cellid = "cellid"
+    let cellid = "cellId"
     
     //사진 저장할곳
     var photoSelectedPostContents : [PostContent]?

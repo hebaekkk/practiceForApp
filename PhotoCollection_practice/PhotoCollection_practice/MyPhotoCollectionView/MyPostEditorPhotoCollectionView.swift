@@ -11,7 +11,7 @@ import SnapKit
 import Photos
 
 class MyPostEditorPhotoCollectionView : BaseCell, UICollectionViewDelegateFlowLayout {
-    let cellid = "cellid"
+    let cellid = "cellId"
     var contents : [PostContent]?
     let imageManager = PHCachingImageManager()
     
@@ -34,7 +34,7 @@ class MyPostEditorPhotoCollectionView : BaseCell, UICollectionViewDelegateFlowLa
             make.leading.equalTo(self)
             make.bottom.equalTo(self)
         }
-        collectionView.register(PostEditorPhotoCell.self, forCellWithReuseIdentifier: cellid)
+        collectionView.register(MyPostEditorPhotoCell.self, forCellWithReuseIdentifier: cellid)
     }
 }
 

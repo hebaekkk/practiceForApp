@@ -10,18 +10,23 @@ import UIKit
 import SnapKit
 import Photos
 
-protocol MyPostEditorPickerControllerDelegate: class {
+//나는 cell id를 .identifier로 사용했어
+
+protocol MyPostEditorPhotoPickerControllerDelegate: class {
     func postEditorPhotoPickerController(_ picker: MyPostEditorPhotoPickerController, didFinishPickingContents contents: [MyPostContent]?)
 }
 
 class MyPostEditorPhotoPickerController: UIViewController {
-    weak var delegate: MyPostEditorPickerControllerDelegate?
+    
+    var selectedPhotoNum: Int?
+    
+    weak var delegate: MyPostEditorPhotoPickerControllerDelegate?
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.backgroundColor = UIColor.white
-        //cv.dataSource = self
-        //cv.delegate = self
+        cv.dataSource = self
+        cv.delegate = self
         cv.allowsMultipleSelection = true
         return cv
     }()
@@ -60,10 +65,10 @@ class MyPostEditorPhotoPickerController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        //setupViews()
-        //setUpNavigationBar()
-        //grabPhotos()
+        //super.viewDidLoad()
+        setupViews()
+        setUpNavigationBar()
+        grabPhotos()
     }
     
     func setupViews() {
@@ -75,7 +80,7 @@ class MyPostEditorPhotoPickerController: UIViewController {
             make.bottom.equalTo(self.view)
         }
         
-        collectionView.register(MyPostEditorPhotoCell.self, forCellWithReuseIdentifier: MyPostEditorPhotoCell.identifier)
+        collectionView.register(MyPostEditPhotoCell.self, forCellWithReuseIdentifier: cellId)
         
     }
     
@@ -116,10 +121,122 @@ extension MyPostEditorPhotoPickerController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPostEditorPhotoCell.identifier, for: indexPath) as! MyPostEditorPhotoCell
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MyPostEditPhotoCell
         
         if let content = contents?[indexPath.item], let asset = content.asset {
-            cell.po
+            cell.postContent = content
+            cell.representedAssetIdentifier = asset.localIdentifier
+            let targetSize = DeviceInfo.Orientation.isPortrait ? CGSize(width: view.frame.width/3 - 1, height: view.frame.width/6 - 1) : CGSize(width: view.frame.width/6 - 1 , height: view.frame.width/6 - 1)
+            imageManager.requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFill, options: nil) { (image, _) in
+                if (cell.representedAssetIdentifier == asset.localIdentifier) {
+                    cell.photoImageView.image = image
+                }
+            }
+            cell.delegate = self
+            cell.selectedNumber = content.selectedNumber
+            
         }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 1.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if DeviceInfo.Orientation.isPortrait {
+            return CGSize(width: view.frame.width/3 - 1, height: view.frame.width/3 - 1)
+        } else {
+            return CGSize(width: view.frame.width/6 - 1, height: view.frame.width/6 - 1)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        let count = collectionView.indexPathsForSelectedItems?.count ?? 0
+        if (count >= selectedPhotoNum!) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! MyPostEditPhotoCell
+        let count = collectionView.indexPathsForSelectedItems?.count ?? 0
+        
+        UIView.animate(withDuration: 0.25,
+                       delay: 0,
+                       usingSpringWithDamping: 1,
+                       initialSpringVelocity: 1,
+                       options: .curveEaseOut,
+                       animations: {
+                        cell.photoImageView.layer.transform = CATransform3DMakeScale(0.8, 0.8, 0.8)
+                       },
+                       completion: { bool in
+                        UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseIn, animations: {
+                            cell.photoImageView.layer.transform = CATransform3DIdentity
+                            cell.photoImageView.layer.borderWidth = 2
+                            cell.blackView.layer.opacity = 0.5
+                        }, completion: nil)
+                        
+                       })
+        if let content = contents?[indexPath.item] {
+            content.selectedNumber = count
+        }
+        cell.selectedNumber = count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! MyPostEditPhotoCell
+        
+        UIView.animate(withDuration: 0.25,
+                       delay: 0,
+                       usingSpringWithDamping: 1,
+                       initialSpringVelocity: 1,
+                       options: .curveEaseOut,
+                       animations: {
+                        cell.photoImageView.layer.transform = CATransform3DMakeScale(0.8, 0.8, 0.8)
+                       },
+                       completion: { bool in
+                        UIView.animate(withDuration: 0.25,
+                                       delay: 0,
+                                       options: .curveEaseIn,
+                                       animations: {
+                                        cell.photoImageView.layer.transform = CATransform3DIdentity
+                                        cell.photoImageView.layer.borderWidth = 0
+                                        cell.blackView.layer.opacity = 0
+                                       }, completion: nil)
+                        
+                       })
+
+        let indexPaths = collectionView.indexPathsForSelectedItems?.sorted{
+            if ( contents?[$0.item].selectedNumber ?? 0 < contents?[$1.item].selectedNumber ?? 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+        if let indexPaths = indexPaths {
+            for (index, indexPath) in indexPaths.enumerated(){
+                if let cell = collectionView.cellForItem(at: indexPath) as? MyPostEditPhotoCell {
+                    cell.selectedNumber = index + 1
+                }
+                if let content = contents?[indexPath.item] {
+                    content.selectedNumber = index + 1
+                }
+            }
+        }
+    }
+}
+
+extension MyPostEditorPhotoPickerController: MyEditPhotoProtocol {
+    func editPhoto(postContent: MyPostContent?) {
+        
     }
 }

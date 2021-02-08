@@ -18,8 +18,8 @@ class MyPostContent : NSObject {
     var asset : PHAsset?
     var selectedNumber : Int?
     var image : UIImage?
-    let type : PostContentType
-    init(type : PostContentType) {
+    let type : MyPostContentType
+    init(type : MyPostContentType) {
         self.type = type
     }
 }

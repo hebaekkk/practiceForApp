@@ -70,6 +70,6 @@ struct Spinner {
             activityIndicator.stopAnimating()
         }
         containerView.removeFromSuperview()
-        completion
+        //completion
     }
 }
