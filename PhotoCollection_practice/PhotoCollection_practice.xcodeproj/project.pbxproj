@@ -18,6 +18,7 @@
 		41466A6325CB8685006EC37E /* CommViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6225CB8685006EC37E /* CommViewController.swift */; };
 		41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6B25CB8791006EC37E /* SigunguJSON.swift */; };
 		41466A6E25CB8791006EC37E /* ServiceArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6C25CB8791006EC37E /* ServiceArea.swift */; };
+		4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148F97A25D221070076F700 /* BasicModalViewController.swift */; };
 		4159E65925C8EA9D00949CCF /* DynamicHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E65825C8EA9D00949CCF /* DynamicHeightViewController.swift */; };
 		4159E66025C8EB3100949CCF /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E65F25C8EB3100949CCF /* BaseCollectionViewCell.swift */; };
 		4159E66525C8EC7900949CCF /* TokenMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E66425C8EC7900949CCF /* TokenMainCell.swift */; };
@@ -76,6 +77,7 @@
 		41466A6225CB8685006EC37E /* CommViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommViewController.swift; sourceTree = "<group>"; };
 		41466A6B25CB8791006EC37E /* SigunguJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigunguJSON.swift; sourceTree = "<group>"; };
 		41466A6C25CB8791006EC37E /* ServiceArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceArea.swift; sourceTree = "<group>"; };
+		4148F97A25D221070076F700 /* BasicModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicModalViewController.swift; sourceTree = "<group>"; };
 		4159E65825C8EA9D00949CCF /* DynamicHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightViewController.swift; sourceTree = "<group>"; };
 		4159E65F25C8EB3100949CCF /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		4159E66425C8EC7900949CCF /* TokenMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenMainCell.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */,
+				4148F97A25D221070076F700 /* BasicModalViewController.swift */,
 				41A1E60B25C7ED6D009CA72E /* PopView */,
 			);
 			name = BottomPopupView;
@@ -483,6 +486,7 @@
 				41ECA98025C14C0600306097 /* Extensions.swift in Sources */,
 				411760D025CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift in Sources */,
 				4159E66A25C8ECD600949CCF /* Token.swift in Sources */,
+				4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */,
 				41466A6325CB8685006EC37E /* CommViewController.swift in Sources */,
 				411760BC25CCF17B000C19F0 /* MyContents.swift in Sources */,
 				41466A6E25CB8791006EC37E /* ServiceArea.swift in Sources */,

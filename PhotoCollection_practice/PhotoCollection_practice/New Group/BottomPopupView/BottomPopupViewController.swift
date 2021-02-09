@@ -6,11 +6,24 @@
 //
 
 import UIKit
-
+import PanModal
 
 class BottomPopupViewController: UIViewController {
 
     @IBAction func button(_ sender: Any) {
+        
+        
+        let vc = BasicModalViewController()
+        self.present(vc, animated: true, completion: {
+            
+            vc.presentationController?.presentedView?.gestureRecognizers?[0].isEnabled = false
+
+        })
+        //presentPanModal(vc)
+        
+        
+        
+    
         
         if(isBottomSheetShown) {
             UIView.animate(withDuration: 0.5, animations: {

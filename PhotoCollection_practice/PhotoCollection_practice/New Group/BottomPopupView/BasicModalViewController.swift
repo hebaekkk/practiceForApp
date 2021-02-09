@@ -1,0 +1,301 @@
+//
+//  BasicModalViewController.swift
+//  PhotoCollection_practice
+//
+//  Created by BigHand on 2021/02/09.
+//
+
+import UIKit
+import PanModal
+import SnapKit
+import SkyFloatingLabelTextField
+
+class BasicModalViewController: UIViewController {
+
+    var isKeyboard: Bool?
+    var isComparable: Bool?
+    
+    let modalTitle: UILabel = {
+        let lb = UILabel()
+        lb.text = "예상 금액을 입력해주세요."
+        lb.font = UIFont.systemFont(ofSize: 24)
+        return lb
+    }()
+    
+    let maxTitle: UILabel = {
+        let lb = UILabel()
+        lb.text = "최대"
+        //lb.frame = CGRect(x: 0, y: 0, width: 30, height: 60)
+        lb.backgroundColor = .orange
+        lb.font = UIFont.systemFont(ofSize: 15)
+        
+        return lb
+    }()
+    let maxTextField: SkyFloatingLabelTextField = {
+        let tf = SkyFloatingLabelTextField()
+        tf.placeholder = "Hi"
+        tf.keyboardType = .numberPad
+        tf.title = "Max"
+        //tf.frame = CGRect(x: 0, y: 0, width: 80, height: 60)
+        tf.sizeToFit()
+        tf.font = UIFont.systemFont(ofSize: 24)
+        tf.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        return tf
+    }()
+    
+    let minTitle: UILabel = {
+        let lb = UILabel()
+        lb.text = "최소"
+        //lb.frame = CGRect(x: 0, y: 0, width: 30, height: 60)
+        lb.backgroundColor = .orange
+        lb.font = UIFont.systemFont(ofSize: 15)
+        
+        return lb
+    }()
+    let minTextField: SkyFloatingLabelTextField = {
+        let tf = SkyFloatingLabelTextField()
+        tf.placeholder = "Hi"
+        tf.keyboardType = .numberPad
+        tf.title = "Min"
+        //tf.frame = CGRect(x: 0, y: 0, width: 80, height: 60)
+        tf.sizeToFit()
+        tf.font = UIFont.systemFont(ofSize: 24)
+        tf.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        return tf
+    }()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+      
+        //self.view.gestureRecognizers?[0].isEnabled = false
+    
+        self.view.gestureRecognizers?.removeAll()
+
+
+        view.addSubview(modalTitle)
+        //view.addSubview(maxTitle)
+        //view.addSubview(textField)
+        self.isKeyboard = false
+        maxTextField.delegate = self
+        minTextField.delegate = self
+        
+        maxTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        minTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(BasicModalViewController.keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil
+                                                )
+        
+        
+        modalTitle.snp.makeConstraints{(make) in
+            make.centerX.equalTo(self.view.center)
+            make.top.equalTo(self.view).offset(36)
+            make.height.equalTo(36)
+        }
+        
+        
+        let maxStackView = UIStackView()
+        maxStackView.backgroundColor = .red
+        maxStackView.axis = .horizontal
+        maxStackView.spacing = 0
+        maxStackView.distribution = .fillProportionally
+        
+        view.addSubview(maxStackView)
+        
+        maxStackView.addArrangedSubview(maxTitle)
+        maxStackView.addArrangedSubview(maxTextField)
+        
+        maxTitle.snp.makeConstraints{ (make) in
+            make.height.equalTo(60)
+            make.width.equalTo(40)
+        }
+        let width = UIScreen.main.bounds.width - 48 - 40
+        maxTextField.snp.makeConstraints{ (make) in
+            make.height.equalTo(60)
+            make.width.equalTo(width)
+            
+        }
+        maxStackView.snp.makeConstraints{ (make) in
+            make.centerX.equalTo(self.view)
+            //make.trailing.equalTo(self.view).offset(-24)
+            make.top.equalTo(modalTitle.snp_bottom).offset(10)
+            make.height.equalTo(60)
+        }
+        
+        let minStackView = UIStackView()
+        minStackView.axis = .horizontal
+        minStackView.spacing = 0
+        minStackView.distribution = .fillProportionally
+        
+        view.addSubview(minStackView)
+        minStackView.addArrangedSubview(minTitle)
+        minStackView.addArrangedSubview(minTextField)
+        
+        minTitle.snp.makeConstraints{ (make) in
+            make.height.equalTo(60)
+            make.width.equalTo(40)
+        }
+        
+        minTextField.snp.makeConstraints{ (make) in
+            make.height.equalTo(60)
+            make.width.equalTo(width)
+            
+        }
+        minStackView.snp.makeConstraints{ (make) in
+            make.centerX.equalTo(self.view)
+            //make.trailing.equalTo(self.view).offset(-24)
+            make.top.equalTo(maxStackView.snp_bottom).offset(10)
+            make.height.equalTo(60)
+        }
+    }
+    
+    var keySize: CGFloat?
+
+    @objc func keyboardWillShow(notification: Notification) {
+        print("키보드!")
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            print("까꿍")
+            self.isKeyboard = true
+            self.keySize = keyboardSize.height
+            
+            panModalSetNeedsLayoutUpdate()
+            panModalTransition(to: .shortForm)
+
+        }
+
+    }
+    
+    @objc private func keyboardWillHide(_ notification: Notification) {
+        print("빠잉")
+      if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+        print("빠이라고~!")
+        //let keybaordRectangle = keyboardFrame.cgRectValue
+        //let keyboardHeight = keybaordRectangle.height
+        self.isKeyboard = false
+        panModalSetNeedsLayoutUpdate()
+        panModalTransition(to: .shortForm)
+      }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+         self.view.endEditing(true)
+
+   }
+    
+
+}
+
+extension BasicModalViewController: PanModalPresentable {
+    
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    var panScrollable: UIScrollView? {
+        return nil
+    }
+    var shortFormHeight: PanModalHeight {
+        return self.isKeyboard! ? .contentHeight(self.keySize! + 220) : .contentHeight(300)
+    }
+    var anchorModalToLongForm: Bool {
+        return false
+    }
+    
+    var longFormHeight: PanModalHeight {
+        if self.isKeyboard! {
+            print("a")
+            return .maxHeightWithTopInset(100)
+        } else {
+            print("b")
+            return .maxHeightWithTopInset(UIScreen.main.bounds.height - 440)
+        }
+        
+    }
+    
+}
+
+extension BasicModalViewController: UITextFieldDelegate {
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if let text = textField.text {
+            if let floatingLabelTextField = textField as? SkyFloatingLabelTextField {
+                if (text.first == "0") {
+                    floatingLabelTextField.errorMessage = "Invalid num"
+                } else {
+                    floatingLabelTextField.errorMessage = ""
+                }
+            }
+        }
+    }
+    
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        self.isComparable = false
+        if (string.first == "0" && textField.text == "") {
+            return false
+        } else {
+            
+            if (!(minTextField.text!.isEmpty) && !(maxTextField.text!.isEmpty)) {
+                self.isComparable = true
+            } else {
+                self.isComparable = false
+            }
+//
+//            let formatter = NumberFormatter()
+//            formatter.numberStyle = .decimal
+//            formatter.locale = Locale.current
+//            formatter.maximumFractionDigits = 0
+//
+//            if let removeAllSeperator = textField.text?.replacingOccurrences(of: formatter.groupingSeparator, with: "") {
+//                var beforeForemattedString = removeAllSeperator + string
+//                if formatter.number(from: string) != nil {
+//                    if let formattedNumber = formatter.number(from: beforeForemattedString),
+//                       let formattedString = formatter.string(from: formattedNumber) {
+//                        textField.text = formattedString
+//                        return false
+//                    }
+//                }
+//            }
+            
+            
+            
+            return true
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        let floatingLabelTextField = textField as? SkyFloatingLabelTextField
+        
+        if self.isComparable! {
+            let minVal = Int(self.minTextField.text!)!
+            let maxVal = Int(self.maxTextField.text!)!
+        
+            if minVal <= maxVal {
+                floatingLabelTextField!.errorMessage = ""
+                self.minTextField.errorMessage = ""
+                self.maxTextField.errorMessage = ""
+                print("OK")
+            } else {
+                
+                
+                
+                floatingLabelTextField!.errorMessage = "Invalid num"
+             
+                
+                
+                
+                print("FAIL")
+            }
+            
+        }
+    }
+
+}

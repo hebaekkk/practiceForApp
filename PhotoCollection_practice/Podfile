@@ -7,6 +7,8 @@ target 'PhotoCollection_practice' do
    pod 'SwiftyJSON', '~> 4.0'
    pod 'SDWebImage', '~> 4.0'
    pod 'KeychainSwift', '~> 19.0'
+   pod 'PanModal'
+   pod 'SkyFloatingLabelTextField', '~> 3.0'
 
 
 end
