@@ -14,12 +14,12 @@ class BottomPopupViewController: UIViewController {
         
         
         let vc = BasicModalViewController()
-        self.present(vc, animated: true, completion: {
-            
-            vc.presentationController?.presentedView?.gestureRecognizers?[0].isEnabled = false
-
-        })
-        //presentPanModal(vc)
+//        self.present(vc, animated: true, completion: {
+//
+//            vc.presentationController?.presentedView?.gestureRecognizers?[0].isEnabled = false
+//
+//        })
+        presentPanModal(vc)
         
         
         

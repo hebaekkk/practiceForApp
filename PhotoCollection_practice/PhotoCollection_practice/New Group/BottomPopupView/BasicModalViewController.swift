@@ -12,6 +12,9 @@ import SkyFloatingLabelTextField
 
 class BasicModalViewController: UIViewController {
 
+    //viewToShake.layer.add(animation, forKey: "position")
+    
+    
     var isKeyboard: Bool?
     var isComparable: Bool?
     
@@ -33,6 +36,7 @@ class BasicModalViewController: UIViewController {
     }()
     let maxTextField: SkyFloatingLabelTextField = {
         let tf = SkyFloatingLabelTextField()
+        tf.textAlignment = .left
         tf.placeholder = "Hi"
         tf.keyboardType = .numberPad
         tf.title = "Max"
@@ -66,7 +70,7 @@ class BasicModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-      
+        
         //self.view.gestureRecognizers?[0].isEnabled = false
     
         self.view.gestureRecognizers?.removeAll()
@@ -75,6 +79,7 @@ class BasicModalViewController: UIViewController {
         view.addSubview(modalTitle)
         //view.addSubview(maxTitle)
         //view.addSubview(textField)
+        self.isComparable = false
         self.isKeyboard = false
         maxTextField.delegate = self
         minTextField.delegate = self
@@ -87,7 +92,7 @@ class BasicModalViewController: UIViewController {
                                                name: UIResponder.keyboardWillShowNotification,
                                                object: nil)
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardWillHide),
+                                               selector: #selector(BasicModalViewController.keyboardWillHide),
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil
                                                 )
@@ -95,7 +100,7 @@ class BasicModalViewController: UIViewController {
         
         modalTitle.snp.makeConstraints{(make) in
             make.centerX.equalTo(self.view.center)
-            make.top.equalTo(self.view).offset(36)
+            make.top.equalTo(self.view).offset(20)
             make.height.equalTo(36)
         }
         
@@ -153,6 +158,45 @@ class BasicModalViewController: UIViewController {
             make.top.equalTo(maxStackView.snp_bottom).offset(10)
             make.height.equalTo(60)
         }
+        
+        let cancleBtn = UIButton()
+        cancleBtn.setTitle("취소", for: .normal)
+        cancleBtn.backgroundColor = .gray
+        cancleBtn.setTitleColor(.white, for: .normal)
+        
+        let submitBtn = UIButton()
+        submitBtn.setTitle("견적 제출", for: .normal)
+        submitBtn.backgroundColor = .purple
+        submitBtn.setTitleColor(.white, for: .normal)
+        
+        let bottomButtonStack = UIStackView()
+        bottomButtonStack.axis = .horizontal
+        bottomButtonStack.spacing = 0
+        
+        view.addSubview(bottomButtonStack)
+        bottomButtonStack.addArrangedSubview(cancleBtn)
+        bottomButtonStack.addArrangedSubview(submitBtn)
+        
+        let screenWidth = UIScreen.main.bounds.width
+        
+        cancleBtn.snp.makeConstraints{ (make) in
+            make.width.equalTo(117)
+            make.height.equalTo(60)
+        }
+        
+        submitBtn.snp.makeConstraints{ (make) in
+            make.width.equalTo(screenWidth - 117)
+            make.height.equalTo(60)
+        }
+        
+        bottomButtonStack.snp.makeConstraints{ (make) in
+            make.leading.equalTo(self.view)
+            make.trailing.equalTo(self.view)
+            make.height.equalTo(60)
+            make.top.equalTo(minStackView.snp_bottom).offset(10)
+        }
+
+        
     }
     
     var keySize: CGFloat?
@@ -193,7 +237,7 @@ class BasicModalViewController: UIViewController {
 }
 
 extension BasicModalViewController: PanModalPresentable {
-    
+
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -201,20 +245,39 @@ extension BasicModalViewController: PanModalPresentable {
     var panScrollable: UIScrollView? {
         return nil
     }
+    
+    //////이것이 해답
+    var allowsDragToDismiss: Bool {
+        return false
+    }
+    
+//
+//    var isUserInteractionEnabled: Bool {
+//        return false
+//    }
+
+    var allowsExtendedPanScrolling: Bool {
+        return false
+    }
+    
+    var showDragIndicator: Bool {
+        return false
+    }
+    ///////modal stretch 막자 !!!
+    
     var shortFormHeight: PanModalHeight {
         return self.isKeyboard! ? .contentHeight(self.keySize! + 220) : .contentHeight(300)
     }
     var anchorModalToLongForm: Bool {
         return false
     }
-    
     var longFormHeight: PanModalHeight {
         if self.isKeyboard! {
             print("a")
             return .maxHeightWithTopInset(100)
         } else {
             print("b")
-            return .maxHeightWithTopInset(UIScreen.main.bounds.height - 440)
+            return .maxHeightWithTopInset(UIScreen.main.bounds.height - 300)
         }
         
     }
@@ -273,8 +336,10 @@ extension BasicModalViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         
         let floatingLabelTextField = textField as? SkyFloatingLabelTextField
+    
         
         if self.isComparable! {
+            
             let minVal = Int(self.minTextField.text!)!
             let maxVal = Int(self.maxTextField.text!)!
         
@@ -284,18 +349,35 @@ extension BasicModalViewController: UITextFieldDelegate {
                 self.maxTextField.errorMessage = ""
                 print("OK")
             } else {
-                
-                
-                
+                print("case 2")
+                floatingLabelTextField?.shake()
                 floatingLabelTextField!.errorMessage = "Invalid num"
-             
-                
-                
                 
                 print("FAIL")
             }
             
+        } else {
+            
+            if (self.minTextField.text!.isEmpty || ((self.maxTextField.text?.isEmpty) != nil)) {
+                floatingLabelTextField!.errorMessage = ""
+                self.minTextField.errorMessage = ""
+                self.maxTextField.errorMessage = ""
+            } else {
+            
+                floatingLabelTextField?.shake()
+                floatingLabelTextField!.errorMessage = "Invalid num"
+            }
         }
     }
 
+}
+
+extension UIView {
+    func shake() {
+        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.duration = 0.6
+        animation.values = [-10.0, 10.0, -10.0, 10.0, -5.0, 5.0, -2.5, 2.5, 0.0 ]
+        layer.add(animation, forKey: "shake")
+    }
 }
