@@ -38,6 +38,7 @@
 		41C5B1AA25C04E55003036D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C5B1A825C04E55003036D8 /* LaunchScreen.storyboard */; };
 		41C5B1B525C04E55003036D8 /* PhotoCollection_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B1B425C04E55003036D8 /* PhotoCollection_practiceTests.swift */; };
 		41C5B1C025C04E55003036D8 /* PhotoCollection_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B1BF25C04E55003036D8 /* PhotoCollection_practiceUITests.swift */; };
+		41CD3B9925D9F8A500EF6DCE /* TopButtonModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD3B9825D9F8A500EF6DCE /* TopButtonModalViewController.swift */; };
 		41ECA97825C14A8200306097 /* EditPhotoViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA97725C14A8200306097 /* EditPhotoViewcontroller.swift */; };
 		41ECA98025C14C0600306097 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA97F25C14C0600306097 /* Extensions.swift */; };
 		41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA98425C14C4A00306097 /* PostEditorPhotoCell.swift */; };
@@ -103,6 +104,7 @@
 		41C5B1BB25C04E55003036D8 /* PhotoCollection_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoCollection_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C5B1BF25C04E55003036D8 /* PhotoCollection_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection_practiceUITests.swift; sourceTree = "<group>"; };
 		41C5B1C125C04E55003036D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41CD3B9825D9F8A500EF6DCE /* TopButtonModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonModalViewController.swift; sourceTree = "<group>"; };
 		41ECA97725C14A8200306097 /* EditPhotoViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoViewcontroller.swift; sourceTree = "<group>"; };
 		41ECA97F25C14C0600306097 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		41ECA98425C14C4A00306097 /* PostEditorPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorPhotoCell.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */,
 				4148F97A25D221070076F700 /* BasicModalViewController.swift */,
+				41CD3B9825D9F8A500EF6DCE /* TopButtonModalViewController.swift */,
 				41A1E60B25C7ED6D009CA72E /* PopView */,
 			);
 			name = BottomPopupView;
@@ -499,6 +502,7 @@
 				4159E70425C926FC00949CCF /* TokenCollectionViewFlowLayout.swift in Sources */,
 				4159E66025C8EB3100949CCF /* BaseCollectionViewCell.swift in Sources */,
 				41A1E5F225C7D1A6009CA72E /* BottomPopupViewController.swift in Sources */,
+				41CD3B9925D9F8A500EF6DCE /* TopButtonModalViewController.swift in Sources */,
 				41ECA99525C14EB200306097 /* PostEditorPhotoCollectionView.swift in Sources */,
 				411760D525CD32B1000C19F0 /* MyPostCell.swift in Sources */,
 				41721E4C25C3A62E0073696F /* MyPostEditorPhotoCollectionView.swift in Sources */,

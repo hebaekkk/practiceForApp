@@ -9,7 +9,47 @@ import UIKit
 import Alamofire
 import KeychainSwift
 
+protocol MessageBoxDelegate: class {
+  func touchButton()
+}
+
+class MessageBox: UIView {
+
+  weak var delegate: MessageBoxDelegate?
+  var button: UIButton?
+
+  public override init(frame: CGRect) {
+    super.init(frame: frame)
+
+    configure()
+  }
+
+  public required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+
+    configure()
+  }
+
+  func configure() {
+    button = UIButton(type: .system)
+    if let btn = button {
+      btn.setTitle("SEND", for: .normal)
+      btn.sizeToFit()
+      btn.frame.origin = CGPoint(x: (self.bounds.width - btn.bounds.width) * 0.5,
+                                 y: (self.bounds.height - btn.bounds.height) * 0.5)
+      btn.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
+      self.addSubview(btn)
+    }
+  }
+
+  @objc func tapButton() {
+    delegate?.touchButton()
+  }
+}
+
 class CommViewController: UIViewController {
+    
+    var messageBox: MessageBox?
 
     let UUID: String = "e0a188cd-22ed-4d8e-9872-66f851bef6b1"
     let url = "http://192.168.0.11:3000/team/servicearea"
@@ -21,6 +61,7 @@ class CommViewController: UIViewController {
 
     let keychain = KeychainSwift()
 
+    
 
     private var receivedArray = [ServiceArea]()
     private var topCollView: DynamicHeightCollectionView!
@@ -29,6 +70,15 @@ class CommViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         jsonDecoding()
+        messageBox = MessageBox(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 200)))
+        if let msg = messageBox {
+          msg.frame.origin = CGPoint(x: (UIScreen.main.bounds.width - msg.bounds.width) * 0.5,
+                                     y: (UIScreen.main.bounds.height - msg.bounds.height) * 0.5)
+
+          msg.backgroundColor = .lightGray
+          msg.delegate = self
+          self.view.addSubview(msg)
+        }
 
     }
 
@@ -66,6 +116,11 @@ class CommViewController: UIViewController {
 
 }
 
+extension CommViewController: MessageBoxDelegate {
+    func touchButton() {
+    print("touchButton")
+  }
+}
 //class CommViewController: UIViewController {
 //
 //    let UUID = "e0a188cd-22ed-4d8e-9872-66f851bef6b1"

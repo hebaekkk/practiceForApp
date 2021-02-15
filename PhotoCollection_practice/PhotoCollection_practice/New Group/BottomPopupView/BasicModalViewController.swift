@@ -37,7 +37,7 @@ class BasicModalViewController: UIViewController {
     let maxTextField: SkyFloatingLabelTextField = {
         let tf = SkyFloatingLabelTextField()
         tf.textAlignment = .left
-        tf.placeholder = "Hi"
+        tf.placeholder = "최대"
         tf.keyboardType = .numberPad
         tf.title = "Max"
         //tf.frame = CGRect(x: 0, y: 0, width: 80, height: 60)
@@ -58,7 +58,7 @@ class BasicModalViewController: UIViewController {
     }()
     let minTextField: SkyFloatingLabelTextField = {
         let tf = SkyFloatingLabelTextField()
-        tf.placeholder = "Hi"
+        tf.placeholder = "최소"
         tf.keyboardType = .numberPad
         tf.title = "Min"
         //tf.frame = CGRect(x: 0, y: 0, width: 80, height: 60)
@@ -247,34 +247,35 @@ extension BasicModalViewController: PanModalPresentable {
     }
     
     //////이것이 해답
-    var allowsDragToDismiss: Bool {
-        return false
-    }
+//    var allowsDragToDismiss: Bool {
+//        return false
+//    }
     
 //
 //    var isUserInteractionEnabled: Bool {
 //        return false
 //    }
 
-    var allowsExtendedPanScrolling: Bool {
-        return false
-    }
+//    var allowsExtendedPanScrolling: Bool {
+//        return false
+//    }
     
     var showDragIndicator: Bool {
         return false
     }
     ///////modal stretch 막자 !!!
     
-    var shortFormHeight: PanModalHeight {
-        return self.isKeyboard! ? .contentHeight(self.keySize! + 220) : .contentHeight(300)
-    }
+//    var shortFormHeight: PanModalHeight {
+//        return self.isKeyboard! ? .contentHeight(self.keySize! + 22) : .contentHeight(300)
+//    }
     var anchorModalToLongForm: Bool {
         return false
     }
     var longFormHeight: PanModalHeight {
         if self.isKeyboard! {
             print("a")
-            return .maxHeightWithTopInset(100)
+            let spacing = UIScreen.main.bounds.height - self.keySize! - 300
+            return .maxHeightWithTopInset(spacing)//.maxHeightWithTopInset(100)
         } else {
             print("b")
             return .maxHeightWithTopInset(UIScreen.main.bounds.height - 300)

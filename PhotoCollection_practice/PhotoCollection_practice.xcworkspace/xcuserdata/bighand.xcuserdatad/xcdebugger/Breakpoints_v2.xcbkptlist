@@ -14,8 +14,8 @@
             filePath = "PhotoCollection_practice/New Group/BottomPopupView/BottomPopupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "BottomPopupViewController"
             landmarkType = "3">
             <Locations>
@@ -142,6 +142,54 @@
             endingLineNumber = "92"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2880BC19-701E-46C7-935C-EDB31002624C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoCollection_practice/New Group/BottomPopupView/BasicModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2880BC19-701E-46C7-935C-EDB31002624C - 6f874d7e619bb2b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.BasicModalViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BasicModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "5158">
+               </Location>
+               <Location
+                  uuid = "2880BC19-701E-46C7-935C-EDB31002624C - d55c2aab1abd6f5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (SnapKit.ConstraintMaker) -&gt; () in PhotoCollection_practice.BasicModalViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/New%20Group/BottomPopupView/BasicModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "111">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

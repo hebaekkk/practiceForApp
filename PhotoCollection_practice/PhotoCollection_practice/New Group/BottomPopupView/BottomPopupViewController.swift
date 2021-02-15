@@ -6,10 +6,32 @@
 //
 
 import UIKit
+import SnapKit
 import PanModal
 
 class BottomPopupViewController: UIViewController {
 
+    let topButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("TOP", for: .normal)
+        return button
+    }()
+    
+    func setTopButton() {
+        self.view.addSubview(topButton)
+        topButton.addTarget(self, action: #selector(topButtonClicked(_:)), for: .touchUpInside)
+        topButton.snp.makeConstraints{ (make) in
+            make.centerX.equalTo(self.view)
+            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(30)
+            make.height.equalTo(60)
+            
+        }
+    }
+    
+    @objc func topButtonClicked(_ sender: UIButton) {
+        
+    }
+    
     @IBAction func button(_ sender: Any) {
         
         
@@ -97,6 +119,7 @@ class BottomPopupViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = false
         view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+        setTopButton()
         
     }
     
