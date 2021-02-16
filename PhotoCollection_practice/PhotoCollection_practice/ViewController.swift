@@ -10,10 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBAction func delegatePractice(_ sender: Any) {
+        let vc = dVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
     @IBAction func photoCollectionButton(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "EditPhotoViewController")
         navigationController?.pushViewController(vc!, animated: true)
-        
     }
     
     @IBAction func moveToMyCollectionBtn(_ sender: Any) {
@@ -50,11 +57,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
     }
 
 

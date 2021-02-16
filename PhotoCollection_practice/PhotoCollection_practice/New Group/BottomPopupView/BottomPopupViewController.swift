@@ -41,6 +41,7 @@ class BottomPopupViewController: UIViewController {
 //            vc.presentationController?.presentedView?.gestureRecognizers?[0].isEnabled = false
 //
 //        })
+        vc.delegate = self
         presentPanModal(vc)
         
         
@@ -120,12 +121,45 @@ class BottomPopupViewController: UIViewController {
         navigationController?.navigationBar.isHidden = false
         view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
         setTopButton()
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       view.endEditing(true)
     }
 
+    var maxSave: String?
 
 }
+
+extension BottomPopupViewController: BasicModalDelegate,AlertViewDelegate {
+    func pressOkButton() {
+        let vc = ConfirmViewController()
+        print("pressOKButton")
+        DispatchQueue.main.async { //[weak self] in
+            print(self.modalPresentationStyle.rawValue)
+            
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func sendMax(max: String) {
+        self.maxSave = max
+    }
+    
+    func pressSubmitButton() {
+        print("submit눌렸어")
+        let vc = AlertViewController()
+        DispatchQueue.main.async { [weak self] in
+            self?.topButton.setTitle("눌림완료", for: .normal)
+            vc.maxLabel.text = self?.maxSave
+            vc.delegate = self
+            //vc.maxLabel.text = "Change Max"
+            self?.present(vc, animated: true, completion: nil)
+            
+        }
+        
+    }
+
+    
+}
+

@@ -19,6 +19,10 @@
 		41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6B25CB8791006EC37E /* SigunguJSON.swift */; };
 		41466A6E25CB8791006EC37E /* ServiceArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6C25CB8791006EC37E /* ServiceArea.swift */; };
 		4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148F97A25D221070076F700 /* BasicModalViewController.swift */; };
+		414A0EA225DB4CD40052B929 /* dVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A0EA125DB4CD40052B929 /* dVC.swift */; };
+		414A0EB625DB58710052B929 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A0EB425DB58710052B929 /* AlertViewController.swift */; };
+		414A0EB725DB58710052B929 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414A0EB525DB58710052B929 /* AlertViewController.xib */; };
+		414A0EBC25DB7C480052B929 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A0EBB25DB7C480052B929 /* ConfirmViewController.swift */; };
 		4159E65925C8EA9D00949CCF /* DynamicHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E65825C8EA9D00949CCF /* DynamicHeightViewController.swift */; };
 		4159E66025C8EB3100949CCF /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E65F25C8EB3100949CCF /* BaseCollectionViewCell.swift */; };
 		4159E66525C8EC7900949CCF /* TokenMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E66425C8EC7900949CCF /* TokenMainCell.swift */; };
@@ -79,6 +83,10 @@
 		41466A6B25CB8791006EC37E /* SigunguJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigunguJSON.swift; sourceTree = "<group>"; };
 		41466A6C25CB8791006EC37E /* ServiceArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceArea.swift; sourceTree = "<group>"; };
 		4148F97A25D221070076F700 /* BasicModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicModalViewController.swift; sourceTree = "<group>"; };
+		414A0EA125DB4CD40052B929 /* dVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dVC.swift; sourceTree = "<group>"; };
+		414A0EB425DB58710052B929 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		414A0EB525DB58710052B929 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		414A0EBB25DB7C480052B929 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		4159E65825C8EA9D00949CCF /* DynamicHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightViewController.swift; sourceTree = "<group>"; };
 		4159E65F25C8EB3100949CCF /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		4159E66425C8EC7900949CCF /* TokenMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenMainCell.swift; sourceTree = "<group>"; };
@@ -179,6 +187,14 @@
 			path = CommCheckView;
 			sourceTree = "<group>";
 		};
+		414A0EA025DB4C5D0052B929 /* DelegatePractice */ = {
+			isa = PBXGroup;
+			children = (
+				414A0EA125DB4CD40052B929 /* dVC.swift */,
+			);
+			path = DelegatePractice;
+			sourceTree = "<group>";
+		};
 		4159E65D25C8EAA600949CCF /* DynamicHeight */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */,
+				414A0EB425DB58710052B929 /* AlertViewController.swift */,
+				414A0EBB25DB7C480052B929 /* ConfirmViewController.swift */,
+				414A0EB525DB58710052B929 /* AlertViewController.xib */,
 				4148F97A25D221070076F700 /* BasicModalViewController.swift */,
 				41CD3B9825D9F8A500EF6DCE /* TopButtonModalViewController.swift */,
 				41A1E60B25C7ED6D009CA72E /* PopView */,
@@ -259,6 +278,7 @@
 				41C5B19F25C04E53003036D8 /* SceneDelegate.swift */,
 				41C5B1A125C04E53003036D8 /* ViewController.swift */,
 				41ECA97F25C14C0600306097 /* Extensions.swift */,
+				414A0EA025DB4C5D0052B929 /* DelegatePractice */,
 				41466A6725CB8692006EC37E /* CommCheckView */,
 				4159E65D25C8EAA600949CCF /* DynamicHeight */,
 				41267B5225C28E8D001009E6 /* New Group */,
@@ -437,6 +457,7 @@
 				41A1E61025C7EDD4009CA72E /* NotificationViewController.xib in Resources */,
 				41C5B1A725C04E55003036D8 /* Assets.xcassets in Resources */,
 				41C5B1A525C04E53003036D8 /* Main.storyboard in Resources */,
+				414A0EB725DB58710052B929 /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +512,7 @@
 				4159E66A25C8ECD600949CCF /* Token.swift in Sources */,
 				4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */,
 				41466A6325CB8685006EC37E /* CommViewController.swift in Sources */,
+				414A0EA225DB4CD40052B929 /* dVC.swift in Sources */,
 				411760BC25CCF17B000C19F0 /* MyContents.swift in Sources */,
 				41466A6E25CB8791006EC37E /* ServiceArea.swift in Sources */,
 				41C5B1A225C04E53003036D8 /* ViewController.swift in Sources */,
@@ -513,9 +535,11 @@
 				41ECA9A225C1521100306097 /* PostEditorPhotoPickerController.swift in Sources */,
 				4159E6F625C91F7000949CCF /* Spinner.swift in Sources */,
 				41ECA97825C14A8200306097 /* EditPhotoViewcontroller.swift in Sources */,
+				414A0EBC25DB7C480052B929 /* ConfirmViewController.swift in Sources */,
 				411760C125CCF1CF000C19F0 /* MyBaseCell.swift in Sources */,
 				41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */,
 				41ECA9A725C152B000306097 /* PostCell.swift in Sources */,
+				414A0EB625DB58710052B929 /* AlertViewController.swift in Sources */,
 				41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */,
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,
 				41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */,

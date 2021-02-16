@@ -10,10 +10,16 @@ import PanModal
 import SnapKit
 import SkyFloatingLabelTextField
 
+protocol BasicModalDelegate: class {
+    func pressSubmitButton()
+    func sendMax(max: String)
+}
+
 class BasicModalViewController: UIViewController {
 
     //viewToShake.layer.add(animation, forKey: "position")
     
+    weak var delegate: BasicModalDelegate?
     
     var isKeyboard: Bool?
     var isComparable: Bool?
@@ -195,8 +201,16 @@ class BasicModalViewController: UIViewController {
             make.height.equalTo(60)
             make.top.equalTo(minStackView.snp_bottom).offset(10)
         }
-
         
+        
+        submitBtn.addTarget(self, action: #selector(pressSubmitButtonHandler), for: .touchUpInside)
+        
+    }
+    // MARK : Submit button press
+    @objc func pressSubmitButtonHandler() {
+        delegate?.pressSubmitButton()
+        delegate?.sendMax(max: maxTextField.text!)
+        dismiss(animated: true, completion: nil)
     }
     
     var keySize: CGFloat?
