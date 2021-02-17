@@ -52,6 +52,8 @@
 		41ECA9A225C1521100306097 /* PostEditorPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA9A125C1521100306097 /* PostEditorPhotoPickerController.swift */; };
 		41ECA9A725C152B000306097 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA9A625C152B000306097 /* PostCell.swift */; };
 		41ECA9B325C15BD000306097 /* MyPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA9B225C15BD000306097 /* MyPhotoCollectionViewController.swift */; };
+		41EEDE1A25DCB283001A6735 /* DynamicTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EEDE1925DCB283001A6735 /* DynamicTableVC.swift */; };
+		41EEDE2225DCB3D9001A6735 /* DyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EEDE2125DCB3D9001A6735 /* DyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,8 @@
 		41ECA9A125C1521100306097 /* PostEditorPhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorPhotoPickerController.swift; sourceTree = "<group>"; };
 		41ECA9A625C152B000306097 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		41ECA9B225C15BD000306097 /* MyPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		41EEDE1925DCB283001A6735 /* DynamicTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableVC.swift; sourceTree = "<group>"; };
+		41EEDE2125DCB3D9001A6735 /* DyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyTableViewCell.swift; sourceTree = "<group>"; };
 		4E2DD7291B49821E7CA92C36 /* Pods-PhotoCollection_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollection_practice.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollection_practice/Pods-PhotoCollection_practice.release.xcconfig"; sourceTree = "<group>"; };
 		7EE5B999F3B1F2053AED2588 /* libPods-PhotoCollection_practice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoCollection_practice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4460CF934C2C2C72855CB7 /* Pods-PhotoCollection_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollection_practice.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollection_practice/Pods-PhotoCollection_practice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,7 +199,7 @@
 			path = DelegatePractice;
 			sourceTree = "<group>";
 		};
-		4159E65D25C8EAA600949CCF /* DynamicHeight */ = {
+		4159E65D25C8EAA600949CCF /* DynamicHeightCollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				4159E65825C8EA9D00949CCF /* DynamicHeightViewController.swift */,
@@ -203,7 +207,7 @@
 				4159E6FA25C9241B00949CCF /* CustomLayout */,
 				4159E65E25C8EAF900949CCF /* ViewComponent */,
 			);
-			path = DynamicHeight;
+			path = DynamicHeightCollectionView;
 			sourceTree = "<group>";
 		};
 		4159E65E25C8EAF900949CCF /* ViewComponent */ = {
@@ -278,9 +282,10 @@
 				41C5B19F25C04E53003036D8 /* SceneDelegate.swift */,
 				41C5B1A125C04E53003036D8 /* ViewController.swift */,
 				41ECA97F25C14C0600306097 /* Extensions.swift */,
+				41EEDE1825DCB25B001A6735 /* DynamicTable */,
 				414A0EA025DB4C5D0052B929 /* DelegatePractice */,
 				41466A6725CB8692006EC37E /* CommCheckView */,
-				4159E65D25C8EAA600949CCF /* DynamicHeight */,
+				4159E65D25C8EAA600949CCF /* DynamicHeightCollectionView */,
 				41267B5225C28E8D001009E6 /* New Group */,
 				41A1E5F025C7D186009CA72E /* BottomPopupView */,
 				41267B3525C283B2001009E6 /* Basic */,
@@ -338,6 +343,15 @@
 				411760D425CD32B1000C19F0 /* MyPostCell.swift */,
 			);
 			path = MyPhotoCollectionView;
+			sourceTree = "<group>";
+		};
+		41EEDE1825DCB25B001A6735 /* DynamicTable */ = {
+			isa = PBXGroup;
+			children = (
+				41EEDE1925DCB283001A6735 /* DynamicTableVC.swift */,
+				41EEDE2125DCB3D9001A6735 /* DyTableViewCell.swift */,
+			);
+			path = DynamicTable;
 			sourceTree = "<group>";
 		};
 		5E23CC0E6CCCBFB43C4DB57F /* Pods */ = {
@@ -540,10 +554,12 @@
 				41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */,
 				41ECA9A725C152B000306097 /* PostCell.swift in Sources */,
 				414A0EB625DB58710052B929 /* AlertViewController.swift in Sources */,
+				41EEDE1A25DCB283001A6735 /* DynamicTableVC.swift in Sources */,
 				41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */,
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,
 				41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */,
 				4159E65925C8EA9D00949CCF /* DynamicHeightViewController.swift in Sources */,
+				41EEDE2225DCB3D9001A6735 /* DyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

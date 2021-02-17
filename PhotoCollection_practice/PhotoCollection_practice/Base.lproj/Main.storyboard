@@ -111,6 +111,16 @@
                                     <action selector="delegatePractice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrS-X4-iQE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-Fy-ovt">
+                                <rect key="frame" x="4" y="100" width="162" height="59"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="40"/>
+                                <state key="normal" title="Dynamic Table">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dynamicTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZI-CM-SnJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,6 +129,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gaf-uI-EZ0" secondAttribute="bottom" id="2R7-K1-WLq"/>
                             <constraint firstItem="JnX-Gg-vUI" firstAttribute="top" secondItem="3wd-b0-bw7" secondAttribute="bottom" constant="28" id="3Nt-S8-Afa"/>
                             <constraint firstItem="iNJ-6h-ydp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3fr-5p-7qx"/>
+                            <constraint firstItem="gNZ-Fy-ovt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="6Br-rp-g5s"/>
                             <constraint firstItem="iNJ-6h-ydp" firstAttribute="top" secondItem="Ox3-sj-WhW" secondAttribute="bottom" constant="30" id="9ud-AX-vaz"/>
                             <constraint firstItem="VCe-r0-GQj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="FgW-KL-6dJ"/>
                             <constraint firstItem="VCe-r0-GQj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="KK4-si-rBZ"/>
@@ -134,6 +145,7 @@
                             <constraint firstItem="JnX-Gg-vUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCD-CZ-2F6"/>
                             <constraint firstItem="wet-Qg-ThQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="426" id="md2-Gj-O6f"/>
                             <constraint firstItem="3wd-b0-bw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="oqh-zG-69c"/>
+                            <constraint firstItem="gNZ-Fy-ovt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="p6I-b4-tb8"/>
                             <constraint firstItem="Gaf-uI-EZ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s1h-pZ-OE6"/>
                         </constraints>
                     </view>
