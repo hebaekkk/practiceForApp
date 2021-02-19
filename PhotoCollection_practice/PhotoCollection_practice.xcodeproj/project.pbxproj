@@ -15,6 +15,11 @@
 		411760D525CD32B1000C19F0 /* MyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411760D425CD32B1000C19F0 /* MyPostCell.swift */; };
 		41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */; };
 		41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */; };
+		41406B9625DF40480028F0E3 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406B9525DF40480028F0E3 /* InfoVC.swift */; };
+		41406B9F25DF439E0028F0E3 /* IDCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406B9E25DF439E0028F0E3 /* IDCardView.swift */; };
+		41406BA425DF449E0028F0E3 /* starAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406BA325DF449E0028F0E3 /* starAndLabel.swift */; };
+		41406BA925DF47C20028F0E3 /* imageVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406BA825DF47C20028F0E3 /* imageVerticalButton.swift */; };
+		41406BAE25DF5AD20028F0E3 /* businessRegisterbadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406BAD25DF5AD20028F0E3 /* businessRegisterbadge.swift */; };
 		41466A6325CB8685006EC37E /* CommViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6225CB8685006EC37E /* CommViewController.swift */; };
 		41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6B25CB8791006EC37E /* SigunguJSON.swift */; };
 		41466A6E25CB8791006EC37E /* ServiceArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41466A6C25CB8791006EC37E /* ServiceArea.swift */; };
@@ -81,6 +86,11 @@
 		411760D425CD32B1000C19F0 /* MyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostCell.swift; sourceTree = "<group>"; };
 		41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringImagePracticeViewController.swift; sourceTree = "<group>"; };
 		41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
+		41406B9525DF40480028F0E3 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		41406B9E25DF439E0028F0E3 /* IDCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCardView.swift; sourceTree = "<group>"; };
+		41406BA325DF449E0028F0E3 /* starAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starAndLabel.swift; sourceTree = "<group>"; };
+		41406BA825DF47C20028F0E3 /* imageVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageVerticalButton.swift; sourceTree = "<group>"; };
+		41406BAD25DF5AD20028F0E3 /* businessRegisterbadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = businessRegisterbadge.swift; sourceTree = "<group>"; };
 		41466A6225CB8685006EC37E /* CommViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommViewController.swift; sourceTree = "<group>"; };
 		41466A6B25CB8791006EC37E /* SigunguJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigunguJSON.swift; sourceTree = "<group>"; };
 		41466A6C25CB8791006EC37E /* ServiceArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceArea.swift; sourceTree = "<group>"; };
@@ -181,6 +191,34 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		41406B9425DF400C0028F0E3 /* InfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				41406B9525DF40480028F0E3 /* InfoVC.swift */,
+				41406B9D25DF437E0028F0E3 /* ViewComponents */,
+			);
+			path = InfoVC;
+			sourceTree = "<group>";
+		};
+		41406B9D25DF437E0028F0E3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				41406B9E25DF439E0028F0E3 /* IDCardView.swift */,
+				41406BA825DF47C20028F0E3 /* imageVerticalButton.swift */,
+				41406BA325DF449E0028F0E3 /* starAndLabel.swift */,
+				41406BB225DF5AD70028F0E3 /* New Group */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		41406BB225DF5AD70028F0E3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				41406BAD25DF5AD20028F0E3 /* businessRegisterbadge.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		41466A6725CB8692006EC37E /* CommCheckView */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +270,7 @@
 		41A1E5F025C7D186009CA72E /* BottomPopupView */ = {
 			isa = PBXGroup;
 			children = (
+				41406B9425DF400C0028F0E3 /* InfoVC */,
 				41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */,
 				414A0EB425DB58710052B929 /* AlertViewController.swift */,
 				414A0EBB25DB7C480052B929 /* ConfirmViewController.swift */,
@@ -525,6 +564,7 @@
 				411760D025CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift in Sources */,
 				4159E66A25C8ECD600949CCF /* Token.swift in Sources */,
 				4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */,
+				41406B9625DF40480028F0E3 /* InfoVC.swift in Sources */,
 				41466A6325CB8685006EC37E /* CommViewController.swift in Sources */,
 				414A0EA225DB4CD40052B929 /* dVC.swift in Sources */,
 				411760BC25CCF17B000C19F0 /* MyContents.swift in Sources */,
@@ -534,7 +574,9 @@
 				41ECA9B325C15BD000306097 /* MyPhotoCollectionViewController.swift in Sources */,
 				4159E66525C8EC7900949CCF /* TokenMainCell.swift in Sources */,
 				41C5B19E25C04E53003036D8 /* AppDelegate.swift in Sources */,
+				41406BA425DF449E0028F0E3 /* starAndLabel.swift in Sources */,
 				41ECA99D25C14FB900306097 /* PostEditorPhotoPreviewCollectionView.swift in Sources */,
+				41406BA925DF47C20028F0E3 /* imageVerticalButton.swift in Sources */,
 				4159E70425C926FC00949CCF /* TokenCollectionViewFlowLayout.swift in Sources */,
 				4159E66025C8EB3100949CCF /* BaseCollectionViewCell.swift in Sources */,
 				41A1E5F225C7D1A6009CA72E /* BottomPopupViewController.swift in Sources */,
@@ -547,6 +589,7 @@
 				41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */,
 				41C5B1A025C04E53003036D8 /* SceneDelegate.swift in Sources */,
 				41ECA9A225C1521100306097 /* PostEditorPhotoPickerController.swift in Sources */,
+				41406B9F25DF439E0028F0E3 /* IDCardView.swift in Sources */,
 				4159E6F625C91F7000949CCF /* Spinner.swift in Sources */,
 				41ECA97825C14A8200306097 /* EditPhotoViewcontroller.swift in Sources */,
 				414A0EBC25DB7C480052B929 /* ConfirmViewController.swift in Sources */,
@@ -559,6 +602,7 @@
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,
 				41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */,
 				4159E65925C8EA9D00949CCF /* DynamicHeightViewController.swift in Sources */,
+				41406BAE25DF5AD20028F0E3 /* businessRegisterbadge.swift in Sources */,
 				41EEDE2225DCB3D9001A6735 /* DyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

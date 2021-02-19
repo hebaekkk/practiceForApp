@@ -273,15 +273,27 @@
                                     <action selector="bottomButton:" destination="Z64-mN-hc4" eventType="touchUpInside" id="PkK-DK-iSX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyR-Mg-rGf">
+                                <rect key="frame" x="292" y="432.5" width="98" height="31"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <state key="normal" title="MoveToScroll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToInfoScroll:" destination="Z64-mN-hc4" eventType="touchUpInside" id="Sgh-o5-Sxf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0r8-QV-Uew"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0r8-QV-Uew" firstAttribute="trailing" secondItem="Qen-Vn-Nhd" secondAttribute="trailing" id="2Zp-mM-c30"/>
+                            <constraint firstItem="KyR-Mg-rGf" firstAttribute="centerY" secondItem="0hS-0n-UZc" secondAttribute="centerY" id="7Dx-qp-rkC"/>
                             <constraint firstItem="XQs-39-TJ7" firstAttribute="centerX" secondItem="0hS-0n-UZc" secondAttribute="centerX" id="Qv8-hX-IwO"/>
                             <constraint firstItem="0r8-QV-Uew" firstAttribute="bottom" secondItem="Q7H-Kn-UuI" secondAttribute="bottom" id="Txs-6K-0ZC"/>
                             <constraint firstItem="0r8-QV-Uew" firstAttribute="trailing" secondItem="Q7H-Kn-UuI" secondAttribute="trailing" id="ZIl-va-byW"/>
                             <constraint firstItem="0r8-QV-Uew" firstAttribute="bottom" secondItem="Qen-Vn-Nhd" secondAttribute="bottom" id="dPY-Mf-aMw"/>
+                            <constraint firstItem="0r8-QV-Uew" firstAttribute="trailing" secondItem="KyR-Mg-rGf" secondAttribute="trailing" constant="24" id="ouO-PK-bAn"/>
                             <constraint firstItem="Qen-Vn-Nhd" firstAttribute="leading" secondItem="0r8-QV-Uew" secondAttribute="leading" id="rDG-1J-Cr9"/>
                             <constraint firstItem="Q7H-Kn-UuI" firstAttribute="leading" secondItem="0r8-QV-Uew" secondAttribute="leading" id="ubk-vg-rdc"/>
                             <constraint firstItem="XQs-39-TJ7" firstAttribute="top" secondItem="0r8-QV-Uew" secondAttribute="top" constant="226" id="yPg-Gy-cy0"/>

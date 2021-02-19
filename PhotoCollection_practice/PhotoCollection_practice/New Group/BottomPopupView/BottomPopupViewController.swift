@@ -11,6 +11,13 @@ import PanModal
 
 class BottomPopupViewController: UIViewController {
 
+    
+    @IBAction func moveToInfoScroll(_ sender: Any) {
+        let vc = InfoVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     let topButton: UIButton = {
         let button = UIButton()
         button.setTitle("TOP", for: .normal)

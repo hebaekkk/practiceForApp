@@ -236,7 +236,7 @@ class BasicModalViewController: UIViewController {
         }
         
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.delegate = self
+        //textView.delegate = self
         
         
         textView.snp.makeConstraints{ make in
