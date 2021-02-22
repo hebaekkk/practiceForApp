@@ -61,6 +61,11 @@ class DynamicTableVC: UIViewController, DyTableCellDelegate {
 
 extension DynamicTableVC: UITableViewDataSource,UITableViewDelegate {
     
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollView.isScrollEnabled = false
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

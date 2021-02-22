@@ -24,7 +24,8 @@ class imageVerticalButton: UIView {
         let label = UILabel()
         label.text = "5.5"
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 12)
         return label
     }()
     
@@ -49,17 +50,22 @@ class imageVerticalButton: UIView {
         addSubview(buttonImage)
         addSubview(buttonLabel)
         addSubview(button)
+        self.snp.makeConstraints { make in
+            make.width.equalTo(70)
+            make.height.equalTo(60)
+        }
         
         buttonImage.snp.makeConstraints{ make in
-            make.height.equalTo(40)
-            make.width.equalTo(40)
+            make.height.equalTo(30)
+            make.width.equalTo(30)
             make.top.equalToSuperview()
             make.centerX.equalToSuperview()
         }
         buttonLabel.snp.makeConstraints{ make in
-            make.top.equalTo(buttonImage.snp_bottom).offset(10)
-            make.centerX.equalToSuperview()
+            make.top.equalTo(buttonImage.snp_bottom).offset(4)
+            make.centerX.equalTo(self)
             make.height.equalTo(21)
+            make.width.equalTo(60)
         }
         button.snp.makeConstraints{ make in
             //make.height.equalTo(80)

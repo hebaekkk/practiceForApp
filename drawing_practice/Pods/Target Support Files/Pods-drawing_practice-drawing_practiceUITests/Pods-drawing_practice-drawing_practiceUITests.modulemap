@@ -1,0 +1,6 @@
+framework module Pods_drawing_practice_drawing_practiceUITests {
+  umbrella header "Pods-drawing_practice-drawing_practiceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

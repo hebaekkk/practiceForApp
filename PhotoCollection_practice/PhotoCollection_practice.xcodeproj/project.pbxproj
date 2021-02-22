@@ -13,6 +13,7 @@
 		411760CB25CCF369000C19F0 /* MyPostEditorPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411760CA25CCF369000C19F0 /* MyPostEditorPhotoCell.swift */; };
 		411760D025CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411760CF25CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift */; };
 		411760D525CD32B1000C19F0 /* MyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411760D425CD32B1000C19F0 /* MyPostCell.swift */; };
+		41186AC625E38CF300ECBE13 /* estimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41186AC525E38CF300ECBE13 /* estimationView.swift */; };
 		41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */; };
 		41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */; };
 		41406B9625DF40480028F0E3 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406B9525DF40480028F0E3 /* InfoVC.swift */; };
@@ -84,6 +85,7 @@
 		411760CA25CCF369000C19F0 /* MyPostEditorPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostEditorPhotoCell.swift; sourceTree = "<group>"; };
 		411760CF25CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostEditorPhotoPickerController.swift; sourceTree = "<group>"; };
 		411760D425CD32B1000C19F0 /* MyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostCell.swift; sourceTree = "<group>"; };
+		41186AC525E38CF300ECBE13 /* estimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estimationView.swift; sourceTree = "<group>"; };
 		41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringImagePracticeViewController.swift; sourceTree = "<group>"; };
 		41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
 		41406B9525DF40480028F0E3 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
@@ -175,6 +177,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		41186AAB25E3457C00ECBE13 /* partial table */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "partial table";
+			sourceTree = "<group>";
+		};
+		41186ACA25E38D0A00ECBE13 /* IDCardView */ = {
+			isa = PBXGroup;
+			children = (
+				41406B9E25DF439E0028F0E3 /* IDCardView.swift */,
+				41406BA825DF47C20028F0E3 /* imageVerticalButton.swift */,
+				41406BA325DF449E0028F0E3 /* starAndLabel.swift */,
+			);
+			path = IDCardView;
+			sourceTree = "<group>";
+		};
 		41267B3525C283B2001009E6 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,9 +222,9 @@
 		41406B9D25DF437E0028F0E3 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
-				41406B9E25DF439E0028F0E3 /* IDCardView.swift */,
-				41406BA825DF47C20028F0E3 /* imageVerticalButton.swift */,
-				41406BA325DF449E0028F0E3 /* starAndLabel.swift */,
+				41186ACA25E38D0A00ECBE13 /* IDCardView */,
+				41186AC525E38CF300ECBE13 /* estimationView.swift */,
+				41186AAB25E3457C00ECBE13 /* partial table */,
 				41406BB225DF5AD70028F0E3 /* New Group */,
 			);
 			path = ViewComponents;
@@ -561,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41ECA98025C14C0600306097 /* Extensions.swift in Sources */,
+				41186AC625E38CF300ECBE13 /* estimationView.swift in Sources */,
 				411760D025CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift in Sources */,
 				4159E66A25C8ECD600949CCF /* Token.swift in Sources */,
 				4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */,

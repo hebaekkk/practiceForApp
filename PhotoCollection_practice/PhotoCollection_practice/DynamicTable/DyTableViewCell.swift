@@ -169,6 +169,8 @@ class DyTableViewCell: UITableViewCell {
         sizingLabel.numberOfLines = self.isExpaneded ? 0 : 2
         moreButton.setTitle(self.isExpaneded ? "Read less..." : "Read more...", for: .normal)
         
+        
+        
         print("SIZING LB : \(sizingLabel.numberOfLines)")
         delegate?.moreTapped(cell: self)
     }

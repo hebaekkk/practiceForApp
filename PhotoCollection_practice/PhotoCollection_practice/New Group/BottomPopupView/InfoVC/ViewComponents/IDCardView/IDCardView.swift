@@ -36,6 +36,7 @@ class IDCardView: UIView {
     
     let star: UIView = {
         let view = starAndLabel()
+        view.frame = CGRect(x: 0, y: 0, width: 60, height: 20)
         return view
     }()
     
@@ -64,6 +65,14 @@ class IDCardView: UIView {
     }
     
     func setupView() {
+        
+        self.backgroundColor = .white
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        teamTitle.translatesAutoresizingMaskIntoConstraints = false
+        cleanKind.translatesAutoresizingMaskIntoConstraints = false
+        star.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         addSubview(imageView)
         addSubview(teamTitle)
         addSubview(cleanKind)
@@ -71,17 +80,12 @@ class IDCardView: UIView {
         //addSubview(chatButton)
         //addSubview(callButton)
         
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        teamTitle.translatesAutoresizingMaskIntoConstraints = false
-        cleanKind.translatesAutoresizingMaskIntoConstraints = false
-        star.translatesAutoresizingMaskIntoConstraints = false
-        
         imageView.snp.makeConstraints{ make in
             make.width.equalTo(60)
             make.height.equalTo(60)
             make.leading.equalTo(self).offset(24)
             make.top.equalTo(self).offset(24)
-            make.top.equalTo(star.snp_top)
+            //make.top.equalTo(star.snp_top)
         }
         
         teamTitle.snp.makeConstraints{ make in
@@ -99,10 +103,13 @@ class IDCardView: UIView {
         }
 
         star.snp.makeConstraints{ make in
+            make.height.equalTo(25)
+            make.width.equalTo(60)
             make.trailing.equalTo(self).offset(-24)
             make.top.equalTo(self).offset(24)
-            make.height.equalTo(20)
-            //make.width.equalTo(60)
+           // make.top.equalTo(imageView.snp_top)
+            //make.bottom.equalTo(self).offset(-24)
+            
 
         }
 //
@@ -114,11 +121,12 @@ class IDCardView: UIView {
         buttonStack.addArrangedSubview(chatButton)
         buttonStack.addArrangedSubview(callButton)
         
-//        addSubview(buttonStack)
-//        buttonStack.snp.makeConstraints{ make in
-//            make.trailing.equalTo(self).offset(-24)
-//            make.bottom.equalTo(self).offset(-24)
-//            make.height.equalTo(70)
-//        }
+        addSubview(buttonStack)
+        buttonStack.snp.makeConstraints{ make in
+            make.trailing.equalTo(self).offset(-24)
+            make.bottom.equalTo(self).offset(-24)
+            make.width.equalTo(100)
+            make.height.equalTo(50)
+        }
     }
 }
