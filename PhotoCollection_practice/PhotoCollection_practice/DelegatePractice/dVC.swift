@@ -10,7 +10,7 @@ import SnapKit
 
 class dVC: UIViewController {
     
-    var height: CGFloat = 300.0
+    var height: CGFloat = 450.0
     
 //    func viewHeight(height: CGFloat) {
 //        self.height = 400.0//Int(height)
@@ -54,7 +54,7 @@ protocol dViewDelegate: class {
 
 class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDelegate {
     
-    var tableHeight: CGFloat?
+    var tableHeight: CGFloat = 300
     //var delegate: dViewDelegate?
     
     let bottomView: UIView = {
@@ -63,13 +63,35 @@ class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDele
         return view
     }()
     
+    let table = dyTableView()
+    
+    
     func moreTapped(cell: DyTableViewCell) {
         
         table.beginUpdates()
         
         //delegate?.viewHeight(height: table.contentSize.height)
+        
+        tableHeight += (table.cellForRow(at: IndexPath(row: 0, section: 0))?.contentView.frame.height)!
+        tableHeight += (table.cellForRow(at: IndexPath(row: 1, section: 0))?.contentView.frame.height)!
+        print(" update row 0 : \(table.cellForRow(at: IndexPath.init(row: 0, section: 0))?.contentView.frame.height)")
+        print(" update row 1 : \(table.cellForRow(at: IndexPath.init(row: 1, section: 0))?.contentView.frame.height)")
+        
+        
+        print("total height view : \(self.tableHeight)")
+        
+//        table.snp.makeConstraints{ make in
+//            make.leading.equalTo(self).offset(12)
+//            make.trailing.equalTo(self).offset(-12)
+//            //make.bottom.equalTo(self.view)
+//            make.height.equalTo(self.tableHeight)
+//            make.bottom.equalTo(footer.snp_top)
+//            make.top.equalTo(self)//.offset(20)
+//        }
+//
+        
+        table.layoutIfNeeded()
         table.endUpdates()
-        print(" update : \(table.contentSize.height)")
     }
     
 
@@ -81,14 +103,14 @@ class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDele
         return view
     }()
     
-    let table = UITableView()
+    //let table = UITableView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.clipsToBounds = true
         //MARK : Create random data
-        for _ in 1...1 {
-            let n = arc4random_uniform(6) + 4
+        for _ in 1...2 {
+            let n = 3
             var str = ""
             for i in 1..<n {
                 str += "Line \(i)\n"
@@ -100,10 +122,17 @@ class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDele
         
         
         setupView()
+        print("initial footer view : \(self.footer.frame.height)")
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("dView 안되네")
     }
+    
+    let footer: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .brown
+        return view
+    }()
     
     func setupView() {
         //addSubview(view)
@@ -113,13 +142,15 @@ class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDele
 //            make.width.equalToSuperview()
 //            make.height.equalTo(200)
 //        }
+        table.translatesAutoresizingMaskIntoConstraints = false
         table.delegate = self
         table.dataSource = self
         table.rowHeight = UITableView.automaticDimension
+        table.estimatedRowHeight = 200
         
-        
-        let footer = UIView(frame: .zero)//(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 150))
-        footer.backgroundColor = .systemBlue
+        table.isDynamicSizeRequried = true
+        //let footer = UIView(frame: .zero)//(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 150))
+        //footer.backgroundColor = .systemBlue
         
         table.tableFooterView = footer
         
@@ -128,10 +159,14 @@ class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDele
             make.leading.equalTo(self).offset(12)
             make.trailing.equalTo(self).offset(-12)
             //make.bottom.equalTo(self.view)
-            make.height.equalTo(250)
+            make.height.equalTo(self.tableHeight)
+            make.bottom.equalTo(footer.snp_top)
             make.top.equalTo(self)//.offset(20)
         }
         
+        self.tableHeight = 0
+        //print( " init height : \(table.cellForRow(at: IndexPath(row: 0, section: 0))?.contentView.frame.height)")
+        //print( " init height : \(table.cellForRow(at: IndexPath(row: 1, section: 0))?.contentView.frame.height)")
         addSubview(bottomView)
         bottomView.snp.makeConstraints{ make in
             make.leading.equalTo(self).offset(12)
@@ -157,18 +192,49 @@ class dView: UIView, UITableViewDelegate, UITableViewDataSource, DyTableCellDele
     }
     
     
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DyTableViewCell.identifier, for: indexPath) as! DyTableViewCell
         
+        //print("HEIGHT : \(cell.snp_height)")
+
         //cell.textLabel!.text = "CHANEL"
         let str = myArray[indexPath.row]
         let aTmp = str.components(separatedBy: "\n")
         
         cell.myInit(theTitle: "\(indexPath) with \(aTmp.count) rows", theBody: str)
         cell.delegate = self
+        print( " init height : \(tableView.cellForRow(at: indexPath)?.contentView.frame.height)")
+        //print( " init height : \(tableView.cellForRow(at: IndexPath(row: 1, section: 0))?.contentView.frame.height)")
         return cell
     }
+    
+    override func updateConstraintsIfNeeded() {
+        super.updateConstraintsIfNeeded()
+        print("updateConstraints If Needed")
+
+    }
+
+    
+//    var isDynamicSizeRequired = true
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        print("1번 이게 되나?")
+//        if !__CGSizeEqualToSize(bounds.size, self.table.intrinsicContentSize) {
+//            print("2번 이게 되나?")
+//            if self.table.intrinsicContentSize.height > table.frame.size.height {
+//                self.invalidateIntrinsicContentSize()
+//            }
+//            if isDynamicSizeRequired {
+//                self.invalidateIntrinsicContentSize()
+//            }
+//        }
+//    }
+//
+//    override var intrinsicContentSize: CGSize {
+//        return table.contentSize
+//    }
     
 }
 

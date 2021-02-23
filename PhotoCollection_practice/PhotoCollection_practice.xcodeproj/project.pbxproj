@@ -14,6 +14,7 @@
 		411760D025CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411760CF25CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift */; };
 		411760D525CD32B1000C19F0 /* MyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411760D425CD32B1000C19F0 /* MyPostCell.swift */; };
 		41186AC625E38CF300ECBE13 /* estimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41186AC525E38CF300ECBE13 /* estimationView.swift */; };
+		411F759025E4BCFF0037B1C8 /* dyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F758F25E4BCFF0037B1C8 /* dyTableView.swift */; };
 		41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */; };
 		41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */; };
 		41406B9625DF40480028F0E3 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406B9525DF40480028F0E3 /* InfoVC.swift */; };
@@ -86,6 +87,7 @@
 		411760CF25CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostEditorPhotoPickerController.swift; sourceTree = "<group>"; };
 		411760D425CD32B1000C19F0 /* MyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostCell.swift; sourceTree = "<group>"; };
 		41186AC525E38CF300ECBE13 /* estimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estimationView.swift; sourceTree = "<group>"; };
+		411F758F25E4BCFF0037B1C8 /* dyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dyTableView.swift; sourceTree = "<group>"; };
 		41267B3625C283D7001009E6 /* BringImagePracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringImagePracticeViewController.swift; sourceTree = "<group>"; };
 		41267B4D25C28E87001009E6 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
 		41406B9525DF40480028F0E3 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				414A0EA125DB4CD40052B929 /* dVC.swift */,
+				411F758F25E4BCFF0037B1C8 /* dyTableView.swift */,
 			);
 			path = DelegatePractice;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */,
 				41ECA9A725C152B000306097 /* PostCell.swift in Sources */,
 				414A0EB625DB58710052B929 /* AlertViewController.swift in Sources */,
+				411F759025E4BCFF0037B1C8 /* dyTableView.swift in Sources */,
 				41EEDE1A25DCB283001A6735 /* DynamicTableVC.swift in Sources */,
 				41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */,
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,
