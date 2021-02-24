@@ -41,6 +41,9 @@
 		41A1E5F225C7D1A6009CA72E /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */; };
 		41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1E60D25C7EDD4009CA72E /* NotificationViewController.swift */; };
 		41A1E61025C7EDD4009CA72E /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A1E60E25C7EDD4009CA72E /* NotificationViewController.xib */; };
+		41B5843E25E61E9F00F33DFD /* MyDyCollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5843D25E61E9F00F33DFD /* MyDyCollVC.swift */; };
+		41B5844325E61F2800F33DFD /* MyDyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5844225E61F2800F33DFD /* MyDyCollectionView.swift */; };
+		41B5845425E638D900F33DFD /* reviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5845325E638D800F33DFD /* reviewCell.swift */; };
 		41C5B19E25C04E53003036D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B19D25C04E53003036D8 /* AppDelegate.swift */; };
 		41C5B1A025C04E53003036D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B19F25C04E53003036D8 /* SceneDelegate.swift */; };
 		41C5B1A225C04E53003036D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5B1A125C04E53003036D8 /* ViewController.swift */; };
@@ -114,6 +117,9 @@
 		41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
 		41A1E60D25C7EDD4009CA72E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		41A1E60E25C7EDD4009CA72E /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		41B5843D25E61E9F00F33DFD /* MyDyCollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDyCollVC.swift; sourceTree = "<group>"; };
+		41B5844225E61F2800F33DFD /* MyDyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDyCollectionView.swift; sourceTree = "<group>"; };
+		41B5845325E638D800F33DFD /* reviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewCell.swift; sourceTree = "<group>"; };
 		41C5B19A25C04E53003036D8 /* PhotoCollection_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollection_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C5B19D25C04E53003036D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C5B19F25C04E53003036D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -314,6 +320,25 @@
 			path = PopView;
 			sourceTree = "<group>";
 		};
+		41B5843925E61E1E00F33DFD /* MyDyCol */ = {
+			isa = PBXGroup;
+			children = (
+				41B5845225E6388A00F33DFD /* cells */,
+				41B5843D25E61E9F00F33DFD /* MyDyCollVC.swift */,
+				41B5844225E61F2800F33DFD /* MyDyCollectionView.swift */,
+			);
+			name = MyDyCol;
+			path = DelegatePractice/MyDyCol;
+			sourceTree = "<group>";
+		};
+		41B5845225E6388A00F33DFD /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				41B5845325E638D800F33DFD /* reviewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		41C5B19125C04E53003036D8 = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +368,7 @@
 				41C5B19F25C04E53003036D8 /* SceneDelegate.swift */,
 				41C5B1A125C04E53003036D8 /* ViewController.swift */,
 				41ECA97F25C14C0600306097 /* Extensions.swift */,
+				41B5843925E61E1E00F33DFD /* MyDyCol */,
 				41EEDE1825DCB25B001A6735 /* DynamicTable */,
 				414A0EA025DB4C5D0052B929 /* DelegatePractice */,
 				41466A6725CB8692006EC37E /* CommCheckView */,
@@ -586,6 +612,7 @@
 				41186AC625E38CF300ECBE13 /* estimationView.swift in Sources */,
 				411760D025CD1D59000C19F0 /* MyPostEditorPhotoPickerController.swift in Sources */,
 				4159E66A25C8ECD600949CCF /* Token.swift in Sources */,
+				41B5843E25E61E9F00F33DFD /* MyDyCollVC.swift in Sources */,
 				4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */,
 				41406B9625DF40480028F0E3 /* InfoVC.swift in Sources */,
 				41466A6325CB8685006EC37E /* CommViewController.swift in Sources */,
@@ -621,11 +648,13 @@
 				41ECA9A725C152B000306097 /* PostCell.swift in Sources */,
 				414A0EB625DB58710052B929 /* AlertViewController.swift in Sources */,
 				411F759025E4BCFF0037B1C8 /* dyTableView.swift in Sources */,
+				41B5845425E638D900F33DFD /* reviewCell.swift in Sources */,
 				41EEDE1A25DCB283001A6735 /* DynamicTableVC.swift in Sources */,
 				41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */,
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,
 				41466A6D25CB8791006EC37E /* SigunguJSON.swift in Sources */,
 				4159E65925C8EA9D00949CCF /* DynamicHeightViewController.swift in Sources */,
+				41B5844325E61F2800F33DFD /* MyDyCollectionView.swift in Sources */,
 				41406BAE25DF5AD20028F0E3 /* businessRegisterbadge.swift in Sources */,
 				41EEDE2225DCB3D9001A6735 /* DyTableViewCell.swift in Sources */,
 			);

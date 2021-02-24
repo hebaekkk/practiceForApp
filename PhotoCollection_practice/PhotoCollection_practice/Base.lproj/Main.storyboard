@@ -121,6 +121,16 @@
                                     <action selector="dynamicTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZI-CM-SnJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBu-Uf-YxF">
+                                <rect key="frame" x="32" y="203" width="49" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MY DY">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myDyColl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7w-CC-THw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -140,12 +150,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BMy-2Q-n6X" secondAttribute="trailing" constant="23" id="R5e-7p-zdj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wet-Qg-ThQ" secondAttribute="trailing" constant="23" id="XN7-hR-waL"/>
                             <constraint firstItem="Ox3-sj-WhW" firstAttribute="top" secondItem="JnX-Gg-vUI" secondAttribute="bottom" constant="28" id="cAp-qz-S1S"/>
+                            <constraint firstItem="uBu-Uf-YxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="hGq-fU-NIK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gaf-uI-EZ0" secondAttribute="trailing" id="i4c-2h-0rv"/>
                             <constraint firstItem="tAQ-57-dZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3x-63-t3F"/>
                             <constraint firstItem="JnX-Gg-vUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCD-CZ-2F6"/>
                             <constraint firstItem="wet-Qg-ThQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="426" id="md2-Gj-O6f"/>
                             <constraint firstItem="3wd-b0-bw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="oqh-zG-69c"/>
                             <constraint firstItem="gNZ-Fy-ovt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="p6I-b4-tb8"/>
+                            <constraint firstItem="uBu-Uf-YxF" firstAttribute="top" secondItem="gNZ-Fy-ovt" secondAttribute="bottom" constant="44" id="pIB-OW-3yx"/>
                             <constraint firstItem="Gaf-uI-EZ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s1h-pZ-OE6"/>
                         </constraints>
                     </view>
