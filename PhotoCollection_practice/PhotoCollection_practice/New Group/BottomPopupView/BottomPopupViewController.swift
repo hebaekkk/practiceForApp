@@ -12,6 +12,11 @@ import PanModal
 class BottomPopupViewController: UIViewController {
 
     
+    @IBAction func moveToMulticellCollectionViewc(_ sender: Any) {
+        let vc = MulticellCollectionViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func moveToInfoScroll(_ sender: Any) {
         let vc = InfoVC()
         navigationController?.pushViewController(vc, animated: true)

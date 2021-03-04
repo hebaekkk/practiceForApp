@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.4.1)
   - KeychainSwift (19.0.0)
+  - PagingKit (1.15.0)
   - PanModal (1.2.7)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - KeychainSwift (~> 19.0)
+  - PagingKit
   - PanModal
   - SDWebImage (~> 4.0)
   - SkyFloatingLabelTextField (~> 3.0)
@@ -22,6 +24,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - KeychainSwift
+    - PagingKit
     - PanModal
     - SDWebImage
     - SkyFloatingLabelTextField
@@ -31,12 +34,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  PagingKit: 4bd58b65d71a82ab98486b6927e870c7fbc6c6eb
   PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 30ca7fdb507594dadeef0e38ddbba4abbd5c3c5c
+PODFILE CHECKSUM: f79d9d1cd33172b4bb44e67d4234310948e97fa2
 
 COCOAPODS: 1.9.3

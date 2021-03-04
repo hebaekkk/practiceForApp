@@ -160,6 +160,8 @@ class ProgressCell: UITableViewCell {
             //make.top.equalTo(progressView.snp.bottom).offset(10)
         }
         
+        
+        
     }
     
 

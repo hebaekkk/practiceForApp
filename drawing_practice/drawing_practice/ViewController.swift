@@ -145,5 +145,12 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func moveToString(_ sender: Any) {
+        let vc = StringVIewController()
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
 }
 

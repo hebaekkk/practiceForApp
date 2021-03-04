@@ -10,5 +10,6 @@ target 'PhotoCollection_practice' do
    pod 'PanModal'
    pod 'SkyFloatingLabelTextField', '~> 3.0'
 
+   pod "PagingKit" # add
 
 end

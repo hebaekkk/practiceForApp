@@ -14,7 +14,8 @@ class starAndLabel: UIView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.image = UIImage(systemName: "star")
+        imageView.image = UIImage(systemName: "star.fill")?.withTintColor(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+        
         return imageView
     }()
     
@@ -22,8 +23,8 @@ class starAndLabel: UIView {
         let label = UILabel()
         label.text = "5.5"
         label.clipsToBounds = true
-        label.frame = CGRect(x: 0, y: 0, width: 60, height: 30)
-        label.font = UIFont.systemFont(ofSize: 14)
+        //label.frame = CGRect(x: 0, y: 0, width: 60, height: 20)
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
     
@@ -46,42 +47,45 @@ class starAndLabel: UIView {
         let hStack = UIStackView()
         hStack.axis = .horizontal
         hStack.spacing = 4
-        hStack.distribution = .fillProportionally
+        hStack.distribution = .fill
         
         
         starImage.translatesAutoresizingMaskIntoConstraints = false
         starLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        
+        addSubview(hStack)
         hStack.addArrangedSubview(starImage)
         hStack.addArrangedSubview(starLabel)
         
         hStack.snp.makeConstraints{ make in
-            make.height.equalTo(25)
+            make.height.equalTo(18)
+            //make.width.equalTo(50)
+            make.top.equalTo(self)
+            make.leading.equalTo(self)
+            make.trailing.equalTo(self)
+            make.bottom.equalTo(self)
         }
-        
+        starImage.tintColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         starImage.snp.makeConstraints{ make in
-            make.height.equalTo(25)
-            make.width.equalTo(25)
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.leading.equalToSuperview()
-//            make.leading.equalTo(self)
-//            make.top.equalTo(self)
-//            make.bottom.equalTo(self)
+            make.height.equalTo(18)
+            make.width.equalTo(18)
+            make.top.equalTo(hStack.snp.top)
+            make.bottom.equalTo(hStack.snp.bottom)
+            make.leading.equalTo(hStack.snp.leading)
+
         }
         starLabel.snp.makeConstraints{ make in
-            make.height.equalTo(25)
-            make.trailing.equalToSuperview()
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-//            make.leading.equalTo(starImage.snp_trailing).offset(4)//(self).offset(34)
-//            make.top.equalToSuperview()//(self.snp_top)
-//            make.bottom.equalToSuperview()//(self.snp_bottom)
-//            make.trailing.equalToSuperview()
-//            make.height.equalTo(30)
+            make.height.equalTo(18)
+            make.width.equalTo(20)
+            make.trailing.equalTo(hStack.snp.trailing)
+            make.top.equalTo(hStack.snp.top)
+            make.bottom.equalTo(hStack.snp.bottom)
+
         }
         
         
-        addSubview(hStack)
+
+        
     }
 }

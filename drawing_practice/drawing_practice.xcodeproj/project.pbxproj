@@ -25,6 +25,9 @@
 		41186B4F25E3A9AC00ECBE13 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41186B4E25E3A9AC00ECBE13 /* CircleView.swift */; };
 		411F75A425E4E0830037B1C8 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F75A325E4E0830037B1C8 /* ProgressCell.swift */; };
 		411F75AA25E4E40E0037B1C8 /* ProgressTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F75A925E4E40D0037B1C8 /* ProgressTable.swift */; };
+		418A6E4925E780E900418A3D /* StringVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A6E4825E780E900418A3D /* StringVIewController.swift */; };
+		418A6E4D25E782AC00418A3D /* StringVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A6E4825E780E900418A3D /* StringVIewController.swift */; };
+		418A6E5125E782AD00418A3D /* StringVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A6E4825E780E900418A3D /* StringVIewController.swift */; };
 		7F140111C3C34E47C8AFA7E2 /* Pods_drawing_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A637C31F17BB3C5AE0EBCF69 /* Pods_drawing_practiceTests.framework */; };
 		9C0C8768C59C64A3D2A18E27 /* Pods_drawing_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D0DCA462ED8C9D6F582199 /* Pods_drawing_practice.framework */; };
 		AA7DDE5496005C54B7228997 /* Pods_drawing_practice_drawing_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD91BC2B91997DFF46F99A4 /* Pods_drawing_practice_drawing_practiceUITests.framework */; };
@@ -68,6 +71,7 @@
 		41186B4E25E3A9AC00ECBE13 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		411F75A325E4E0830037B1C8 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
 		411F75A925E4E40D0037B1C8 /* ProgressTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTable.swift; sourceTree = "<group>"; };
+		418A6E4825E780E900418A3D /* StringVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringVIewController.swift; sourceTree = "<group>"; };
 		58C4C43B2FD0C6BB4510E409 /* Pods-drawing_practice-drawing_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawing_practice-drawing_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-drawing_practice-drawing_practiceUITests/Pods-drawing_practice-drawing_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E5F004248A6F6E651F5E0AC /* Pods-drawing_practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawing_practiceTests.debug.xcconfig"; path = "Target Support Files/Pods-drawing_practiceTests/Pods-drawing_practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		882C5EE251676A361961A31F /* Pods-drawing_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawing_practice.release.xcconfig"; path = "Target Support Files/Pods-drawing_practice/Pods-drawing_practice.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				41186AF225E3939600ECBE13 /* SceneDelegate.swift */,
 				41186AF425E3939600ECBE13 /* ViewController.swift */,
+				418A6E4825E780E900418A3D /* StringVIewController.swift */,
 				411F75A825E4E3E30037B1C8 /* progressTable */,
 				41186B2825E393D500ECBE13 /* drawingComponents */,
 				41186AF625E3939600ECBE13 /* Main.storyboard */,
@@ -443,6 +448,7 @@
 				41186AF525E3939600ECBE13 /* ViewController.swift in Sources */,
 				41186B4F25E3A9AC00ECBE13 /* CircleView.swift in Sources */,
 				411F75AA25E4E40E0037B1C8 /* ProgressTable.swift in Sources */,
+				418A6E4925E780E900418A3D /* StringVIewController.swift in Sources */,
 				41186B2425E393D200ECBE13 /* line.swift in Sources */,
 				41186AF125E3939600ECBE13 /* AppDelegate.swift in Sources */,
 				411F75A425E4E0830037B1C8 /* ProgressCell.swift in Sources */,
@@ -456,6 +462,7 @@
 			files = (
 				41186B3125E397A800ECBE13 /* ViewController.swift in Sources */,
 				41186B3925E397DA00ECBE13 /* line.swift in Sources */,
+				418A6E4D25E782AC00418A3D /* StringVIewController.swift in Sources */,
 				41186B0825E3939800ECBE13 /* drawing_practiceTests.swift in Sources */,
 				41186B2925E397A300ECBE13 /* SceneDelegate.swift in Sources */,
 			);
@@ -467,6 +474,7 @@
 			files = (
 				41186B3525E397A900ECBE13 /* ViewController.swift in Sources */,
 				41186B3D25E397DB00ECBE13 /* line.swift in Sources */,
+				418A6E5125E782AD00418A3D /* StringVIewController.swift in Sources */,
 				41186B1325E3939800ECBE13 /* drawing_practiceUITests.swift in Sources */,
 				41186B2D25E397A300ECBE13 /* SceneDelegate.swift in Sources */,
 			);

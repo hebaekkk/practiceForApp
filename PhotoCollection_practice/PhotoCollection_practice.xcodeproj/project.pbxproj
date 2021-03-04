@@ -38,6 +38,15 @@
 		4159E6FC25C9243000949CCF /* DynmicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E6FB25C9243000949CCF /* DynmicHeightCollectionView.swift */; };
 		4159E70425C926FC00949CCF /* TokenCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E70325C926FC00949CCF /* TokenCollectionViewFlowLayout.swift */; };
 		41721E4C25C3A62E0073696F /* MyPostEditorPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41721E4B25C3A62E0073696F /* MyPostEditorPhotoCollectionView.swift */; };
+		417BFC9A25F0B73800C767B5 /* MulticellCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BFC9925F0B73800C767B5 /* MulticellCollectionViewController.swift */; };
+		417BFCA325F0B7D000C767B5 /* IDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BFCA225F0B7D000C767B5 /* IDCell.swift */; };
+		417BFCF125F0C0FC00C767B5 /* MultiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BFCF025F0C0FC00C767B5 /* MultiCollectionViewCell.swift */; };
+		417BFD0225F0CF3600C767B5 /* BusinessInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BFD0025F0CF3600C767B5 /* BusinessInfoCell.swift */; };
+		417BFD0325F0CF3600C767B5 /* BusinessInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417BFD0125F0CF3600C767B5 /* BusinessInfoCell.xib */; };
+		417BFD1425F0D29800C767B5 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BFD1325F0D29800C767B5 /* ReviewTableViewCell.swift */; };
+		417BFD1925F0D5D200C767B5 /* ReviewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BFD1825F0D5D200C767B5 /* ReviewTableView.swift */; };
+		418A6E3A25E7303000418A3D /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A6E3925E7303000418A3D /* TextSize.swift */; };
+		418A6E3F25E73AF100418A3D /* reviewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A6E3E25E73AF100418A3D /* reviewInfo.swift */; };
 		41A1E5F225C7D1A6009CA72E /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */; };
 		41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1E60D25C7EDD4009CA72E /* NotificationViewController.swift */; };
 		41A1E61025C7EDD4009CA72E /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A1E60E25C7EDD4009CA72E /* NotificationViewController.xib */; };
@@ -114,6 +123,15 @@
 		4159E6FB25C9243000949CCF /* DynmicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynmicHeightCollectionView.swift; sourceTree = "<group>"; };
 		4159E70325C926FC00949CCF /* TokenCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		41721E4B25C3A62E0073696F /* MyPostEditorPhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostEditorPhotoCollectionView.swift; sourceTree = "<group>"; };
+		417BFC9925F0B73800C767B5 /* MulticellCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticellCollectionViewController.swift; sourceTree = "<group>"; };
+		417BFCA225F0B7D000C767B5 /* IDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCell.swift; sourceTree = "<group>"; };
+		417BFCF025F0C0FC00C767B5 /* MultiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCollectionViewCell.swift; sourceTree = "<group>"; };
+		417BFD0025F0CF3600C767B5 /* BusinessInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInfoCell.swift; sourceTree = "<group>"; };
+		417BFD0125F0CF3600C767B5 /* BusinessInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessInfoCell.xib; sourceTree = "<group>"; };
+		417BFD1325F0D29800C767B5 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		417BFD1825F0D5D200C767B5 /* ReviewTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableView.swift; sourceTree = "<group>"; };
+		418A6E3925E7303000418A3D /* TextSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
+		418A6E3E25E73AF100418A3D /* reviewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewInfo.swift; sourceTree = "<group>"; };
 		41A1E5F125C7D1A6009CA72E /* BottomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
 		41A1E60D25C7EDD4009CA72E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		41A1E60E25C7EDD4009CA72E /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
@@ -185,13 +203,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		41186AAB25E3457C00ECBE13 /* partial table */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "partial table";
-			sourceTree = "<group>";
-		};
 		41186ACA25E38D0A00ECBE13 /* IDCardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +243,6 @@
 			children = (
 				41186ACA25E38D0A00ECBE13 /* IDCardView */,
 				41186AC525E38CF300ECBE13 /* estimationView.swift */,
-				41186AAB25E3457C00ECBE13 /* partial table */,
 				41406BB225DF5AD70028F0E3 /* New Group */,
 			);
 			path = ViewComponents;
@@ -295,6 +305,28 @@
 			path = CustomLayout;
 			sourceTree = "<group>";
 		};
+		417BFCA125F0B7A500C767B5 /* MultiCollection */ = {
+			isa = PBXGroup;
+			children = (
+				417BFC9925F0B73800C767B5 /* MulticellCollectionViewController.swift */,
+				417BFCF025F0C0FC00C767B5 /* MultiCollectionViewCell.swift */,
+				417BFCAA25F0B7D500C767B5 /* CollectionVIewCell */,
+			);
+			path = MultiCollection;
+			sourceTree = "<group>";
+		};
+		417BFCAA25F0B7D500C767B5 /* CollectionVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				417BFCA225F0B7D000C767B5 /* IDCell.swift */,
+				417BFD0025F0CF3600C767B5 /* BusinessInfoCell.swift */,
+				417BFD1325F0D29800C767B5 /* ReviewTableViewCell.swift */,
+				417BFD1825F0D5D200C767B5 /* ReviewTableView.swift */,
+				417BFD0125F0CF3600C767B5 /* BusinessInfoCell.xib */,
+			);
+			path = CollectionVIewCell;
+			sourceTree = "<group>";
+		};
 		41A1E5F025C7D186009CA72E /* BottomPopupView */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +358,7 @@
 				41B5845225E6388A00F33DFD /* cells */,
 				41B5843D25E61E9F00F33DFD /* MyDyCollVC.swift */,
 				41B5844225E61F2800F33DFD /* MyDyCollectionView.swift */,
+				418A6E3925E7303000418A3D /* TextSize.swift */,
 			);
 			name = MyDyCol;
 			path = DelegatePractice/MyDyCol;
@@ -335,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				41B5845325E638D800F33DFD /* reviewCell.swift */,
+				418A6E3E25E73AF100418A3D /* reviewInfo.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -374,6 +408,7 @@
 				41466A6725CB8692006EC37E /* CommCheckView */,
 				4159E65D25C8EAA600949CCF /* DynamicHeightCollectionView */,
 				41267B5225C28E8D001009E6 /* New Group */,
+				417BFCA125F0B7A500C767B5 /* MultiCollection */,
 				41A1E5F025C7D186009CA72E /* BottomPopupView */,
 				41267B3525C283B2001009E6 /* Basic */,
 				41ECA9AE25C1582500306097 /* MyPhotoCollectionView */,
@@ -557,6 +592,7 @@
 				41C5B1AA25C04E55003036D8 /* LaunchScreen.storyboard in Resources */,
 				41A1E61025C7EDD4009CA72E /* NotificationViewController.xib in Resources */,
 				41C5B1A725C04E55003036D8 /* Assets.xcassets in Resources */,
+				417BFD0325F0CF3600C767B5 /* BusinessInfoCell.xib in Resources */,
 				41C5B1A525C04E53003036D8 /* Main.storyboard in Resources */,
 				414A0EB725DB58710052B929 /* AlertViewController.xib in Resources */,
 			);
@@ -615,11 +651,15 @@
 				41B5843E25E61E9F00F33DFD /* MyDyCollVC.swift in Sources */,
 				4148F97B25D221070076F700 /* BasicModalViewController.swift in Sources */,
 				41406B9625DF40480028F0E3 /* InfoVC.swift in Sources */,
+				418A6E3F25E73AF100418A3D /* reviewInfo.swift in Sources */,
+				417BFCF125F0C0FC00C767B5 /* MultiCollectionViewCell.swift in Sources */,
 				41466A6325CB8685006EC37E /* CommViewController.swift in Sources */,
 				414A0EA225DB4CD40052B929 /* dVC.swift in Sources */,
 				411760BC25CCF17B000C19F0 /* MyContents.swift in Sources */,
 				41466A6E25CB8791006EC37E /* ServiceArea.swift in Sources */,
+				417BFD0225F0CF3600C767B5 /* BusinessInfoCell.swift in Sources */,
 				41C5B1A225C04E53003036D8 /* ViewController.swift in Sources */,
+				417BFC9A25F0B73800C767B5 /* MulticellCollectionViewController.swift in Sources */,
 				41ECA98A25C14C9F00306097 /* Contents.swift in Sources */,
 				41ECA9B325C15BD000306097 /* MyPhotoCollectionViewController.swift in Sources */,
 				4159E66525C8EC7900949CCF /* TokenMainCell.swift in Sources */,
@@ -637,6 +677,7 @@
 				411760CB25CCF369000C19F0 /* MyPostEditorPhotoCell.swift in Sources */,
 				4159E6FC25C9243000949CCF /* DynmicHeightCollectionView.swift in Sources */,
 				41267B3725C283D7001009E6 /* BringImagePracticeViewController.swift in Sources */,
+				417BFD1425F0D29800C767B5 /* ReviewTableViewCell.swift in Sources */,
 				41C5B1A025C04E53003036D8 /* SceneDelegate.swift in Sources */,
 				41ECA9A225C1521100306097 /* PostEditorPhotoPickerController.swift in Sources */,
 				41406B9F25DF439E0028F0E3 /* IDCardView.swift in Sources */,
@@ -645,10 +686,13 @@
 				414A0EBC25DB7C480052B929 /* ConfirmViewController.swift in Sources */,
 				411760C125CCF1CF000C19F0 /* MyBaseCell.swift in Sources */,
 				41267B4E25C28E87001009E6 /* BasicCollectionViewController.swift in Sources */,
+				417BFD1925F0D5D200C767B5 /* ReviewTableView.swift in Sources */,
 				41ECA9A725C152B000306097 /* PostCell.swift in Sources */,
 				414A0EB625DB58710052B929 /* AlertViewController.swift in Sources */,
 				411F759025E4BCFF0037B1C8 /* dyTableView.swift in Sources */,
 				41B5845425E638D900F33DFD /* reviewCell.swift in Sources */,
+				417BFCA325F0B7D000C767B5 /* IDCell.swift in Sources */,
+				418A6E3A25E7303000418A3D /* TextSize.swift in Sources */,
 				41EEDE1A25DCB283001A6735 /* DynamicTableVC.swift in Sources */,
 				41A1E60F25C7EDD4009CA72E /* NotificationViewController.swift in Sources */,
 				41ECA98525C14C4A00306097 /* PostEditorPhotoCell.swift in Sources */,

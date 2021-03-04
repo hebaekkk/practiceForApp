@@ -77,6 +77,8 @@ class InfoVC: UIViewController {
         contentView.addSubview(idView)
         contentView.addSubview(estimationView)
         
+        scrollView.alwaysBounceVertical = false
+        
         idView.snp.makeConstraints{ make in
 //            make.leading.equalTo(self.view)
 //            make.trailing.equalTo(self.view)
@@ -95,7 +97,7 @@ class InfoVC: UIViewController {
             make.leading.equalTo(self.contentView)
             make.trailing.equalTo(self.contentView)
             make.top.equalTo(idView.snp_bottom).offset(8)
-            make.height.equalTo(100)
+            make.height.equalTo(250)
         }
     }
 }

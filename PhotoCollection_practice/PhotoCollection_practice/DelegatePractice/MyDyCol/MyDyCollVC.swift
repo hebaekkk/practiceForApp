@@ -8,12 +8,15 @@
 import UIKit
 import SnapKit
 
+
 class MyDyCollVC: UIViewController {
 
-    let myHeightC: NSLayoutConstraint = {
-        let constraint = NSLayoutConstraint.init()
-        return constraint
-    }()
+    var cellHeight:CGFloat = 180
+    var index: Int = 0
+    var isExpandedSaver = [Bool]()
+    
+    let viewModels: [ReviewInfoViewModel] = [ReviewInfoViewModel(adr: "마마마마마마마마마마마마마마마마", cleanKind: "깨끗하게", starScore: "3.4", passedDay: "3", reviewContent: "세종대왕이 즉위 25년(1443년)에 직접 창제하여 궁중에 정음청(正音廳)을 두고 성삼문, 신숙주, 최항, 정인지, 박팽년 등 집현전 학자들에게 명하여 해설서 (훈민정음 해례본)을 발간하여 즉위 28년(1446년)에 반포하였다. 훈민정음이라는 말은 '백성(民)을 가르치는(訓) 바른(正) 소리(音)'라는 뜻으로, 독창적이며, 쓰기 편한 28자의 소리글자였다.세종 28년(1446)에 세종의 명으로 정인지(鄭麟趾) 등이 펴낸, 새 글자 ①에 대한 해설서. 전체가 한문임. 세종이 훈민정음 창제의 취지를 밝힌 서문(序文)과 글자의 음가(音價) 및 운용법을 밝힌 예의편(例義篇)이 본문처럼 되어 있고, 그 뒤에 음가와 운용법 등을 더욱 상세히 서술한 해례편(解例篇)이 부록으로 되어 있으며, 그 뒤 정인지의 서문이 끝에 실려 있음. 목판본으로 국보 70호임.", isImage: false),
+                                             ReviewInfoViewModel(adr: "마마마마마마마마마마마마마마마마", cleanKind: "깨끗하게", starScore: "3.4", passedDay: "3", reviewContent: "세종대왕이 즉위 25년(1443년)에 직접 창제하여 궁중에 정음청(正音廳)을 두고 성삼문, 신숙주, 최항, 정인지, 박팽년 등 집현전 학자들에게 명하여 해설서 (훈민정음 해례본)을 발간하여 즉위 28년(1446년)에 반포하였다. 훈민정음이라는 말은 '백성(民)을 가르치는(訓) 바른(正) 소리(音)'라는 뜻으로, 독창적이며, 쓰기 편한 28자의 소리글자였다.세종 28년(1446)에 세종의 명으로 정인지(鄭麟趾) 등이 펴낸, 새 글자 ①에 대한 해설서. 전체가 한문임. 세종이 훈민정음 창제의 취지를 밝힌 서문(序文)과 글자의 음가(音價) 및 운용법을 밝힌 예의편(例義篇)이 본문처럼 되어 있고, 그 뒤에 음가와 운용법 등을 더욱 상세히 서술한 해례편(解例篇)이 부록으로 되어 있으며, 그 뒤 정인지의 서문이 끝에 실려 있음. 목판본으로 국보 70호임.", isImage: false)]
     
     let button: UIButton = {
         let button = UIButton()
@@ -30,6 +33,7 @@ class MyDyCollVC: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
+        isExpandedSaver = Array(repeating: false, count: viewModels.count)
         self.setupViews()
     }
     
@@ -115,9 +119,9 @@ class MyDyCollVC: UIViewController {
     
     @objc func addCellNum(_ sender: UIButton) {
         self.cellCount += 1
-        self.collectionView.reloadData()
-        self.collectionView.layoutIfNeeded()
-        self.collectionView.collectionViewLayout.invalidateLayout()
+        //self.collectionView.reloadData()
+        //self.collectionView.layoutIfNeeded()
+        //self.collectionView.collectionViewLayout.invalidateLayout()
         
         print("cell Count : \(self.cellCount)")
     }
@@ -125,7 +129,8 @@ class MyDyCollVC: UIViewController {
 
 extension MyDyCollVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.cellCount
+        //return self.cellCount
+        return viewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -134,18 +139,72 @@ extension MyDyCollVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.black.cgColor
         cell.contentView.backgroundColor = .white
+        
+        cell.commonInit(with: viewModels[indexPath.row])
+        
+        cell.delegate = self
         return cell
     }
     
 
     
+    
+}
+
+extension MyDyCollVC: reviewCellDelegate {
+    func moreTapped(cell: reviewCell){//, indexPath: IndexPath) {
+        
+        //cell.isExpanded = !(cell.isExpanded)
+        
+        //isExpandedSaver[indexPath.row] = !isExpandedSaver[indexPath.row]
+        //self.cellHeight = cell.isExpanded ? 300 : 180
+        //self.cellHeight = 300
+        collectionView.performBatchUpdates(nil, completion: nil)//performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+    }
 }
 
 extension MyDyCollVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width// - 48
-       
-        return CGSize(width: width, height: 150)
+        if isExpandedSaver[indexPath.row] == true{
+             return CGSize(width: width, height: 300)
+        }else{
+            return CGSize(width: width, height: 180)
+        }
+//        switch  collectionView.indexPathsForSelectedItems?.first {
+//        case .some(indexPath):
+//            let height = 200
+//            return CGSize(width: width, height: height)
+//        default:
+//            let height = 100
+//            return CGSize(width: width, height: height)
+//
+//        }
+        //collectionView.reloadData()
+//
+//        if let currentCell = collectionView.cellForItem(at: indexPath) as? reviewCell {
+//            if currentCell.isExpanded {
+//                return CGSize(width: width, height: 300)
+//            } else {
+//                return CGSize(width: width, height: 180)
+//            }
+//
+//        } else {
+//            return CGSize(width: width, height: self.cellHeight)
+//        }
+        
+//        let cell = collectionView.cellForItem(at: indexPath) as! reviewCell
+//        if cell.isExpanded {
+//            return CGSize(width: width, height: 300)
+//        } else {
+//            return CGSize(width: width, height: 180)
+//        }
+//
+        
+
+        //return CGSize(width: width, height: self.cellHeight)
     }
+    
+    
     
 }

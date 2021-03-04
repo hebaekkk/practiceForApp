@@ -14,8 +14,8 @@
             filePath = "PhotoCollection_practice/New Group/BottomPopupView/BottomPopupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "BottomPopupViewController"
             landmarkType = "3">
             <Locations>
@@ -190,6 +190,100 @@
                   offsetFromSymbolStart = "111">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32FB2E86-716A-40EA-9594-0C8073120C93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoCollection_practice/DelegatePractice/MyDyCol/cells/reviewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "reviewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "32FB2E86-716A-40EA-9594-0C8073120C93 - 538b77541eacd07e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.reviewCell.delegate.getter : Swift.Optional&lt;PhotoCollection_practice.reviewCellDelegate&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/DelegatePractice/MyDyCol/cells/reviewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "32FB2E86-716A-40EA-9594-0C8073120C93 - 5bc187302345888a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.reviewCell.delegate.setter : Swift.Optional&lt;PhotoCollection_practice.reviewCellDelegate&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/DelegatePractice/MyDyCol/cells/reviewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "32FB2E86-716A-40EA-9594-0C8073120C93 - f53785399beb34b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.reviewCell.delegate.modify : Swift.Optional&lt;PhotoCollection_practice.reviewCellDelegate&gt;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/DelegatePractice/MyDyCol/cells/reviewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "32FB2E86-716A-40EA-9594-0C8073120C93 - 413753c4876def5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoCollection_practice.reviewCell.delegate.modify : Swift.Optional&lt;PhotoCollection_practice.reviewCellDelegate&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PhotoCollection_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bighand/Desktop/Tools/PhotoCollection_practice/PhotoCollection_practice/DelegatePractice/MyDyCol/cells/reviewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C0B335B-DF36-47EE-8D69-95424ED4E916"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoCollection_practice/MulticellCollectionVIewcontrollerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "MulticellCollectionVIewcontrollerViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
