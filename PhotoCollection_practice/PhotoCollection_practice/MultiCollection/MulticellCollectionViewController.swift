@@ -104,7 +104,7 @@ extension MulticellCollectionViewController: UICollectionViewDelegateFlowLayout 
         if indexPath.row == 0 {
             return CGSize(width: screenWidth, height: 130)
         } else {
-            return CGSize(width: screenWidth, height: 300)
+            return CGSize(width: screenWidth, height: 400)
         }
        
     }

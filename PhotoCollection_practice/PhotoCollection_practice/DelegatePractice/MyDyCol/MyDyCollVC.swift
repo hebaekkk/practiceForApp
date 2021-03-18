@@ -52,7 +52,7 @@ class MyDyCollVC: UIViewController {
           self.scrollView.widthAnchor.constraint(equalTo: self.view.widthAnchor),
           self.scrollView.heightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.heightAnchor),
           self.scrollView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-          self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            self.scrollView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
           self.scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
           self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
           ])
@@ -128,6 +128,10 @@ class MyDyCollVC: UIViewController {
 }
 
 extension MyDyCollVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return self.cellCount
         return viewModels.count
@@ -146,6 +150,14 @@ extension MyDyCollVC: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("selected")
+        isExpandedSaver[indexPath.row] = !isExpandedSaver[indexPath.row]
+        print("\(indexPath.row)")
+        collectionView.layoutIfNeeded()
+        //collectionView.updateConstraints()
+    }
+    
 
     
     
@@ -154,23 +166,32 @@ extension MyDyCollVC: UICollectionViewDelegate, UICollectionViewDataSource {
 extension MyDyCollVC: reviewCellDelegate {
     func moreTapped(cell: reviewCell){//, indexPath: IndexPath) {
         
-        //cell.isExpanded = !(cell.isExpanded)
         
+        self.collectionView.layoutIfNeeded()
+        //cell.isExpanded = !(cell.isExpanded)
+            
         //isExpandedSaver[indexPath.row] = !isExpandedSaver[indexPath.row]
         //self.cellHeight = cell.isExpanded ? 300 : 180
         //self.cellHeight = 300
-        collectionView.performBatchUpdates(nil, completion: nil)//performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+        //collectionView.performBatchUpdates(nil, completion: nil)//performBatchUpdates(<#T##updates: (() -> Void)?##(() -> Void)?##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
     }
 }
 
 extension MyDyCollVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width// - 48
-        if isExpandedSaver[indexPath.row] == true{
-             return CGSize(width: width, height: 300)
-        }else{
-            return CGSize(width: width, height: 180)
-        }
+//        if isExpandedSaver[indexPath.row] {
+//             return CGSize(width: width, height: 300)
+//        } else {
+//            return CGSize(width: width, height: 180)
+//        }
+        
+        let expandedSize = CGSize(width: width, height: 300)
+        let compressedSize = CGSize(width: width, height: 180)
+        
+        //let size: CGSize?
+        let size: CGSize = isExpandedSaver[indexPath.row] ? expandedSize : compressedSize
+        return size
 //        switch  collectionView.indexPathsForSelectedItems?.first {
 //        case .some(indexPath):
 //            let height = 200

@@ -20,4 +20,4 @@ class MultiCollectionViewCell: UICollectionViewCell {
     func setupViews() {
         
     }
-    }
+}

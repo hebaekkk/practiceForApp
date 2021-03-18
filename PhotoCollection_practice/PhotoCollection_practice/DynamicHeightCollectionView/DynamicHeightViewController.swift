@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 //
 //class DynamicHeightViewController: UIViewController {
 //
@@ -291,6 +292,7 @@ class DynamicHeightViewController: UIViewController {
   }
   
   private func setupViews() {
+    self.scrollView.delegate = self
     
     self.navigationItem.title = "Confirm Recovery Key"
     self.scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -440,6 +442,22 @@ class DynamicHeightViewController: UIViewController {
     collView.backgroundColor = .clear
     return collView
   }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        
+        let headerHeightMaxChange = CGFloat(100)
+        
+        var subOffset: CGFloat = 0
+        if offsetY > headerHeightMaxChange {
+            subOffset = offsetY - headerHeightMaxChange
+        } else {
+            subOffset = 0
+        }
+        
+        NotificationCenter.default.post(name: Notification.Name(rawValue: NotificationNames.setOffset), object: subOffset)
+    }
 }
 
 extension DynamicHeightViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -473,6 +491,8 @@ extension DynamicHeightViewController: UICollectionViewDataSource, UICollectionV
       return cell
     }
   }
+    
+    
   
 //  func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 //
@@ -543,4 +563,9 @@ extension DynamicHeightViewController: UICollectionViewDataSource, UICollectionV
       return CGSize(width: cellWidth, height: 30.0)
     }
   }
+}
+
+
+struct NotificationNames {
+    static let setOffset = "setOffset"
 }

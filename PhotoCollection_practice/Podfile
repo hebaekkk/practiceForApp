@@ -10,6 +10,7 @@ target 'PhotoCollection_practice' do
    pod 'PanModal'
    pod 'SkyFloatingLabelTextField', '~> 3.0'
 
-   pod "PagingKit" # add
+   pod "PagingKit" 
+   pod 'IGListKit', '~> 4.0.0'
 
 end

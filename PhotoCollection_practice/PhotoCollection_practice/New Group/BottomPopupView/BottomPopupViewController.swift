@@ -18,7 +18,7 @@ class BottomPopupViewController: UIViewController {
     }
     
     @IBAction func moveToInfoScroll(_ sender: Any) {
-        let vc = InfoVC()
+        let vc = Try2VC()//InfoVC()
         navigationController?.pushViewController(vc, animated: true)
     }
     

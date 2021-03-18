@@ -6,9 +6,18 @@
 //
 
 import UIKit
+import SnapKit
 
 
 class ViewController: UIViewController {
+    
+    let button: UIButton = {
+        let button = UIButton()
+        //button.setTitle("ImageSlider Prac", for: .normal)
+        button.setTitle("FOLDING COLLECTIONVIEW", for: .normal)
+        button.backgroundColor = .black
+        return button
+    }()
 
     @IBAction func myDyColl(_ sender: Any) {
         let vc = MyDyCollVC()
@@ -69,6 +78,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = false
         // Do any additional setup after loading the view.
+        view.addSubview(button)
+        button.snp.makeConstraints{ make in
+            make.top.equalTo(self.view).offset(150)
+            make.trailing.equalTo(self.view).offset(-10)
+            make.height.equalTo(30)
+            //make.width.equalTo(60)
+        }
+        button.addTarget(self, action: #selector(moveToImageSlider(_:)), for: .touchUpInside)
+    }
+    
+    @objc func moveToImageSlider(_ sender: UIButton) {
+        //let vc = ImageSliderVC()
+        let vc = NEW()
+        navigationController?.pushViewController(vc, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false

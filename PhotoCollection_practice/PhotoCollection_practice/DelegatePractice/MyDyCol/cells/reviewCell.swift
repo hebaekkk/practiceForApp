@@ -50,12 +50,12 @@ class reviewCell: UICollectionViewCell {
         return label
     }()
     
-    let starLabel: starAndLabel = {
-        let view = starAndLabel()
-        view.starLabel.textAlignment = .right
-        view.starLabel.text = "별점"
-        return view
-    }()
+//    let starLabel: starAndLabel = {
+//        let view = starAndLabel()
+//        view.starLabel.textAlignment = .right
+//        view.starLabel.text = "별점"
+//        return view
+//    }()
     
     var days: String = "0"
     
@@ -124,8 +124,8 @@ class reviewCell: UICollectionViewCell {
     func setupView() {
         contentView.addSubview(adrLabel)
         contentView.addSubview(cleanKindLabel)
-        contentView.addSubview(starLabel)
-        contentView.addSubview(passedDayLabel)
+        //contentView.addSubview(starLabel)
+        //contentView.addSubview(passedDayLabel)
         contentView.addSubview(reviewLabel)
         
         contentView.addSubview(moreButton)
@@ -133,34 +133,35 @@ class reviewCell: UICollectionViewCell {
         //contentView.addSubview(imageCollection)
         
         adrLabel.snp.makeConstraints { make in
-            make.top.equalTo(contentView).offset(12)
-            make.leading.equalTo(contentView).offset(24)
+            make.top.equalTo(contentView.snp.top).offset(12)
+            make.leading.equalTo(contentView.snp.leading).offset(24)
             make.height.equalTo(24)
         }
         cleanKindLabel.snp.makeConstraints{ make in
             make.top.equalTo(adrLabel.snp.bottom)
-            make.leading.equalTo(contentView).offset(24)
+            make.leading.equalTo(contentView.snp.leading).offset(24)
             make.height.equalTo(24)
         }
-        starLabel.snp.makeConstraints{ make in
-            make.width.equalTo(60)
-            make.top.equalTo(contentView).offset(12)
-            make.trailing.equalTo(contentView.snp_trailing).offset(-24)
-            make.height.equalTo(24)
-        }
-        passedDayLabel.snp.makeConstraints { make in
-            make.top.equalTo(starLabel.snp_bottom)
-            make.trailing.equalTo(contentView).offset(-24)
-            make.height.equalTo(24)
-        }
-        
+//        starLabel.snp.makeConstraints{ make in
+//            make.width.equalTo(60)
+//            make.top.equalTo(contentView).offset(12)
+//            make.trailing.equalTo(contentView.snp_trailing).offset(-24)
+//            make.height.equalTo(24)
+//        }
+//        passedDayLabel.snp.makeConstraints { make in
+//            make.top.equalTo(starLabel.snp_bottom)
+//            make.trailing.equalTo(contentView).offset(-24)
+//            make.height.equalTo(24)
+//        }
+//
         reviewLabel.snp.makeConstraints{ make in
             make.top.equalTo(cleanKindLabel.snp.bottom)
-            make.top.equalTo(passedDayLabel.snp.bottom)
+            //make.top.equalTo(passedDayLabel.snp.bottom)
             
             make.leading.equalTo(contentView.snp.leading).offset(24)
             make.trailing.equalTo(contentView.snp.trailing).offset(-24)
-            make.height.greaterThanOrEqualTo(self.isExpanded ? 40 : 80)
+            //make.height.greaterThanOrEqualTo(self.isExpanded ? 40 : 80)
+            make.bottom.equalTo(moreButton.snp.top).offset(-24)
         }
         
 
@@ -169,6 +170,7 @@ class reviewCell: UICollectionViewCell {
             make.trailing.equalTo(contentView.snp.trailing).offset(-24)
             make.top.equalTo(reviewLabel.snp.bottom).offset(4)
             make.height.equalTo(20)
+            make.bottom.greaterThanOrEqualTo(contentView.snp.bottom)//.offset(-23)
             //make.bottom.equalTo(isImage ? imageCollection.snp.top : contentView.snp.bottom).offset(-10)
         }
     
@@ -181,14 +183,14 @@ class reviewCell: UICollectionViewCell {
         
         reviewLabel.numberOfLines = self.isExpanded ? 0 : 3
         moreButton.setTitle(self.isExpanded ? "접기" : "더보기", for: .normal)
-        reviewLabel.snp.makeConstraints{ make in
-            make.top.equalTo(cleanKindLabel.snp.bottom)
-            make.top.equalTo(passedDayLabel.snp.bottom)
-            
-            make.leading.equalTo(contentView.snp.leading).offset(24)
-            make.trailing.equalTo(contentView.snp.trailing).offset(-24)
-            make.height.greaterThanOrEqualTo(self.isExpanded ? 80 : 40)
-        }
+//        reviewLabel.snp.makeConstraints{ make in
+//            make.top.equalTo(cleanKindLabel.snp.bottom)
+//            make.top.equalTo(passedDayLabel.snp.bottom)
+//
+//            make.leading.equalTo(contentView.snp.leading).offset(24)
+//            make.trailing.equalTo(contentView.snp.trailing).offset(-24)
+//            make.height.greaterThanOrEqualTo(self.isExpanded ? 80 : 40)
+//        }
         
         print("INDEXPATH : \(String(describing: self.indexPath))")
         
@@ -207,7 +209,7 @@ class reviewCell: UICollectionViewCell {
     
     func commonInit(with viewModel: ReviewInfoViewModel){
         adrLabel.text = viewModel.adr
-        starLabel.starLabel.text = viewModel.starScore
+        //starLabel.starLabel.text = viewModel.starScore
         cleanKindLabel.text = viewModel.cleanKind
         passedDayLabel.text = viewModel.passedDay + "일 후"
         reviewLabel.text = viewModel.reviewContent
