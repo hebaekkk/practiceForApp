@@ -58,6 +58,7 @@ class NEW: UIViewController {
         
         //MARK : Configure collection view
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: listLayout)
+        
         collectionView.delegate = self
         //collectionView.dataSource = self
         

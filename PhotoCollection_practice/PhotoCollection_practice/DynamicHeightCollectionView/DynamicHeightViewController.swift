@@ -332,7 +332,7 @@ class DynamicHeightViewController: UIViewController {
     self.topCollView = returnCollView()
     self.topCollView.register(TokenMainCell.self, forCellWithReuseIdentifier: TokenMainCell.identifier)
     self.topCollView.layer.cornerRadius = 5.0
-    self.topCollView.layer.borderColor = #colorLiteral(red: 0.4039215686, green: 0.4666666667, blue: 0.7215686275, alpha: 1).cgColor
+    self.topCollView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8470588235).cgColor    
     self.topCollView.layer.borderWidth = 1.25
     self.topCollView.isDynamicSizeRequired = true
     
